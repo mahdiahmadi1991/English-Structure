@@ -1034,7 +1034,7 @@
         missing.push('level (0-6)');
       }
       if (state.levelsByNumber.size > 0 && Number.isInteger(topic.level) && !state.levelsByNumber.has(topic.level)) {
-        missing.push('level (missing metadata)');
+        missing.push('level (metadata missing in index)');
       }
       if (topic.order !== undefined && !Number.isInteger(topic.order)) {
         missing.push('order');

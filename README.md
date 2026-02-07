@@ -88,6 +88,11 @@ full topic content from the level files in `data/levels/`.
 }
 ```
 
+Level assignments come from `data/level-map.json`. Topics that are not explicitly
+listed fall back to the `defaultLevel` (currently set to 1) or inferred keywords
+when generating the index. Add `"strict": true` to a topic to enable stricter
+validation requirements for examples, mistakes, and quiz counts.
+
 Each grammar topic in the level files follows this structure:
 
 ```javascript
