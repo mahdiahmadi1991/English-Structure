@@ -28,26 +28,18 @@ An interactive, mobile-first static web application for learning English grammar
    cd English-Structure
    ```
 
-2. Open `index.html` in your web browser:
-   ```bash
-   # On macOS
-   open index.html
-   
-   # On Linux
-   xdg-open index.html
-   
-   # On Windows
-   start index.html
-   ```
-
-3. Or serve it with a local server:
+2. Serve it with a local server:
    ```bash
    # Using Python 3
    python -m http.server 8000
    
-   # Using Node.js (http-server)
-   npx http-server
+   # Using Node.js
+   npx serve
    ```
+
+3. Open http://localhost:8000 in your browser.
+
+> **Important:** Do not open `index.html` via `file://` URLs. Fetch requests for JSON data are blocked by browsers without an HTTP server.
 
 That's it! No build process or dependencies required.
 
@@ -61,13 +53,42 @@ English-Structure/
 ├── scripts/
 │   └── app.js             # Application logic (vanilla JavaScript)
 ├── data/
-│   └── grammar-topics.js  # Grammar topics data
+│   ├── topics-index.json  # Lightweight topics metadata + level definitions
+│   └── levels/            # Full topic content split by level
 └── README.md              # This file
 ```
 
 ## 📝 Data Structure
 
-Each grammar topic in `data/grammar-topics.js` follows this structure:
+The app reads a lightweight index from `data/topics-index.json`, then lazily loads
+full topic content from the level files in `data/levels/`.
+
+`data/topics-index.json`:
+
+```json
+{
+  "schemaVersion": 1,
+  "levels": [
+    {
+      "level": 0,
+      "key": "level-0",
+      "label": { "en": "Absolute Beginner (Foundations)", "fa": "مقدماتی مطلق (پایهها)" },
+      "file": "data/levels/level-0.json"
+    }
+  ],
+  "topics": [
+    {
+      "id": "present-simple",
+      "level": 0,
+      "title": { "en": "Present Simple Tense", "fa": "زمان حال ساده" },
+      "category": { "en": "Tenses", "fa": "زمان" },
+      "tags": { "en": ["basic"], "fa": ["پایه"] }
+    }
+  ]
+}
+```
+
+Each grammar topic in the level files follows this structure:
 
 ```javascript
 {
@@ -103,10 +124,9 @@ Each grammar topic in `data/grammar-topics.js` follows this structure:
 
 ### Adding New Topics
 
-1. Open `data/grammar-topics.js`
-2. Add a new topic object to the `grammarTopics` array
-3. Follow the data structure above
-4. Refresh the page to see your changes
+1. Add or update a topic in the appropriate `data/levels/level-*.json` file.
+2. Run `node scripts/split-topics-by-level.cjs` to refresh `data/topics-index.json`.
+3. Refresh the page to see your changes.
 
 ### Styling
 

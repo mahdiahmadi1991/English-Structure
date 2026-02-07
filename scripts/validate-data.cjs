@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-const INDEX_PATH = path.join(__dirname, '..', 'data', 'topics-index.json');
-const LEVELS_DIR = path.join(__dirname, '..', 'data', 'levels');
+const ROOT_DIR = path.join(__dirname, '..');
+const INDEX_PATH = path.join(ROOT_DIR, 'data', 'topics-index.json');
+const LEVEL_MAP_PATH = path.join(ROOT_DIR, 'data', 'level-map.json');
 
 const errors = [];
 const LEVELS = [0, 1, 2, 3, 4, 5, 6];
@@ -178,41 +179,150 @@ function ensureQuizArray(value, pathLabel) {
   });
 }
 
+function collectStrings(value) {
+  if (Array.isArray(value)) {
+    return value.flatMap(collectStrings);
+  }
+  if (value && typeof value === 'object') {
+    return Object.values(value).flatMap(collectStrings);
+  }
+  if (typeof value === 'string') {
+    return [value];
+  }
+  return [];
+}
+
+function inferLevel(topic) {
+  const values = [
+    ...collectStrings(topic.title),
+    ...collectStrings(topic.category),
+    ...collectStrings(topic.tags)
+  ];
+  const haystack = values.join(' ').toLowerCase();
+  if (/\bfluency\b/.test(haystack) || /\bmastery\b/.test(haystack)) {
+    return 6;
+  }
+  if (/\badvanced\b/.test(haystack)) {
+    return 5;
+  }
+  if (/upper-?intermediate/.test(haystack)) {
+    return 4;
+  }
+  if (/pre-?intermediate/.test(haystack)) {
+    return 2;
+  }
+  if (/\bintermediate\b/.test(haystack)) {
+    return 3;
+  }
+  if (/\bbeginner\b/.test(haystack)) {
+    return 1;
+  }
+  if (/\bbasic\b/.test(haystack) || /\bbasics\b/.test(haystack) || /\bintro\b/.test(haystack) ||
+      /foundations?/.test(haystack) || /absolute beginner/.test(haystack)) {
+    return 0;
+  }
+  return null;
+}
+
+function readJsonFile(filePath, errorLabel) {
+  try {
+    const contents = fs.readFileSync(filePath, 'utf8');
+    return JSON.parse(contents);
+  } catch {
+    if (errorLabel) {
+      addError(errorLabel);
+    }
+    return null;
+  }
+}
+
 function validateIndex(indexData) {
-  if (!Array.isArray(indexData)) {
+  if (!indexData || typeof indexData !== 'object' || Array.isArray(indexData)) {
     addError('data/topics-index.json');
-    return new Map();
+    return { indexById: new Map(), levelsByNumber: new Map(), topics: [], counts: null };
   }
 
-  const ids = new Map();
-  indexData.forEach((topic, index) => {
-    if (!topic || typeof topic !== 'object') {
-      addError(`topicsIndex[${index}]`);
+  if (!Number.isInteger(indexData.schemaVersion)) {
+    addError('topicsIndex.schemaVersion');
+  }
+
+  const levels = Array.isArray(indexData.levels) ? indexData.levels : [];
+  const topics = Array.isArray(indexData.topics) ? indexData.topics : [];
+  if (!Array.isArray(indexData.levels)) {
+    addError('topicsIndex.levels');
+  }
+  if (!Array.isArray(indexData.topics)) {
+    addError('topicsIndex.topics');
+  }
+
+  const levelsByNumber = new Map();
+  levels.forEach((levelMeta, index) => {
+    const levelPath = `topicsIndex.levels[${index}]`;
+    if (!levelMeta || typeof levelMeta !== 'object') {
+      addError(levelPath);
       return;
     }
-    ensurePlainString(topic.id, `topicsIndex[${index}].id`);
-    ensureNonEmptyString(topic.title, `topicsIndex[${index}].title`);
-    ensureNonEmptyString(topic.category, `topicsIndex[${index}].category`);
-    ensureStringArray(topic.tags, `topicsIndex[${index}].tags`);
+    if (!Number.isInteger(levelMeta.level)) {
+      addError(`${levelPath}.level`);
+    } else if (levelMeta.level < 0 || levelMeta.level > 6) {
+      addError(`${levelPath}.level`);
+    } else if (levelsByNumber.has(levelMeta.level)) {
+      addError(`${levelPath}.level`);
+    } else {
+      levelsByNumber.set(levelMeta.level, levelMeta);
+    }
+    ensurePlainString(levelMeta.key, `${levelPath}.key`);
+    ensureNonEmptyString(levelMeta.label, `${levelPath}.label`);
+    if (levelMeta.description !== undefined) {
+      ensureNonEmptyString(levelMeta.description, `${levelPath}.description`);
+    }
+    ensurePlainString(levelMeta.file, `${levelPath}.file`);
+    if (typeof levelMeta.file === 'string' && levelMeta.file.trim()) {
+      const resolvedPath = path.join(ROOT_DIR, levelMeta.file);
+      if (!fs.existsSync(resolvedPath)) {
+        addError(`${levelPath}.file`);
+      }
+    }
+  });
+
+  LEVELS.forEach((level) => {
+    if (!levelsByNumber.has(level)) {
+      addError(`topicsIndex.levels[level-${level}]`);
+    }
+  });
+
+  const ids = new Map();
+  topics.forEach((topic, index) => {
+    const topicPath = `topicsIndex.topics[${index}]`;
+    if (!topic || typeof topic !== 'object') {
+      addError(topicPath);
+      return;
+    }
+    ensurePlainString(topic.id, `${topicPath}.id`);
+    ensureNonEmptyString(topic.title, `${topicPath}.title`);
+    ensureNonEmptyString(topic.category, `${topicPath}.category`);
+    ensureStringArray(topic.tags, `${topicPath}.tags`);
     if (!Number.isInteger(topic.level)) {
-      addError(`topicsIndex[${index}].level`);
+      addError(`${topicPath}.level`);
     } else if (topic.level < 0 || topic.level > 6) {
-      addError(`topicsIndex[${index}].level`);
+      addError(`${topicPath}.level`);
+    } else if (!levelsByNumber.has(topic.level)) {
+      addError(`${topicPath}.level`);
     }
     if (topic.order !== undefined && !Number.isInteger(topic.order)) {
-      addError(`topicsIndex[${index}].order`);
+      addError(`${topicPath}.order`);
     }
 
     if (topic.id) {
       if (ids.has(topic.id)) {
-        addError(`topicsIndex[${index}].id`);
+        addError(`${topicPath}.id`);
       } else {
         ids.set(topic.id, topic);
       }
     }
   });
 
-  return ids;
+  return { indexById: ids, levelsByNumber, topics, counts: indexData.counts ?? null };
 }
 
 function validateTopic(topic, index, level, indexById) {
@@ -223,13 +333,16 @@ function validateTopic(topic, index, level, indexById) {
   }
 
   ensurePlainString(topic.id, `${topicPath}.id`);
-  if (topic.id && !indexById.has(topic.id)) {
+  const indexEntry = topic.id ? indexById.get(topic.id) : null;
+  if (topic.id && !indexEntry) {
     addError(`${topicPath}.id`);
   }
 
   if (!Number.isInteger(topic.level)) {
     addError(`${topicPath}.level`);
   } else if (topic.level !== level) {
+    addError(`${topicPath}.level`);
+  } else if (indexEntry && indexEntry.level !== topic.level) {
     addError(`${topicPath}.level`);
   }
 
@@ -254,7 +367,7 @@ function validateTopic(topic, index, level, indexById) {
   ensureMistakesArray(topic.sections.commonMistakes, `${topicPath}.sections.commonMistakes`);
   ensureQuizArray(topic.sections.quiz, `${topicPath}.sections.quiz`);
 
-  const enforceStrict = topic.strict === true || (Number.isInteger(topic.level) && topic.level >= 1);
+  const enforceStrict = topic.strict === true;
   if (enforceStrict) {
     const examples = resolveLocalized(topic.sections.examples, `${topicPath}.sections.examples`);
     const mistakes = resolveLocalized(topic.sections.commonMistakes, `${topicPath}.sections.commonMistakes`);
@@ -273,38 +386,81 @@ function validateTopic(topic, index, level, indexById) {
   }
 }
 
-function readLevelFile(level) {
-  const filePath = path.join(LEVELS_DIR, `level-${level}.json`);
-  try {
-    const contents = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(contents);
-  } catch {
-    addError(`data/levels/level-${level}.json`);
-    return null;
-  }
+function readLevelFile(filePath, level) {
+  const resolved = path.join(ROOT_DIR, filePath);
+  const data = readJsonFile(resolved, `data/levels/level-${level}.json`);
+  return data;
 }
 
 function readIndexFile() {
-  try {
-    const contents = fs.readFileSync(INDEX_PATH, 'utf8');
-    return JSON.parse(contents);
-  } catch {
-    addError('data/topics-index.json');
-    return null;
+  return readJsonFile(INDEX_PATH, 'data/topics-index.json');
+}
+
+function warnAboutUnmappedTopics(topics) {
+  const mapData = readJsonFile(LEVEL_MAP_PATH);
+  if (!mapData || !topics.length) {
+    return;
+  }
+
+  const defaultLevel = Number.isInteger(mapData.defaultLevel) ? mapData.defaultLevel : 0;
+  const levelLists = mapData.levels && typeof mapData.levels === 'object'
+    ? mapData.levels
+    : mapData;
+  const mappedIds = new Set();
+  LEVELS.forEach((level) => {
+    const ids = Array.isArray(levelLists?.[level]) ? levelLists[level] : [];
+    ids.forEach((id) => mappedIds.add(id));
+  });
+
+  const unmapped = topics.filter((topic) => topic?.id && !mappedIds.has(topic.id));
+  const ambiguous = unmapped.filter((topic) => inferLevel(topic) === null);
+  if (ambiguous.length) {
+    const sample = ambiguous.slice(0, 5).map((topic) => topic.id).join(', ');
+    console.warn(`Warning: ${ambiguous.length} topics are ambiguous; defaulted to level ${defaultLevel}.`);
+    if (sample) {
+      console.warn(`Examples: ${sample}`);
+    }
+  }
+}
+
+function validateCounts(counts, topics) {
+  if (!counts || typeof counts !== 'object') {
+    return;
+  }
+  if (!Number.isInteger(counts.total)) {
+    addError('topicsIndex.counts.total');
+  } else if (counts.total !== topics.length) {
+    addError('topicsIndex.counts.total');
+  }
+
+  if (counts.levels && typeof counts.levels === 'object') {
+    LEVELS.forEach((level) => {
+      const levelCount = counts.levels[level];
+      if (!Number.isInteger(levelCount)) {
+        addError(`topicsIndex.counts.levels.${level}`);
+        return;
+      }
+      const actualCount = topics.filter((topic) => topic.level === level).length;
+      if (levelCount !== actualCount) {
+        addError(`topicsIndex.counts.levels.${level}`);
+      }
+    });
   }
 }
 
 const topicsIndex = readIndexFile();
-const indexById = validateIndex(topicsIndex);
+const { indexById, levelsByNumber, topics, counts } = validateIndex(topicsIndex);
 const seenIds = new Set();
 
 LEVELS.forEach((level) => {
-  const topics = readLevelFile(level);
-  if (!Array.isArray(topics)) {
+  const levelMeta = levelsByNumber.get(level);
+  const filePath = levelMeta?.file || path.join('data', 'levels', `level-${level}.json`);
+  const levelTopics = readLevelFile(filePath, level);
+  if (!Array.isArray(levelTopics)) {
     return;
   }
 
-  topics.forEach((topic, index) => {
+  levelTopics.forEach((topic, index) => {
     validateTopic(topic, index, level, indexById);
     if (topic && topic.id) {
       if (seenIds.has(topic.id)) {
@@ -316,15 +472,16 @@ LEVELS.forEach((level) => {
   });
 });
 
-if (Array.isArray(topicsIndex)) {
-  topicsIndex.forEach((topic, index) => {
-    if (topic && topic.id && !seenIds.has(topic.id)) {
-      addError(`topicsIndex[${index}].id`);
-    }
-  });
-}
+topics.forEach((topic, index) => {
+  if (topic && topic.id && !seenIds.has(topic.id)) {
+    addError(`topicsIndex.topics[${index}].id`);
+  }
+});
 
-console.log(`Topics checked: ${Array.isArray(topicsIndex) ? topicsIndex.length : 0}`);
+warnAboutUnmappedTopics(topics);
+validateCounts(counts, topics);
+
+console.log(`Topics checked: ${topics.length}`);
 console.log(`Level files checked: ${LEVELS.length}`);
 
 if (errors.length) {

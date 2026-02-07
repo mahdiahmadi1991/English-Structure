@@ -1,5 +1,195 @@
 [
   {
+    "id": "articles",
+    "title": "Articles (a, an, the)",
+    "category": "Grammar Basics",
+    "tags": [
+      "articles",
+      "determiners",
+      "intermediate"
+    ],
+    "level": 3,
+    "lang": "en",
+    "sections": {
+      "summary": "Articles are words that define nouns as specific or unspecific. English has two types: definite (the) and indefinite (a/an).",
+      "rules": [
+        "Use \"a\" before consonant sounds",
+        "Use \"an\" before vowel sounds",
+        "Use \"the\" for specific nouns or when something is mentioned again",
+        "No article for plural/uncountable nouns in general statements"
+      ],
+      "examples": [
+        "I saw a dog. The dog was brown. (first mention → specific)",
+        "She is an engineer. (job/profession)",
+        "The sun rises in the east. (unique things)",
+        "I like coffee. (general - no article with uncountable)"
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I am an student.",
+          "correct": "I am a student.",
+          "explanation": "Student starts with consonant sound /st/, use \"a\""
+        },
+        {
+          "wrong": "She goes to the school.",
+          "correct": "She goes to school.",
+          "explanation": "No article when referring to the general purpose (education)"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "She is ___ honest person.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "no article"
+          ],
+          "correct": 1,
+          "explanation": "Honest starts with vowel sound /ɒ/, use \"an\""
+        },
+        {
+          "question": "I love ___ music.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "no article"
+          ],
+          "correct": 3,
+          "explanation": "General statements with uncountable nouns need no article"
+        }
+      ]
+    }
+  },
+  {
+    "id": "prepositions",
+    "title": "Prepositions of Time and Place",
+    "category": "Grammar Basics",
+    "tags": [
+      "prepositions",
+      "intermediate"
+    ],
+    "level": 3,
+    "lang": "en",
+    "sections": {
+      "summary": "Prepositions show relationships between nouns and other words. The most common are in, on, at.",
+      "rules": [
+        "Time: at (specific times), on (days/dates), in (months/years/periods)",
+        "Place: at (specific points), on (surfaces), in (enclosed spaces)",
+        "at: at 3 PM, at night, at home, at the door",
+        "on: on Monday, on the table, on the wall",
+        "in: in May, in 2020, in the morning, in the room"
+      ],
+      "examples": [
+        "I wake up at 7 AM. (specific time)",
+        "The meeting is on Monday. (day)",
+        "She was born in 1990. (year)",
+        "The book is on the table. (surface)",
+        "He lives in New York. (city/enclosed space)"
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I will see you in Monday.",
+          "correct": "I will see you on Monday.",
+          "explanation": "Use \"on\" with days of the week"
+        },
+        {
+          "wrong": "The class starts at the morning.",
+          "correct": "The class starts in the morning.",
+          "explanation": "Use \"in\" with parts of the day (except \"at night\")"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "The party is ___ Saturday night.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "by"
+          ],
+          "correct": 1,
+          "explanation": "Use \"on\" with specific days and nights of the week"
+        },
+        {
+          "question": "She arrived ___ 5 o'clock.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "by"
+          ],
+          "correct": 0,
+          "explanation": "Use \"at\" with specific clock times"
+        }
+      ]
+    }
+  },
+  {
+    "id": "modal-verbs",
+    "title": "Modal Verbs (can, should, must)",
+    "category": "Grammar Basics",
+    "tags": [
+      "modals",
+      "intermediate"
+    ],
+    "level": 3,
+    "lang": "en",
+    "sections": {
+      "summary": "Modal verbs express ability, permission, obligation, advice, or possibility.",
+      "rules": [
+        "Can/could: ability, permission, possibility",
+        "Should/ought to: advice, recommendation",
+        "Must/have to: obligation, necessity",
+        "May/might: permission, possibility",
+        "Modal + base form (no \"to\" except ought to)"
+      ],
+      "examples": [
+        "I can swim. (ability)",
+        "You should see a doctor. (advice)",
+        "We must arrive on time. (obligation)",
+        "It might rain tomorrow. (possibility)"
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "He can to speak English.",
+          "correct": "He can speak English.",
+          "explanation": "Modal verbs are followed by base form without \"to\""
+        },
+        {
+          "wrong": "She musts study harder.",
+          "correct": "She must study harder.",
+          "explanation": "Modal verbs don't add -s in third person"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "You ___ eat so much sugar. It's unhealthy.",
+          "options": [
+            "mustn't",
+            "shouldn't",
+            "can't",
+            "don't have to"
+          ],
+          "correct": 1,
+          "explanation": "Should/shouldn't is used for advice"
+        },
+        {
+          "question": "I ___ finish this project by Friday.",
+          "options": [
+            "must",
+            "should",
+            "might",
+            "would"
+          ],
+          "correct": 0,
+          "explanation": "Must expresses strong obligation"
+        }
+      ]
+    }
+  },
+  {
     "id": "narrative-tenses-past-simple-continuous-perfect",
     "title": {
       "en": "Narrative Tenses (Past simple/continuous/perfect)",
