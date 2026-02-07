@@ -7,6 +7,8 @@
   // ===========================
   const state = {
     topics: [],
+    levels: [],
+    levelsByNumber: new Map(),
     topicCache: new Map(),
     loadedLevels: new Set(),
     currentTopicId: null,
@@ -33,13 +35,13 @@
       allLevels: 'All Levels',
       levelOptionPrefix: 'Level',
       levelLabels: [
+        'Absolute Beginner (Foundations)',
         'Beginner',
-        'Elementary',
         'Pre-Intermediate',
         'Intermediate',
         'Upper-Intermediate',
         'Advanced',
-        'Proficient'
+        'Fluency-Oriented Mastery'
       ],
       emptyTitle: 'Welcome to Grammar Handbook! 👋',
       emptySubtitle: 'Select a topic from the list to start learning.',
@@ -83,13 +85,13 @@
       allLevels: 'همه سطوح',
       levelOptionPrefix: 'سطح',
       levelLabels: [
+        'مقدماتی مطلق (پایهها)',
         'مبتدی',
-        'ابتدایی',
-        'پیش‌متوسط',
+        'پیشمتوسط',
         'متوسط',
-        'متوسط پیشرفته',
+        'بالاتر از متوسط',
         'پیشرفته',
-        'حرفه‌ای'
+        'تسلط کاربردی'
       ],
       emptyTitle: 'به دفترچه دستور زبان خوش آمدید! 👋',
       emptySubtitle: 'برای شروع یادگیری یک موضوع را انتخاب کنید.',
@@ -154,17 +156,39 @@
     return state.topics.find(topic => topic.id === topicId) || null;
   }
 
+  function getLevelMeta(level) {
+    if (!Number.isInteger(level)) {
+      return null;
+    }
+    return state.levelsByNumber.get(level) || null;
+  }
+
   async function loadTopicsIndex() {
     try {
       const response = await fetch('data/topics-index.json');
       if (!response.ok) {
         throw new Error('Failed to load topics index');
       }
-      const topics = await response.json();
-      state.topics = Array.isArray(topics) ? topics : [];
+      const indexData = await response.json();
+      const topics = Array.isArray(indexData?.topics)
+        ? indexData.topics
+        : Array.isArray(indexData)
+          ? indexData
+          : [];
+      const levels = Array.isArray(indexData?.levels) ? indexData.levels : [];
+      state.topics = topics;
+      state.levels = levels;
+      state.levelsByNumber = new Map();
+      levels.forEach((levelMeta) => {
+        if (levelMeta && Number.isInteger(levelMeta.level)) {
+          state.levelsByNumber.set(levelMeta.level, levelMeta);
+        }
+      });
     } catch (error) {
       console.warn(error);
       state.topics = [];
+      state.levels = [];
+      state.levelsByNumber = new Map();
     }
   }
 
@@ -174,7 +198,9 @@
     }
 
     try {
-      const response = await fetch(`data/topics/level-${level}.json`);
+      const levelMeta = getLevelMeta(level);
+      const levelFile = levelMeta?.file || `data/levels/level-${level}.json`;
+      const response = await fetch(levelFile);
       if (!response.ok) {
         throw new Error(`Failed to load level ${level}`);
       }
@@ -348,14 +374,29 @@
 
     const prefix = getUiString('levelOptionPrefix');
     const labels = getUiString('levelLabels');
-    for (let level = 0; level <= 6; level += 1) {
-      const option = document.createElement('option');
-      option.value = String(level);
-      const label = Array.isArray(labels) ? labels[level] : '';
-      option.textContent = label ? `${prefix} ${level} — ${label}` : `${prefix} ${level}`;
-      elements.levelSelect.appendChild(option);
-    }
+    const levelsToRender = state.levels.length
+      ? state.levels
+      : Array.from({ length: 7 }, (_, level) => ({ level, label: Array.isArray(labels) ? labels[level] : '' }));
 
+    levelsToRender.forEach((levelMeta) => {
+      if (!Number.isInteger(levelMeta.level)) {
+        return;
+      }
+      const option = document.createElement('option');
+      option.value = String(levelMeta.level);
+      const label = t(levelMeta.label, state.currentLang);
+      const fallbackLabel = Array.isArray(labels) ? labels[levelMeta.level] : '';
+      const finalLabel = label || fallbackLabel;
+      option.textContent = finalLabel
+        ? `${prefix} ${levelMeta.level} — ${finalLabel}`
+        : `${prefix} ${levelMeta.level}`;
+      elements.levelSelect.appendChild(option);
+    });
+
+    const optionValues = Array.from(elements.levelSelect.options).map(option => option.value);
+    if (!optionValues.includes(state.selectedLevel)) {
+      state.selectedLevel = '';
+    }
     elements.levelSelect.value = state.selectedLevel;
   }
 
@@ -992,17 +1033,11 @@
       } else if (topic.level < 0 || topic.level > 6) {
         missing.push('level (0-6)');
       }
+      if (state.levelsByNumber.size > 0 && Number.isInteger(topic.level) && !state.levelsByNumber.has(topic.level)) {
+        missing.push('level (metadata missing in index)');
+      }
       if (topic.order !== undefined && !Number.isInteger(topic.order)) {
         missing.push('order');
-      }
-      if (!topic.sections) {
-        missing.push('sections');
-      } else {
-        requiredSections.forEach(section => {
-          if (!topic.sections[section]) {
-            missing.push(`sections.${section}`);
-          }
-        });
       }
 
       if (missing.length > 0) {

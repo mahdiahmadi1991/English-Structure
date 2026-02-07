@@ -19,7 +19,7 @@ function createConsoleErrorTracker(page) {
 }
 
 async function waitForTopicData(page) {
-  await page.waitForResponse((response) => response.url().includes('/data/topics/level-') && response.ok());
+  await page.waitForResponse((response) => response.url().includes('/data/levels/level-') && response.ok());
 }
 
 test('homepage loads', async ({ page }) => {
