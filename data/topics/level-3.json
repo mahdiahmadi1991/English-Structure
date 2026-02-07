@@ -1,5 +1,207 @@
 [
   {
+    "id": "question-forms-wh-questions-advanced-embedded-questions-intro",
+    "title": {
+      "en": "Question Forms (Wh- questions advanced, embedded questions intro)",
+      "fa": "Question Forms (Wh- questions advanced, embedded questions intro)"
+    },
+    "category": {
+      "en": "Questions",
+      "fa": "سوال‌ها"
+    },
+    "tags": {
+      "en": [
+        "question",
+        "forms",
+        "wh",
+        "questions"
+      ],
+      "fa": [
+        "question",
+        "forms",
+        "wh",
+        "questions"
+      ]
+    },
+    "level": 3,
+    "sections": {
+      "summary": {
+        "en": "This topic explains Question Forms (Wh- questions advanced, embedded questions intro) in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
+        "fa": "This topic explains Question Forms (Wh- questions advanced, embedded questions intro) in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
+      },
+      "rules": {
+        "en": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ],
+        "fa": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I understand question forms (wh- questions advanced, embedded questions intro).",
+          "She practices question forms (wh- questions advanced, embedded questions intro) every day.",
+          "Can you give an example of question forms (wh- questions advanced, embedded questions intro)?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ],
+        "fa": [
+          "I understand question forms (wh- questions advanced, embedded questions intro).",
+          "She practices question forms (wh- questions advanced, embedded questions intro) every day.",
+          "Can you give an example of question forms (wh- questions advanced, embedded questions intro)?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ],
+        "fa": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": "all-tense-review-12-tenses-overview-contrasts",
     "title": {
       "en": "All Tense Review (12 tenses overview & contrasts)",
@@ -4626,462 +4828,6 @@
     }
   },
   {
-    "id": "articles-no-article-the-a-advanced",
-    "title": {
-      "en": "Articles (No article / the / a — advanced)",
-      "fa": "Articles (No article / the / a — advanced)"
-    },
-    "category": {
-      "en": "Determiners & Quantifiers",
-      "fa": "تعیین‌کننده‌ها و کمیت‌ها"
-    },
-    "tags": {
-      "en": [
-        "articles",
-        "no-article",
-        "the",
-        "a"
-      ],
-      "fa": [
-        "articles",
-        "no-article",
-        "the",
-        "a"
-      ]
-    },
-    "level": 3,
-    "sections": {
-      "summary": {
-        "en": "Decide between no article, the, or a/an based on specificity, shared context, and first mention.",
-        "fa": "Decide between no article, the, or a/an based on specificity, shared context, and first mention."
-      },
-      "rules": {
-        "en": [
-          "Use a/an for first mention of a singular countable noun.",
-          "Use the for something already known or unique in context.",
-          "Use no article for general plural/uncountable nouns.",
-          "Switch from a/an to the when the listener can identify the noun."
-        ],
-        "fa": [
-          "Use a/an for first mention of a singular countable noun.",
-          "Use the for something already known or unique in context.",
-          "Use no article for general plural/uncountable nouns.",
-          "Switch from a/an to the when the listener can identify the noun."
-        ]
-      },
-      "examples": {
-        "en": [
-          "I saw a movie yesterday. The movie was exciting.",
-          "We need water to survive. (no article)",
-          "The bus I told you about is late.",
-          "She bought a dress. The dress is blue."
-        ],
-        "fa": [
-          "I saw a movie yesterday. The movie was exciting.",
-          "We need water to survive. (no article)",
-          "The bus I told you about is late.",
-          "She bought a dress. The dress is blue."
-        ]
-      },
-      "commonMistakes": {
-        "en": [
-          {
-            "wrong": "The life is beautiful.",
-            "correct": "Life is beautiful.",
-            "explanation": "Use no article for life in general statements."
-          },
-          {
-            "wrong": "I bought the car yesterday. (first mention)",
-            "correct": "I bought a car yesterday.",
-            "explanation": "Use a/an when mentioning something for the first time."
-          }
-        ],
-        "fa": [
-          {
-            "wrong": "The life is beautiful.",
-            "correct": "Life is beautiful.",
-            "explanation": "Use no article for life in general statements."
-          },
-          {
-            "wrong": "I bought the car yesterday. (first mention)",
-            "correct": "I bought a car yesterday.",
-            "explanation": "Use a/an when mentioning something for the first time."
-          }
-        ]
-      },
-      "quiz": {
-        "en": [
-          {
-            "question": "Choose the correct option: ___ coffee keeps me awake.",
-            "options": [
-              "A",
-              "The",
-              "— (no article)"
-            ],
-            "correct": 2,
-            "explanation": "General uncountable nouns use no article."
-          },
-          {
-            "question": "Choose the correct sentence for first mention.",
-            "options": [
-              "I bought a laptop yesterday.",
-              "I bought the laptop yesterday."
-            ],
-            "correct": 0,
-            "explanation": "Use a/an for first mention."
-          }
-        ],
-        "fa": [
-          {
-            "question": "Choose the correct option: ___ coffee keeps me awake.",
-            "options": [
-              "A",
-              "The",
-              "— (no article)"
-            ],
-            "correct": 2,
-            "explanation": "General uncountable nouns use no article."
-          },
-          {
-            "question": "Choose the correct sentence for first mention.",
-            "options": [
-              "I bought a laptop yesterday.",
-              "I bought the laptop yesterday."
-            ],
-            "correct": 0,
-            "explanation": "Use a/an for first mention."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "modal-verbs-deduction-must-might-cant-present-past",
-    "title": {
-      "en": "Modal Verbs (Deduction): must/might/can’t (present/past)",
-      "fa": "Modal Verbs (Deduction): must/might/can’t (present/past)"
-    },
-    "category": {
-      "en": "Modal Verbs",
-      "fa": "افعال وجهی"
-    },
-    "tags": {
-      "en": [
-        "modal",
-        "deduction",
-        "must",
-        "might",
-        "cant"
-      ],
-      "fa": [
-        "modal",
-        "deduction",
-        "must",
-        "might",
-        "cant"
-      ]
-    },
-    "level": 3,
-    "sections": {
-      "summary": {
-        "en": "Use must, might, and can’t to make logical deductions about the present or past based on evidence.",
-        "fa": "Use must, might, and can’t to make logical deductions about the present or past based on evidence."
-      },
-      "rules": {
-        "en": [
-          "Present deduction: must/might/can’t + base verb (He must be tired).",
-          "Past deduction: must/might/can’t + have + past participle (She might have missed the bus).",
-          "Must = strong certainty, might = possibility, can’t = impossible.",
-          "Use evidence or clues to support the deduction."
-        ],
-        "fa": [
-          "Present deduction: must/might/can’t + base verb (He must be tired).",
-          "Past deduction: must/might/can’t + have + past participle (She might have missed the bus).",
-          "Must = strong certainty, might = possibility, can’t = impossible.",
-          "Use evidence or clues to support the deduction."
-        ]
-      },
-      "examples": {
-        "en": [
-          "The lights are off. They must be asleep.",
-          "He is not answering. He might be in a meeting.",
-          "She can’t be at home; her car is gone.",
-          "He must have forgotten the appointment."
-        ],
-        "fa": [
-          "The lights are off. They must be asleep.",
-          "He is not answering. He might be in a meeting.",
-          "She can’t be at home; her car is gone.",
-          "He must have forgotten the appointment."
-        ]
-      },
-      "commonMistakes": {
-        "en": [
-          {
-            "wrong": "He must to be tired.",
-            "correct": "He must be tired.",
-            "explanation": "Modal verbs use the base form without \"to\"."
-          },
-          {
-            "wrong": "She can’t have go home.",
-            "correct": "She can’t have gone home.",
-            "explanation": "Use past participle after have for past deductions."
-          }
-        ],
-        "fa": [
-          {
-            "wrong": "He must to be tired.",
-            "correct": "He must be tired.",
-            "explanation": "Modal verbs use the base form without \"to\"."
-          },
-          {
-            "wrong": "She can’t have go home.",
-            "correct": "She can’t have gone home.",
-            "explanation": "Use past participle after have for past deductions."
-          }
-        ]
-      },
-      "quiz": {
-        "en": [
-          {
-            "question": "Choose the best deduction: The ground is wet. It ___ have rained.",
-            "options": [
-              "must",
-              "can’t",
-              "might not"
-            ],
-            "correct": 0,
-            "explanation": "Must shows strong certainty from evidence."
-          },
-          {
-            "question": "Pick the correct past deduction.",
-            "options": [
-              "She might missed the bus.",
-              "She might have missed the bus."
-            ],
-            "correct": 1,
-            "explanation": "Use might have + past participle."
-          }
-        ],
-        "fa": [
-          {
-            "question": "Choose the best deduction: The ground is wet. It ___ have rained.",
-            "options": [
-              "must",
-              "can’t",
-              "might not"
-            ],
-            "correct": 0,
-            "explanation": "Must shows strong certainty from evidence."
-          },
-          {
-            "question": "Pick the correct past deduction.",
-            "options": [
-              "She might missed the bus.",
-              "She might have missed the bus."
-            ],
-            "correct": 1,
-            "explanation": "Use might have + past participle."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "prepositions-dependent-prepositions-adjective-prep-verb-prep",
-    "title": {
-      "en": "Prepositions (dependent prepositions: adjective+prep, verb+prep)",
-      "fa": "Prepositions (dependent prepositions: adjective+prep, verb+prep)"
-    },
-    "category": {
-      "en": "Prepositions",
-      "fa": "حروف اضافه"
-    },
-    "tags": {
-      "en": [
-        "prepositions",
-        "dependent",
-        "adjective",
-        "verb"
-      ],
-      "fa": [
-        "prepositions",
-        "dependent",
-        "adjective",
-        "verb"
-      ]
-    },
-    "level": 3,
-    "sections": {
-      "summary": {
-        "en": "Many adjectives and verbs require specific prepositions; learn them as fixed combinations.",
-        "fa": "Many adjectives and verbs require specific prepositions; learn them as fixed combinations."
-      },
-      "rules": {
-        "en": [
-          "Learn adjective + preposition pairs (interested in, good at).",
-          "Learn verb + preposition pairs (depend on, look for).",
-          "Keep the preposition with the word it depends on.",
-          "Practice common combinations in sentences."
-        ],
-        "fa": [
-          "Learn adjective + preposition pairs (interested in, good at).",
-          "Learn verb + preposition pairs (depend on, look for).",
-          "Keep the preposition with the word it depends on.",
-          "Practice common combinations in sentences."
-        ]
-      },
-      "examples": {
-        "en": [
-          "She is interested in art.",
-          "They are good at math.",
-          "I depend on my team.",
-          "We are looking for a solution."
-        ],
-        "fa": [
-          "She is interested in art.",
-          "They are good at math.",
-          "I depend on my team.",
-          "We are looking for a solution."
-        ]
-      },
-      "commonMistakes": {
-        "en": [
-          {
-            "wrong": "He is interested on music.",
-            "correct": "He is interested in music.",
-            "explanation": "Use the correct dependent preposition."
-          },
-          {
-            "wrong": "She depends with her friend.",
-            "correct": "She depends on her friend.",
-            "explanation": "Depend uses the preposition on."
-          }
-        ],
-        "fa": [
-          {
-            "wrong": "He is interested on music.",
-            "correct": "He is interested in music.",
-            "explanation": "Use the correct dependent preposition."
-          },
-          {
-            "wrong": "She depends with her friend.",
-            "correct": "She depends on her friend.",
-            "explanation": "Depend uses the preposition on."
-          }
-        ]
-      },
-      "quiz": {
-        "en": [
-          {
-            "question": "Choose the correct preposition: She is good ___ English.",
-            "options": [
-              "in",
-              "at",
-              "on"
-            ],
-            "correct": 1,
-            "explanation": "Good at is the correct pair."
-          },
-          {
-            "question": "Pick the correct sentence.",
-            "options": [
-              "We are looking for help.",
-              "We are looking at help."
-            ],
-            "correct": 0,
-            "explanation": "Look for means search."
-          }
-        ],
-        "fa": [
-          {
-            "question": "Choose the correct preposition: She is good ___ English.",
-            "options": [
-              "in",
-              "at",
-              "on"
-            ],
-            "correct": 1,
-            "explanation": "Good at is the correct pair."
-          },
-          {
-            "question": "Pick the correct sentence.",
-            "options": [
-              "We are looking for help.",
-              "We are looking at help."
-            ],
-            "correct": 0,
-            "explanation": "Look for means search."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "modal-verbs",
-    "title": "Modal Verbs (Permission/Requests/Offers/Suggestions)",
-    "category": "Modal Verbs",
-    "tags": [
-      "permission",
-      "requests",
-      "offers",
-      "suggestions",
-      "modals"
-    ],
-    "level": 3,
-    "lang": "en",
-    "sections": {
-      "summary": "Use modal verbs to ask for permission, make requests, offer help, and give suggestions politely.",
-      "rules": [
-        "Use can/could to ask for permission or make polite requests.",
-        "Use would you like...? to offer something politely.",
-        "Use shall we...? or should to give suggestions.",
-        "Use may for formal permission.",
-        "Modal + base verb (no \"to\" after the modal)."
-      ],
-      "examples": [
-        "Can I open the window? (permission)",
-        "Could you help me with this? (request)",
-        "Would you like some tea? (offer)",
-        "Shall we start now? (suggestion)"
-      ],
-      "commonMistakes": [
-        {
-          "wrong": "Can you to help me?",
-          "correct": "Can you help me?",
-          "explanation": "Use the base verb after modal verbs."
-        },
-        {
-          "wrong": "He cans help us.",
-          "correct": "He can help us.",
-          "explanation": "Modal verbs do not add -s in third person."
-        }
-      ],
-      "quiz": [
-        {
-          "question": "Choose the best request.",
-          "options": [
-            "Can you close the door?",
-            "You close the door?",
-            "Close you the door?"
-          ],
-          "correct": 0,
-          "explanation": "Can you...? is a polite request."
-        },
-        {
-          "question": "Which sentence is an offer?",
-          "options": [
-            "Would you like some coffee?",
-            "You like coffee.",
-            "Did you like coffee?"
-          ],
-          "correct": 0,
-          "explanation": "Would you like...? is used to offer."
-        }
-      ]
-    }
-  },
-  {
     "id": "narrative-tenses-past-simple-continuous-perfect",
     "title": {
       "en": "Narrative Tenses (Past simple/continuous/perfect)",
@@ -5484,208 +5230,6 @@
     }
   },
   {
-    "id": "relative-clauses-reduced-relatives-participle-clauses-intro",
-    "title": {
-      "en": "Relative Clauses (Reduced relatives / participle clauses — intro)",
-      "fa": "Relative Clauses (Reduced relatives / participle clauses — intro)"
-    },
-    "category": {
-      "en": "Clauses",
-      "fa": "بندها"
-    },
-    "tags": {
-      "en": [
-        "relative",
-        "clauses",
-        "reduced",
-        "relatives"
-      ],
-      "fa": [
-        "relative",
-        "clauses",
-        "reduced",
-        "relatives"
-      ]
-    },
-    "level": 3,
-    "sections": {
-      "summary": {
-        "en": "This topic explains Relative Clauses (Reduced relatives / participle clauses — intro) in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
-        "fa": "This topic explains Relative Clauses (Reduced relatives / participle clauses — intro) in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
-      },
-      "rules": {
-        "en": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
-        ],
-        "fa": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
-        ]
-      },
-      "examples": {
-        "en": [
-          "I understand relative clauses (reduced relatives / participle clauses — intro).",
-          "She practices relative clauses (reduced relatives / participle clauses — intro) every day.",
-          "Can you give an example of relative clauses (reduced relatives / participle clauses — intro)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
-        ],
-        "fa": [
-          "I understand relative clauses (reduced relatives / participle clauses — intro).",
-          "She practices relative clauses (reduced relatives / participle clauses — intro) every day.",
-          "Can you give an example of relative clauses (reduced relatives / participle clauses — intro)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
-        ]
-      },
-      "commonMistakes": {
-        "en": [
-          {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
-          },
-          {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
-          },
-          {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
-          }
-        ],
-        "fa": [
-          {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
-          },
-          {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
-          },
-          {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
-          }
-        ]
-      },
-      "quiz": {
-        "en": [
-          {
-            "question": "Choose the best sentence.",
-            "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
-            ],
-            "correct": 0,
-            "explanation": "Use do + not for negatives."
-          },
-          {
-            "question": "Pick the correct word order.",
-            "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
-            ],
-            "correct": 0,
-            "explanation": "SVO is the default order in English."
-          },
-          {
-            "question": "Which option is a Wh- question?",
-            "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
-            ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
-          },
-          {
-            "question": "Choose the correct form for 'he' in present simple.",
-            "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
-            ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
-          }
-        ],
-        "fa": [
-          {
-            "question": "Choose the best sentence.",
-            "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
-            ],
-            "correct": 0,
-            "explanation": "Use do + not for negatives."
-          },
-          {
-            "question": "Pick the correct word order.",
-            "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
-            ],
-            "correct": 0,
-            "explanation": "SVO is the default order in English."
-          },
-          {
-            "question": "Which option is a Wh- question?",
-            "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
-            ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
-          },
-          {
-            "question": "Choose the correct form for 'he' in present simple.",
-            "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
-            ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
-          }
-        ]
-      }
-    }
-  },
-  {
     "id": "passive-voice",
     "title": "Passive Voice (All common tenses)",
     "category": "Advanced Grammar",
@@ -5746,410 +5290,6 @@
           "explanation": "Future passive: will be + past participle"
         }
       ]
-    }
-  },
-  {
-    "id": "gerunds-infinitives-advanced-patterns-meaning-change",
-    "title": {
-      "en": "Gerunds/Infinitives (Advanced patterns + meaning change)",
-      "fa": "Gerunds/Infinitives (Advanced patterns + meaning change)"
-    },
-    "category": {
-      "en": "Grammar",
-      "fa": "گرامر"
-    },
-    "tags": {
-      "en": [
-        "gerunds",
-        "infinitives",
-        "advanced",
-        "patterns"
-      ],
-      "fa": [
-        "gerunds",
-        "infinitives",
-        "advanced",
-        "patterns"
-      ]
-    },
-    "level": 3,
-    "sections": {
-      "summary": {
-        "en": "This topic explains Gerunds/Infinitives (Advanced patterns + meaning change) in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
-        "fa": "This topic explains Gerunds/Infinitives (Advanced patterns + meaning change) in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
-      },
-      "rules": {
-        "en": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
-        ],
-        "fa": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
-        ]
-      },
-      "examples": {
-        "en": [
-          "I understand gerunds/infinitives (advanced patterns + meaning change).",
-          "She practices gerunds/infinitives (advanced patterns + meaning change) every day.",
-          "Can you give an example of gerunds/infinitives (advanced patterns + meaning change)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
-        ],
-        "fa": [
-          "I understand gerunds/infinitives (advanced patterns + meaning change).",
-          "She practices gerunds/infinitives (advanced patterns + meaning change) every day.",
-          "Can you give an example of gerunds/infinitives (advanced patterns + meaning change)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
-        ]
-      },
-      "commonMistakes": {
-        "en": [
-          {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
-          },
-          {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
-          },
-          {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
-          }
-        ],
-        "fa": [
-          {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
-          },
-          {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
-          },
-          {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
-          }
-        ]
-      },
-      "quiz": {
-        "en": [
-          {
-            "question": "Choose the best sentence.",
-            "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
-            ],
-            "correct": 0,
-            "explanation": "Use do + not for negatives."
-          },
-          {
-            "question": "Pick the correct word order.",
-            "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
-            ],
-            "correct": 0,
-            "explanation": "SVO is the default order in English."
-          },
-          {
-            "question": "Which option is a Wh- question?",
-            "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
-            ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
-          },
-          {
-            "question": "Choose the correct form for 'he' in present simple.",
-            "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
-            ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
-          }
-        ],
-        "fa": [
-          {
-            "question": "Choose the best sentence.",
-            "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
-            ],
-            "correct": 0,
-            "explanation": "Use do + not for negatives."
-          },
-          {
-            "question": "Pick the correct word order.",
-            "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
-            ],
-            "correct": 0,
-            "explanation": "SVO is the default order in English."
-          },
-          {
-            "question": "Which option is a Wh- question?",
-            "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
-            ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
-          },
-          {
-            "question": "Choose the correct form for 'he' in present simple.",
-            "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
-            ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "determiners-quantifiers-advanced-range",
-    "title": {
-      "en": "Determiners & Quantifiers (advanced range)",
-      "fa": "Determiners & Quantifiers (advanced range)"
-    },
-    "category": {
-      "en": "Determiners & Quantifiers",
-      "fa": "تعیین‌کننده‌ها و کمیت‌ها"
-    },
-    "tags": {
-      "en": [
-        "determiners",
-        "quantifiers",
-        "advanced",
-        "range"
-      ],
-      "fa": [
-        "determiners",
-        "quantifiers",
-        "advanced",
-        "range"
-      ]
-    },
-    "level": 3,
-    "sections": {
-      "summary": {
-        "en": "This topic explains Determiners & Quantifiers (advanced range) in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
-        "fa": "This topic explains Determiners & Quantifiers (advanced range) in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
-      },
-      "rules": {
-        "en": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
-        ],
-        "fa": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
-        ]
-      },
-      "examples": {
-        "en": [
-          "I understand determiners & quantifiers (advanced range).",
-          "She practices determiners & quantifiers (advanced range) every day.",
-          "Can you give an example of determiners & quantifiers (advanced range)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
-        ],
-        "fa": [
-          "I understand determiners & quantifiers (advanced range).",
-          "She practices determiners & quantifiers (advanced range) every day.",
-          "Can you give an example of determiners & quantifiers (advanced range)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
-        ]
-      },
-      "commonMistakes": {
-        "en": [
-          {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
-          },
-          {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
-          },
-          {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
-          }
-        ],
-        "fa": [
-          {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
-          },
-          {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
-          },
-          {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
-          }
-        ]
-      },
-      "quiz": {
-        "en": [
-          {
-            "question": "Choose the best sentence.",
-            "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
-            ],
-            "correct": 0,
-            "explanation": "Use do + not for negatives."
-          },
-          {
-            "question": "Pick the correct word order.",
-            "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
-            ],
-            "correct": 0,
-            "explanation": "SVO is the default order in English."
-          },
-          {
-            "question": "Which option is a Wh- question?",
-            "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
-            ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
-          },
-          {
-            "question": "Choose the correct form for 'he' in present simple.",
-            "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
-            ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
-          }
-        ],
-        "fa": [
-          {
-            "question": "Choose the best sentence.",
-            "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
-            ],
-            "correct": 0,
-            "explanation": "Use do + not for negatives."
-          },
-          {
-            "question": "Pick the correct word order.",
-            "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
-            ],
-            "correct": 0,
-            "explanation": "SVO is the default order in English."
-          },
-          {
-            "question": "Which option is a Wh- question?",
-            "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
-            ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
-          },
-          {
-            "question": "Choose the correct form for 'he' in present simple.",
-            "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
-            ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
-          }
-        ]
-      }
     }
   }
 ]
