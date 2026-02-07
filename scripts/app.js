@@ -11,7 +11,8 @@
     filteredTopics: [],
     searchQuery: '',
     selectedCategory: '',
-    currentLang: 'en'
+    currentLang: 'en',
+    quizState: null
   };
 
   const LANG_STORAGE_KEY = 'ep_lang';
@@ -48,7 +49,12 @@
       notesSaved: 'Notes saved successfully! 💾',
       mistakesSaved: 'Mistakes log saved successfully! 💾',
       mistakesWrongLabel: 'Wrong',
-      mistakesCorrectLabel: 'Correct'
+      mistakesCorrectLabel: 'Correct',
+      quizRetry: 'Retry',
+      quizShowAnswer: 'Show Answer',
+      quizScoreLabel: 'Score:',
+      quizBestLabel: 'Best:',
+      quizIncorrect: '❌ Incorrect'
     },
     fa: {
       appTitle: '📚 دفترچه دستور زبان',
@@ -81,7 +87,12 @@
       notesSaved: 'یادداشت‌ها با موفقیت ذخیره شد! 💾',
       mistakesSaved: 'ثبت اشتباهات با موفقیت ذخیره شد! 💾',
       mistakesWrongLabel: 'اشتباه',
-      mistakesCorrectLabel: 'درست'
+      mistakesCorrectLabel: 'درست',
+      quizRetry: 'تلاش مجدد',
+      quizShowAnswer: 'نمایش پاسخ',
+      quizScoreLabel: 'امتیاز:',
+      quizBestLabel: 'بهترین:',
+      quizIncorrect: '❌ نادرست'
     }
   };
 
@@ -345,29 +356,47 @@
   // ===========================
   function renderQuiz(quizQuestions, currentLang) {
     const quizCheckAnswerLabel = getUiString('quizCheckAnswer');
-    elements.quizContent.innerHTML = quizQuestions
-      .filter(question => question && typeof question === 'object')
-      .map((q, index) => `
+    const quizRetryLabel = getUiString('quizRetry');
+    const quizShowAnswerLabel = getUiString('quizShowAnswer');
+    const questions = quizQuestions.filter(question => question && typeof question === 'object');
+
+    initializeQuizState(questions);
+
+    elements.quizContent.innerHTML = `
+      <div class="quiz-summary">
+        <span class="quiz-score" data-quiz-score></span>
+        <span class="quiz-best" data-quiz-best></span>
+      </div>
+      ${questions.map((q, index) => `
         <div class="quiz-question" data-question-index="${index}">
           <div class="quiz-question-text">Q${index + 1}: ${t(q.question, currentLang)}</div>
           <div class="quiz-options">
             ${toArray(t(q.options, currentLang)).map((option, optIndex) => `
-              <div class="quiz-option" data-option-index="${optIndex}">
+              <div class="quiz-option" data-option-index="${optIndex}" tabindex="0" role="button" aria-pressed="false">
                 ${String.fromCharCode(65 + optIndex)}. ${option}
               </div>
             `).join('')}
           </div>
-          <button class="btn btn-primary quiz-submit" data-question-index="${index}">
-            ${quizCheckAnswerLabel}
-          </button>
+          <div class="quiz-feedback" data-quiz-feedback></div>
+          <div class="quiz-actions">
+            <button class="btn btn-primary quiz-submit" type="button" data-question-index="${index}">
+              ${quizCheckAnswerLabel}
+            </button>
+            <button class="btn btn-secondary quiz-retry" type="button" data-question-index="${index}">
+              ${quizRetryLabel}
+            </button>
+            <button class="btn btn-secondary quiz-show-answer" type="button" data-question-index="${index}">
+              ${quizShowAnswerLabel}
+            </button>
+          </div>
           <div class="quiz-explanation">
             ${t(q.explanation, currentLang)}
           </div>
         </div>
-      `)
-      .join('');
+      `).join('')}
+    `;
 
-    // Attach quiz event listeners
+    updateQuizSummary();
     attachQuizListeners();
   }
 
@@ -376,51 +405,206 @@
   // ===========================
   function attachQuizListeners() {
     const quizQuestions = elements.quizContent.querySelectorAll('.quiz-question');
-    
     quizQuestions.forEach(questionEl => {
-      const options = questionEl.querySelectorAll('.quiz-option');
+      const options = Array.from(questionEl.querySelectorAll('.quiz-option'));
       const submitBtn = questionEl.querySelector('.quiz-submit');
+      const retryBtn = questionEl.querySelector('.quiz-retry');
+      const showAnswerBtn = questionEl.querySelector('.quiz-show-answer');
       const explanation = questionEl.querySelector('.quiz-explanation');
-      const questionIndex = parseInt(questionEl.dataset.questionIndex);
+      const feedback = questionEl.querySelector('[data-quiz-feedback]');
+      const questionIndex = parseInt(questionEl.dataset.questionIndex, 10);
       const topic = state.topics.find(t => t.id === state.currentTopicId);
       const quizData = toArray(t((topic.sections || {}).quiz, state.currentLang))[questionIndex];
+      const questionState = state.quizState?.questions?.[questionIndex];
 
-      if (!quizData) {
+      if (!quizData || !questionState) {
         return;
       }
-      
-      let selectedOption = null;
+
+      const selectOption = (optionIndex) => {
+        questionState.selectedIndex = optionIndex;
+        updateQuestionUI(options, explanation, feedback, quizData, questionState);
+      };
 
       options.forEach(option => {
         option.addEventListener('click', () => {
-          options.forEach(opt => opt.classList.remove('selected'));
-          option.classList.add('selected');
-          selectedOption = parseInt(option.dataset.optionIndex);
+          selectOption(parseInt(option.dataset.optionIndex, 10));
+        });
+        option.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            selectOption(parseInt(option.dataset.optionIndex, 10));
+          }
         });
       });
 
       submitBtn.addEventListener('click', () => {
-        if (selectedOption === null) {
+        if (questionState.selectedIndex === null) {
           alert(getUiString('selectAnswerAlert'));
           return;
         }
 
-        options.forEach((option, index) => {
-          option.style.pointerEvents = 'none';
-          if (index === quizData.correct) {
-            option.classList.add('correct');
-          } else if (index === selectedOption && selectedOption !== quizData.correct) {
-            option.classList.add('incorrect');
-          }
-        });
+        questionState.answered = true;
+        questionState.revealAnswer = true;
+        questionState.isCorrect = questionState.selectedIndex === quizData.correct;
+        questionState.feedback = questionState.isCorrect ? 'correct' : 'incorrect';
+        questionState.showExplanation = true;
 
-        explanation.classList.add('show');
-        submitBtn.disabled = true;
-        submitBtn.textContent = selectedOption === quizData.correct
-          ? getUiString('quizCorrect')
-          : getUiString('quizTryAgain');
+        updateQuizScore();
+        updateQuestionUI(options, explanation, feedback, quizData, questionState);
       });
+
+      retryBtn.addEventListener('click', () => {
+        resetQuestionState(questionState);
+        updateQuizScore();
+        updateQuestionUI(options, explanation, feedback, quizData, questionState);
+      });
+
+      showAnswerBtn.addEventListener('click', () => {
+        questionState.revealAnswer = true;
+        questionState.showExplanation = true;
+
+        if (!questionState.answered) {
+          questionState.answered = true;
+          questionState.isCorrect = questionState.selectedIndex === quizData.correct;
+          updateQuizScore();
+        }
+
+        updateQuestionUI(options, explanation, feedback, quizData, questionState);
+      });
+
+      updateQuestionUI(options, explanation, feedback, quizData, questionState);
     });
+  }
+
+  function initializeQuizState(questions) {
+    const total = questions.length;
+    const topicId = state.currentTopicId;
+    const bestScore = loadBestScore(topicId);
+
+    state.quizState = {
+      topicId,
+      total,
+      questions: questions.map(() => ({
+        selectedIndex: null,
+        answered: false,
+        isCorrect: false,
+        revealAnswer: false,
+        showExplanation: false,
+        feedback: ''
+      })),
+      correctCount: 0,
+      answeredCount: 0,
+      best: bestScore || { correctCount: 0, total, updatedAtISO: null }
+    };
+  }
+
+  function resetQuestionState(questionState) {
+    questionState.selectedIndex = null;
+    questionState.answered = false;
+    questionState.isCorrect = false;
+    questionState.revealAnswer = false;
+    questionState.showExplanation = false;
+    questionState.feedback = '';
+  }
+
+  function updateQuestionUI(options, explanation, feedback, quizData, questionState) {
+    options.forEach((option, index) => {
+      const isSelected = index === questionState.selectedIndex;
+      option.classList.toggle('selected', isSelected);
+      option.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+      option.classList.remove('correct', 'incorrect');
+
+      if (questionState.revealAnswer) {
+        if (index === quizData.correct) {
+          option.classList.add('correct');
+        }
+        if (questionState.selectedIndex !== null &&
+            questionState.selectedIndex !== quizData.correct &&
+            index === questionState.selectedIndex) {
+          option.classList.add('incorrect');
+        }
+      }
+    });
+
+    if (questionState.showExplanation) {
+      explanation.classList.add('show');
+    } else {
+      explanation.classList.remove('show');
+    }
+
+    if (questionState.feedback === 'correct') {
+      feedback.textContent = getUiString('quizCorrect');
+      feedback.classList.add('correct');
+      feedback.classList.remove('incorrect');
+    } else if (questionState.feedback === 'incorrect') {
+      feedback.textContent = getUiString('quizIncorrect');
+      feedback.classList.add('incorrect');
+      feedback.classList.remove('correct');
+    } else {
+      feedback.textContent = '';
+      feedback.classList.remove('correct', 'incorrect');
+    }
+  }
+
+  function updateQuizScore() {
+    if (!state.quizState) {
+      return;
+    }
+
+    const answeredCount = state.quizState.questions.filter(question => question.answered).length;
+    const correctCount = state.quizState.questions.filter(question => question.answered && question.isCorrect).length;
+
+    state.quizState.answeredCount = answeredCount;
+    state.quizState.correctCount = correctCount;
+
+    if (correctCount > state.quizState.best.correctCount) {
+      state.quizState.best = saveBestScore(state.quizState.topicId, correctCount, state.quizState.total);
+    }
+
+    updateQuizSummary();
+  }
+
+  function updateQuizSummary() {
+    const scoreEl = elements.quizContent.querySelector('[data-quiz-score]');
+    const bestEl = elements.quizContent.querySelector('[data-quiz-best]');
+    const quizState = state.quizState;
+
+    if (!scoreEl || !bestEl || !quizState) {
+      return;
+    }
+
+    scoreEl.textContent = `${getUiString('quizScoreLabel')} ${quizState.correctCount}/${quizState.total}`;
+    bestEl.textContent = `${getUiString('quizBestLabel')} ${quizState.best.correctCount}/${quizState.total}`;
+  }
+
+  function loadBestScore(topicId) {
+    if (!topicId) {
+      return null;
+    }
+    const stored = localStorage.getItem(`bestScore-${state.currentLang}-${topicId}`);
+    if (!stored) {
+      return null;
+    }
+    try {
+      const parsed = JSON.parse(stored);
+      if (parsed && Number.isInteger(parsed.correctCount) && Number.isInteger(parsed.total)) {
+        return parsed;
+      }
+    } catch (error) {
+      return null;
+    }
+    return null;
+  }
+
+  function saveBestScore(topicId, correctCount, total) {
+    const payload = {
+      correctCount,
+      total,
+      updatedAtISO: new Date().toISOString()
+    };
+    localStorage.setItem(`bestScore-${state.currentLang}-${topicId}`, JSON.stringify(payload));
+    return payload;
   }
 
   // ===========================
