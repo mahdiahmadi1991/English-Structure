@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Grammar Handbook for English learners with searchable topics, examples, and quizzes">
+    <title>Grammar Handbook - English Structure</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>📚 Grammar Handbook</h1>
+            <p class="subtitle">Your Interactive English Grammar Guide</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Sidebar with topic list -->
+            <aside class="sidebar" id="sidebar">
+                <div class="search-container">
+                    <input 
+                        type="search" 
+                        id="searchInput" 
+                        placeholder="🔍 Search topics..." 
+                        aria-label="Search grammar topics"
+                    />
+                </div>
+
+                <div class="category-filter">
+                    <label for="categorySelect">Filter by category:</label>
+                    <select id="categorySelect">
+                        <option value="">All Categories</option>
+                    </select>
+                </div>
+
+                <nav class="topics-list" id="topicsList" role="navigation" aria-label="Grammar topics">
+                    <!-- Topics will be dynamically inserted here -->
+                </nav>
+            </aside>
+
+            <!-- Topic Detail View -->
+            <section class="topic-detail" id="topicDetail">
+                <div class="empty-state">
+                    <h2>Welcome to Grammar Handbook! 👋</h2>
+                    <p>Select a topic from the list to start learning.</p>
+                </div>
+
+                <div class="topic-content" id="topicContent" style="display: none;">
+                    <!-- Topic header -->
+                    <div class="topic-header">
+                        <h2 id="topicTitle"></h2>
+                        <div class="topic-meta">
+                            <span class="topic-category" id="topicCategory"></span>
+                            <div class="topic-tags" id="topicTags"></div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Sections -->
+                    <div class="accordion">
+                        <!-- Summary -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="true">
+                                <span class="accordion-icon">📋</span>
+                                <span>Summary</span>
+                                <span class="accordion-toggle">−</span>
+                            </button>
+                            <div class="accordion-content active">
+                                <p id="summaryContent"></p>
+                            </div>
+                        </div>
+
+                        <!-- Rules -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="accordion-icon">📐</span>
+                                <span>Rules</span>
+                                <span class="accordion-toggle">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ul id="rulesContent"></ul>
+                            </div>
+                        </div>
+
+                        <!-- Examples -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="accordion-icon">💡</span>
+                                <span>Examples</span>
+                                <span class="accordion-toggle">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <ul id="examplesContent"></ul>
+                            </div>
+                        </div>
+
+                        <!-- Common Mistakes -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="accordion-icon">⚠️</span>
+                                <span>Common Mistakes</span>
+                                <span class="accordion-toggle">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div id="mistakesContent"></div>
+                            </div>
+                        </div>
+
+                        <!-- Quiz -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="accordion-icon">✏️</span>
+                                <span>Quiz</span>
+                                <span class="accordion-toggle">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div id="quizContent"></div>
+                            </div>
+                        </div>
+
+                        <!-- My Notes -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="accordion-icon">📝</span>
+                                <span>My Notes & Mistakes</span>
+                                <span class="accordion-toggle">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="notes-section">
+                                    <h4>Personal Notes</h4>
+                                    <textarea 
+                                        id="notesTextarea" 
+                                        placeholder="Write your notes here..."
+                                        rows="4"
+                                    ></textarea>
+                                    <button id="saveNotesBtn" class="btn btn-primary">💾 Save Notes</button>
+                                    
+                                    <h4>My Mistakes Log</h4>
+                                    <textarea 
+                                        id="mistakesTextarea" 
+                                        placeholder="Track mistakes you've made with this topic..."
+                                        rows="4"
+                                    ></textarea>
+                                    <button id="saveMistakesBtn" class="btn btn-primary">💾 Save Mistakes</button>
+
+                                    <div class="notes-info">
+                                        <small>💡 Your notes are saved locally in your browser</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            ☰
+        </button>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>&copy; 2026 Grammar Handbook. Built with ❤️ for English learners.</p>
+        </footer>
+    </div>
+
+    <!-- Load data and app -->
+    <script src="data/grammar-topics.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
