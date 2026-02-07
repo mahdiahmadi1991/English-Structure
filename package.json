@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "http-server . -p 4173 -c-1",
+    "preview": "npm run dev",
     "test:e2e": "playwright test",
     "test:e2e:ci": "playwright test --reporter=line",
+    "build:data": "node scripts/split-topics-by-level.cjs",
     "lint": "eslint \"scripts/**/*.js\" \"scripts/**/*.cjs\" \"data/**/*.js\" \"tests/**/*.js\"",
     "lint:fix": "eslint --fix \"scripts/**/*.js\" \"scripts/**/*.cjs\" \"data/**/*.js\" \"tests/**/*.js\"",
     "validate:data": "node scripts/validate-data.cjs",
     "apply:levels": "node scripts/apply-level-map.cjs"
   },
   "devDependencies": {
-    "@playwright/test": "^1.48.2",
     "@eslint/js": "^9.0.0",
-    "eslint": "^10.0.0"
+    "@playwright/test": "^1.48.2",
+    "eslint": "^10.0.0",
+    "http-server": "^14.1.1"
   }
 }

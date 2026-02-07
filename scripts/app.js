@@ -35,7 +35,7 @@
       allLevels: 'All Levels',
       levelOptionPrefix: 'Level',
       levelLabels: [
-        'Absolute Beginner (Foundations)',
+        'Absolute Beginner',
         'Beginner',
         'Pre-Intermediate',
         'Intermediate',
@@ -59,6 +59,7 @@
       saveMistakes: '💾 Save Mistakes',
       notesInfo: '💡 Your notes are saved locally in your browser',
       noTopics: 'No topics found',
+      fileProtocolWarning: 'You are opening this app via file://. Run \"npm run dev\" and open http://localhost:4173.',
       footerText: '© 2026 Grammar Handbook. Built with ❤️ for English learners.',
       quizCheckAnswer: 'Check Answer',
       quizCorrect: '✅ Correct!',
@@ -85,7 +86,7 @@
       allLevels: 'همه سطوح',
       levelOptionPrefix: 'سطح',
       levelLabels: [
-        'مقدماتی مطلق (پایهها)',
+        'الفبا و پایهی جمله',
         'مبتدی',
         'پیشمتوسط',
         'متوسط',
@@ -109,6 +110,7 @@
       saveMistakes: '💾 ذخیره اشتباهات',
       notesInfo: '💡 یادداشت‌های شما به صورت محلی در مرورگر ذخیره می‌شوند',
       noTopics: 'هیچ موضوعی یافت نشد',
+      fileProtocolWarning: 'این صفحه را با file:// باز کرده‌اید. لطفاً «npm run dev» را اجرا کنید و سپس http://localhost:4173 را باز کنید.',
       footerText: '© 2026 دفترچه دستور زبان. ساخته شده با ❤️ برای زبان‌آموزان انگلیسی.',
       quizCheckAnswer: 'بررسی پاسخ',
       quizCorrect: '✅ درست!',
@@ -314,7 +316,8 @@
     notesTitle: document.getElementById('notesTitle'),
     mistakesTitle: document.getElementById('mistakesTitle'),
     notesInfo: document.getElementById('notesInfo'),
-    appFooter: document.getElementById('appFooter')
+    appFooter: document.getElementById('appFooter'),
+    protocolWarning: document.getElementById('protocolWarning')
   };
 
   // ===========================
@@ -1010,6 +1013,29 @@
     elements.saveMistakesBtn.textContent = getUiString('saveMistakes');
     elements.notesInfo.textContent = getUiString('notesInfo');
     elements.appFooter.textContent = getUiString('footerText');
+    updateProtocolWarning();
+  }
+
+  function updateProtocolWarning() {
+    if (window.location.protocol !== 'file:') {
+      return;
+    }
+
+    if (!elements.protocolWarning) {
+      const warning = document.createElement('div');
+      warning.id = 'protocolWarning';
+      warning.className = 'protocol-warning';
+      warning.setAttribute('role', 'alert');
+      const header = document.querySelector('.app-header');
+      if (header && header.parentNode) {
+        header.insertAdjacentElement('afterend', warning);
+      } else {
+        document.body.prepend(warning);
+      }
+      elements.protocolWarning = warning;
+    }
+
+    elements.protocolWarning.textContent = getUiString('fileProtocolWarning');
   }
 
   function validateTopics() {

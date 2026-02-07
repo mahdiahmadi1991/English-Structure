@@ -33,6 +33,24 @@ test('homepage loads', async ({ page }) => {
   await tracker.assertNoErrors();
 });
 
+test('level filter options + selection', async ({ page }) => {
+  const tracker = createConsoleErrorTracker(page);
+
+  await page.goto('/');
+
+  const levelSelect = page.locator('#levelSelect');
+  await expect(levelSelect).toBeVisible();
+  await expect.poll(() => levelSelect.locator('option').count()).toBeGreaterThanOrEqual(7);
+  await expect(levelSelect).toContainText('Beginner');
+
+  const totalCount = await page.locator('.topic-item').count();
+  await page.selectOption('#levelSelect', '2');
+  await expect.poll(() => page.locator('.topic-item').count()).toBeGreaterThan(0);
+  await expect.poll(() => page.locator('.topic-item').count()).toBeLessThan(totalCount);
+
+  await tracker.assertNoErrors();
+});
+
 test('language toggle + RTL', async ({ page }) => {
   const tracker = createConsoleErrorTracker(page);
 

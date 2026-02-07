@@ -1982,5 +1982,1348 @@
         ]
       }
     }
+  },
+  {
+    "id": "plurals",
+    "title": {
+      "en": "Plurals (Regular & Irregular)",
+      "fa": "جمع‌ها (قاعده‌دار و بی‌قاعده)"
+    },
+    "category": {
+      "en": "Grammar Basics",
+      "fa": "مبانی دستور زبان"
+    },
+    "tags": {
+      "en": [
+        "plural",
+        "regular",
+        "irregular"
+      ],
+      "fa": [
+        "جمع",
+        "قاعده‌دار",
+        "بی‌قاعده"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Most nouns add -s or -es to become plural, but some have irregular forms.",
+        "fa": "بیشتر اسم‌ها با -s یا -es جمع می‌شوند، اما بعضی بی‌قاعده هستند."
+      },
+      "rules": {
+        "en": [
+          "Add -s to most nouns",
+          "Add -es to nouns ending in s, x, ch, sh",
+          "Change y to ies after a consonant",
+          "Some nouns change form (man → men)",
+          "Some nouns stay the same (sheep → sheep)"
+        ],
+        "fa": [
+          "بیشتر اسم‌ها با -s جمع می‌شوند",
+          "اسم‌های ending in s, x, ch, sh با -es جمع می‌شوند",
+          "بعد از حرف بی‌صدا y به ies تبدیل می‌شود",
+          "برخی اسم‌ها شکلشان عوض می‌شود (man → men)",
+          "برخی اسم‌ها ثابت می‌مانند (sheep → sheep)"
+        ]
+      },
+      "examples": {
+        "en": [
+          "book → books (regular)",
+          "bus → buses (-es)",
+          "city → cities (y → ies)",
+          "child → children (irregular)"
+        ],
+        "fa": [
+          "book → books (قاعده‌دار)",
+          "bus → buses (-es)",
+          "city → cities (y → ies)",
+          "child → children (بی‌قاعده)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "two childs",
+            "correct": "two children",
+            "explanation": "Child has an irregular plural form."
+          },
+          {
+            "wrong": "boxs",
+            "correct": "boxes",
+            "explanation": "Add -es to nouns ending in x."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "two childs",
+            "correct": "two children",
+            "explanation": "جمع child بی‌قاعده است."
+          },
+          {
+            "wrong": "boxs",
+            "correct": "boxes",
+            "explanation": "اسم‌های ending in x با -es جمع می‌شوند."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct plural of “baby”.",
+            "options": [
+              "babys",
+              "babies",
+              "babyes",
+              "babyses"
+            ],
+            "correct": 1,
+            "explanation": "Y changes to ies after a consonant."
+          },
+          {
+            "question": "The plural of “man” is ___.",
+            "options": [
+              "mans",
+              "mens",
+              "men",
+              "manes"
+            ],
+            "correct": 2,
+            "explanation": "Man has an irregular plural."
+          }
+        ],
+        "fa": [
+          {
+            "question": "جمع درست “baby” کدام است؟",
+            "options": [
+              "babys",
+              "babies",
+              "babyes",
+              "babyses"
+            ],
+            "correct": 1,
+            "explanation": "بعد از حرف بی‌صدا y به ies تبدیل می‌شود."
+          },
+          {
+            "question": "جمع “man” کدام است؟",
+            "options": [
+              "mans",
+              "mens",
+              "men",
+              "manes"
+            ],
+            "correct": 2,
+            "explanation": "Man جمع بی‌قاعده دارد."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "short-answers",
+    "title": {
+      "en": "Short Answers (Yes, I do / No, I don’t)",
+      "fa": "جواب‌های کوتاه (Yes, I do / No, I don’t)"
+    },
+    "category": {
+      "en": "Questions",
+      "fa": "سوال‌ها"
+    },
+    "tags": {
+      "en": [
+        "short-answers",
+        "yes-no",
+        "questions"
+      ],
+      "fa": [
+        "جواب کوتاه",
+        "بله/خیر",
+        "سوال"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Short answers respond to yes/no questions without repeating the whole sentence. They use the same auxiliary verb as the question.",
+        "fa": "جواب‌های کوتاه به سوال‌های بله/خیر پاسخ می‌دهند و فعل کمکی سوال را تکرار می‌کنند."
+      },
+      "rules": {
+        "en": [
+          "Use the same auxiliary as the question (Do you? Yes, I do.)",
+          "Use be in short answers to be-questions (Is she? Yes, she is.)",
+          "Negative short answers use not (No, I don't.)",
+          "Use the correct subject pronoun (Are they? No, they aren't.)",
+          "Avoid answering with only Yes/No in formal speech (Yes, I am.)",
+          "Modal questions use the modal in the answer (Can you? Yes, I can.)"
+        ],
+        "fa": [
+          "از فعل کمکی همان سوال استفاده کنید (Do you? Yes, I do.)",
+          "برای سوال‌های be از be استفاده کنید (Is she? Yes, she is.)",
+          "جواب منفی با not می‌آید (No, I don't.)",
+          "ضمیر فاعلی درست را به کار ببرید (Are they? No, they aren't.)",
+          "در پاسخ رسمی فقط Yes/No نگویید (Yes, I am.)",
+          "سوال‌های با modal همان modal را در پاسخ دارند (Can you? Yes, I can.)"
+        ]
+      },
+      "examples": {
+        "en": [
+          "Do you like tea? Yes, I do.",
+          "Is he at home? No, he isn't.",
+          "Are they ready? Yes, they are.",
+          "Does she work here? No, she doesn't.",
+          "Can you swim? Yes, I can.",
+          "Is it cold? Yes, it is.",
+          "Do we have time? No, we don't.",
+          "Will you come? Yes, I will."
+        ],
+        "fa": [
+          "آیا چای دوست داری؟ بله، دوست دارم.",
+          "آیا او در خانه است؟ نه، نیست.",
+          "آیا آنها آماده‌اند؟ بله، هستند.",
+          "آیا او اینجا کار می‌کند؟ نه، نمی‌کند.",
+          "می‌توانی شنا کنی؟ بله، می‌توانم.",
+          "آیا هوا سرد است؟ بله، هست.",
+          "آیا وقت داریم؟ نه، نداریم.",
+          "آیا می‌آیی؟ بله، می‌آیم."
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "Do you like tea? Yes, I like.",
+            "correct": "Do you like tea? Yes, I do.",
+            "explanation": "Use the auxiliary do in the short answer."
+          },
+          {
+            "wrong": "Is she here? Yes, she is here.",
+            "correct": "Is she here? Yes, she is.",
+            "explanation": "Short answers omit the repeated information."
+          },
+          {
+            "wrong": "Can you help? No, I can't help you can't.",
+            "correct": "Can you help? No, I can't.",
+            "explanation": "Keep short answers brief with the auxiliary only."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "Do you like tea? Yes, I like.",
+            "correct": "Do you like tea? Yes, I do.",
+            "explanation": "در جواب کوتاه از فعل کمکی do استفاده می‌شود."
+          },
+          {
+            "wrong": "Is she here? Yes, she is here.",
+            "correct": "Is she here? Yes, she is.",
+            "explanation": "در جواب کوتاه اطلاعات تکراری حذف می‌شود."
+          },
+          {
+            "wrong": "Can you help? No, I can't help you can't.",
+            "correct": "Can you help? No, I can't.",
+            "explanation": "جواب کوتاه باید مختصر باشد."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct short answer: Do you like coffee?",
+            "options": [
+              "Yes, I like.",
+              "Yes, I do.",
+              "Yes, I am.",
+              "Yes, I will."
+            ],
+            "correct": 1,
+            "explanation": "Use do/does for present simple."
+          },
+          {
+            "question": "Is she a doctor? (negative)",
+            "options": [
+              "No, she doesn't.",
+              "No, she isn't.",
+              "No, she aren't.",
+              "No, she don't."
+            ],
+            "correct": 1,
+            "explanation": "Use isn't with she."
+          },
+          {
+            "question": "Can you swim? (positive)",
+            "options": [
+              "Yes, I can.",
+              "Yes, I do.",
+              "Yes, I am.",
+              "Yes, I will."
+            ],
+            "correct": 0,
+            "explanation": "Use can in short answers to can questions."
+          },
+          {
+            "question": "Do they live here? (negative)",
+            "options": [
+              "No, they don't.",
+              "No, they aren't.",
+              "No, they can't.",
+              "No, they not."
+            ],
+            "correct": 0,
+            "explanation": "Use don't with they."
+          }
+        ],
+        "fa": [
+          {
+            "question": "جواب کوتاه درست کدام است؟ Do you like coffee?",
+            "options": [
+              "Yes, I like.",
+              "Yes, I do.",
+              "Yes, I am.",
+              "Yes, I will."
+            ],
+            "correct": 1,
+            "explanation": "برای حال ساده از do استفاده می‌شود."
+          },
+          {
+            "question": "Is she a doctor? (منفی)",
+            "options": [
+              "No, she doesn't.",
+              "No, she isn't.",
+              "No, she aren't.",
+              "No, she don't."
+            ],
+            "correct": 1,
+            "explanation": "با she از isn't استفاده می‌شود."
+          },
+          {
+            "question": "Can you swim? (مثبت)",
+            "options": [
+              "Yes, I can.",
+              "Yes, I do.",
+              "Yes, I am.",
+              "Yes, I will."
+            ],
+            "correct": 0,
+            "explanation": "در جواب کوتاه can همان can می‌آید."
+          },
+          {
+            "question": "Do they live here? (منفی)",
+            "options": [
+              "No, they don't.",
+              "No, they aren't.",
+              "No, they can't.",
+              "No, they not."
+            ],
+            "correct": 0,
+            "explanation": "با they از don't استفاده می‌شود."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "object-pronouns",
+    "title": {
+      "en": "Object Pronouns (me/him/us...)",
+      "fa": "ضمیرهای مفعولی (me/him/us...)"
+    },
+    "category": {
+      "en": "Pronouns",
+      "fa": "ضمیرها"
+    },
+    "tags": {
+      "en": [
+        "object-pronouns",
+        "me-him-us",
+        "grammar"
+      ],
+      "fa": [
+        "ضمیر مفعولی",
+        "me/him/us",
+        "گرامر"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Object pronouns receive the action of the verb. They appear after verbs or prepositions.",
+        "fa": "ضمیرهای مفعولی عمل را دریافت می‌کنند و بعد از فعل یا حرف اضافه می‌آیند."
+      },
+      "rules": {
+        "en": [
+          "Object pronouns: me, you, him, her, it, us, them (I see him).",
+          "Use them after verbs (She calls me).",
+          "Use them after prepositions (The gift is for her).",
+          "Do not use object pronouns as subjects (He is right).",
+          "Place object pronouns before nouns they replace (I like it).",
+          "Use us/them for groups (He invited us)."
+        ],
+        "fa": [
+          "ضمیرهای مفعولی: me, you, him, her, it, us, them (I see him).",
+          "بعد از فعل می‌آیند (She calls me).",
+          "بعد از حرف اضافه می‌آیند (The gift is for her).",
+          "به جای فاعل استفاده نمی‌شوند (He is right).",
+          "به جای اسم مفعول می‌آیند (I like it).",
+          "برای گروه‌ها از us/them استفاده کنید (He invited us)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "She helps me. (object)",
+          "I know him. (object)",
+          "The teacher asks us. (object)",
+          "Please listen to her. (preposition)",
+          "We saw them yesterday. (object)",
+          "Give it to me. (preposition)",
+          "He invited us to dinner. (object)",
+          "She talks to them. (preposition)"
+        ],
+        "fa": [
+          "او به من کمک می‌کند. (مفعول)",
+          "من او را می‌شناسم. (مفعول)",
+          "معلم از ما سوال می‌کند. (مفعول)",
+          "لطفاً به او گوش بده. (حرف اضافه)",
+          "ما دیروز آنها را دیدیم. (مفعول)",
+          "آن را به من بده. (حرف اضافه)",
+          "او ما را به شام دعوت کرد. (مفعول)",
+          "او با آنها صحبت می‌کند. (حرف اضافه)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "Me am ready.",
+            "correct": "I am ready.",
+            "explanation": "Use subject pronouns as subjects."
+          },
+          {
+            "wrong": "She likes I.",
+            "correct": "She likes me.",
+            "explanation": "Use object pronouns after verbs."
+          },
+          {
+            "wrong": "He gave she a gift.",
+            "correct": "He gave her a gift.",
+            "explanation": "Use her as the object form of she."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "Me am ready.",
+            "correct": "I am ready.",
+            "explanation": "فاعل باید ضمیر فاعلی باشد."
+          },
+          {
+            "wrong": "She likes I.",
+            "correct": "She likes me.",
+            "explanation": "بعد از فعل باید ضمیر مفعولی بیاید."
+          },
+          {
+            "wrong": "He gave she a gift.",
+            "correct": "He gave her a gift.",
+            "explanation": "برای مفعول از her استفاده می‌شود."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct sentence.",
+            "options": [
+              "She helped I.",
+              "She helped me.",
+              "She helped we.",
+              "She helped he."
+            ],
+            "correct": 1,
+            "explanation": "Me is the object pronoun."
+          },
+          {
+            "question": "The gift is for ___.",
+            "options": [
+              "she",
+              "he",
+              "her",
+              "we"
+            ],
+            "correct": 2,
+            "explanation": "Use her after a preposition."
+          },
+          {
+            "question": "We saw ___ at the station.",
+            "options": [
+              "they",
+              "them",
+              "their",
+              "theirs"
+            ],
+            "correct": 1,
+            "explanation": "Them is the object form of they."
+          },
+          {
+            "question": "Choose the object pronoun for “I”.",
+            "options": [
+              "my",
+              "mine",
+              "me",
+              "I"
+            ],
+            "correct": 2,
+            "explanation": "Me is the object form of I."
+          }
+        ],
+        "fa": [
+          {
+            "question": "جمله درست را انتخاب کنید.",
+            "options": [
+              "She helped I.",
+              "She helped me.",
+              "She helped we.",
+              "She helped he."
+            ],
+            "correct": 1,
+            "explanation": "Me ضمیر مفعولی است."
+          },
+          {
+            "question": "The gift is for ___.",
+            "options": [
+              "she",
+              "he",
+              "her",
+              "we"
+            ],
+            "correct": 2,
+            "explanation": "بعد از حرف اضافه از her استفاده می‌شود."
+          },
+          {
+            "question": "We saw ___ at the station.",
+            "options": [
+              "they",
+              "them",
+              "their",
+              "theirs"
+            ],
+            "correct": 1,
+            "explanation": "Them شکل مفعولی they است."
+          },
+          {
+            "question": "ضمیر مفعولی “I” کدام است؟",
+            "options": [
+              "my",
+              "mine",
+              "me",
+              "I"
+            ],
+            "correct": 2,
+            "explanation": "Me ضمیر مفعولی I است."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "possessive-pronouns",
+    "title": {
+      "en": "Possessive Pronouns (mine/yours...)",
+      "fa": "ضمیرهای ملکی (mine/yours...)"
+    },
+    "category": {
+      "en": "Pronouns",
+      "fa": "ضمیرها"
+    },
+    "tags": {
+      "en": [
+        "possessive-pronouns",
+        "mine-yours",
+        "ownership"
+      ],
+      "fa": [
+        "ضمیر ملکی",
+        "mine/yours",
+        "مالکیت"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Possessive pronouns show ownership without a noun. They replace “my book” with “mine.”",
+        "fa": "ضمیرهای ملکی مالکیت را بدون اسم نشان می‌دهند و جایگزین «my book» با «mine» می‌شوند."
+      },
+      "rules": {
+        "en": [
+          "Possessive pronouns: mine, yours, his, hers, its, ours, theirs (This is mine).",
+          "Do not use a noun after them (Not: mine book).",
+          "Do not use apostrophes (its is not it's).",
+          "Use them after be (The pen is hers).",
+          "They match the owner, not the object (Their car is theirs).",
+          "Use them to avoid repetition (Your bag is yours)."
+        ],
+        "fa": [
+          "ضمیرهای ملکی: mine, yours, his, hers, its, ours, theirs (This is mine).",
+          "بعد از آنها اسم نمی‌آید (Not: mine book).",
+          "آپاستروف استفاده نمی‌شود (its نه it's).",
+          "معمولاً بعد از be می‌آیند (The pen is hers).",
+          "به مالک اشاره می‌کنند نه شیء (Their car is theirs).",
+          "برای جلوگیری از تکرار به کار می‌روند (Your bag is yours)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "This seat is mine. (ownership)",
+          "That jacket is yours. (yours)",
+          "The red bag is hers. (hers)",
+          "The choice is ours. (ours)",
+          "The laptop is his. (his)",
+          "These keys are theirs. (theirs)",
+          "Is this phone yours? (question)",
+          "The decision is mine. (mine)"
+        ],
+        "fa": [
+          "این صندلی مال من است. (مالکیت)",
+          "آن کت مال تو است. (yours)",
+          "کیف قرمز مال اوست. (hers)",
+          "انتخاب مال ماست. (ours)",
+          "لپ‌تاپ مال اوست. (his)",
+          "این کلیدها مال آنهاست. (theirs)",
+          "این گوشی مال تو است؟ (سوال)",
+          "تصمیم مال من است. (mine)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "This is mine book.",
+            "correct": "This is my book. / This is mine.",
+            "explanation": "Possessive pronouns cannot be followed by a noun."
+          },
+          {
+            "wrong": "That pen is your's.",
+            "correct": "That pen is yours.",
+            "explanation": "Possessive pronouns do not take apostrophes."
+          },
+          {
+            "wrong": "This bag is her.",
+            "correct": "This bag is hers.",
+            "explanation": "Use hers as the possessive pronoun."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "This is mine book.",
+            "correct": "This is my book. / This is mine.",
+            "explanation": "بعد از ضمیر ملکی اسم نمی‌آید."
+          },
+          {
+            "wrong": "That pen is your's.",
+            "correct": "That pen is yours.",
+            "explanation": "ضمیر ملکی آپاستروف ندارد."
+          },
+          {
+            "wrong": "This bag is her.",
+            "correct": "This bag is hers.",
+            "explanation": "برای مالکیت از hers استفاده می‌شود."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "This notebook is ___.",
+            "options": [
+              "my",
+              "mine",
+              "me",
+              "I"
+            ],
+            "correct": 1,
+            "explanation": "Mine is the possessive pronoun."
+          },
+          {
+            "question": "That coat is ___ (belonging to her).",
+            "options": [
+              "her",
+              "hers",
+              "she",
+              "her's"
+            ],
+            "correct": 1,
+            "explanation": "Hers shows possession without a noun."
+          },
+          {
+            "question": "Choose the correct sentence.",
+            "options": [
+              "This is yours bag.",
+              "This is your bag.",
+              "This is your's bag.",
+              "This is you bag."
+            ],
+            "correct": 1,
+            "explanation": "Use your + noun or yours without a noun."
+          },
+          {
+            "question": "The pencils are ___.",
+            "options": [
+              "their",
+              "theirs",
+              "them",
+              "they"
+            ],
+            "correct": 1,
+            "explanation": "Theirs is the possessive pronoun."
+          }
+        ],
+        "fa": [
+          {
+            "question": "This notebook is ___.",
+            "options": [
+              "my",
+              "mine",
+              "me",
+              "I"
+            ],
+            "correct": 1,
+            "explanation": "Mine ضمیر ملکی است."
+          },
+          {
+            "question": "That coat is ___ (مال او).",
+            "options": [
+              "her",
+              "hers",
+              "she",
+              "her's"
+            ],
+            "correct": 1,
+            "explanation": "Hers مالکیت را بدون اسم نشان می‌دهد."
+          },
+          {
+            "question": "جمله درست را انتخاب کنید.",
+            "options": [
+              "This is yours bag.",
+              "This is your bag.",
+              "This is your's bag.",
+              "This is you bag."
+            ],
+            "correct": 1,
+            "explanation": "your با اسم می‌آید؛ yours بدون اسم."
+          },
+          {
+            "question": "The pencils are ___.",
+            "options": [
+              "their",
+              "theirs",
+              "them",
+              "they"
+            ],
+            "correct": 1,
+            "explanation": "Theirs ضمیر ملکی است."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "basic-sentence-types",
+    "title": {
+      "en": "Basic Sentence Types (Statements/Questions/Negatives)",
+      "fa": "انواع جمله پایه (خبری/سوالی/منفی)"
+    },
+    "category": {
+      "en": "Sentence Structure",
+      "fa": "ساختار جمله"
+    },
+    "tags": {
+      "en": [
+        "statements",
+        "negatives",
+        "questions"
+      ],
+      "fa": [
+        "خبری",
+        "منفی",
+        "سوالی"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Statements give information, negatives say something is not true, and questions ask for information. You can build all three using simple patterns.",
+        "fa": "جملات خبری اطلاعات می‌دهند، منفی‌ها عدم درست بودن را نشان می‌دهند و سوال‌ها اطلاعات می‌خواهند. هر سه با الگوهای ساده ساخته می‌شوند."
+      },
+      "rules": {
+        "en": [
+          "Statements use S + V (He works).",
+          "Negatives use do/does + not (She does not drive).",
+          "Use don't/doesn't in speech (I don't know).",
+          "Be-verb negatives place not after be (He is not late).",
+          "Yes/No questions start with Do/Does/Is/Are (Do you like it?).",
+          "Wh- questions start with a question word (Where do you live?)."
+        ],
+        "fa": [
+          "جمله خبری با فاعل + فعل می‌آید (He works).",
+          "جمله منفی با do/does + not ساخته می‌شود (She does not drive).",
+          "در گفتار از don't/doesn't استفاده کنید (I don't know).",
+          "در جملات be، not بعد از be می‌آید (He is not late).",
+          "سوال بله/خیر با Do/Does/Is/Are شروع می‌شود (Do you like it?).",
+          "سوال Wh- با کلمه سوال شروع می‌شود (Where do you live?)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "She studies English. (statement)",
+          "He does not eat meat. (negative)",
+          "Do you play tennis? (question)",
+          "I am not ready. (be negative)",
+          "Is it cold outside? (be question)",
+          "Where does he work? (wh-)",
+          "They don't like coffee. (negative)",
+          "We live in Isfahan. (statement)"
+        ],
+        "fa": [
+          "او انگلیسی می‌خواند. (خبری)",
+          "او گوشت نمی‌خورد. (منفی)",
+          "آیا تنیس بازی می‌کنی؟ (سوالی)",
+          "من آماده نیستم. (منفی با be)",
+          "آیا بیرون سرد است؟ (سوالی با be)",
+          "او کجا کار می‌کند؟ (Wh-)",
+          "آنها قهوه دوست ندارند. (منفی)",
+          "ما در اصفهان زندگی می‌کنیم. (خبری)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "He not likes tea.",
+            "correct": "He does not like tea.",
+            "explanation": "Use does not + base verb for negatives in present simple."
+          },
+          {
+            "wrong": "Do she like music?",
+            "correct": "Does she like music?",
+            "explanation": "Use does with he/she/it."
+          },
+          {
+            "wrong": "Where he works?",
+            "correct": "Where does he work?",
+            "explanation": "Wh- questions need an auxiliary before the subject."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "He not likes tea.",
+            "correct": "He does not like tea.",
+            "explanation": "در منفی حال ساده از does not + فعل پایه استفاده کنید."
+          },
+          {
+            "wrong": "Do she like music?",
+            "correct": "Does she like music?",
+            "explanation": "برای he/she/it از does استفاده می‌شود."
+          },
+          {
+            "wrong": "Where he works?",
+            "correct": "Where does he work?",
+            "explanation": "در سوال Wh- فعل کمکی قبل از فاعل می‌آید."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct negative sentence.",
+            "options": [
+              "She not study.",
+              "She does not study.",
+              "She does not studies.",
+              "She not studies."
+            ],
+            "correct": 1,
+            "explanation": "Use does not + base verb."
+          },
+          {
+            "question": "Choose the correct question.",
+            "options": [
+              "Does he like pizza?",
+              "Do he like pizza?",
+              "Does he likes pizza?",
+              "Do he likes pizza?"
+            ],
+            "correct": 0,
+            "explanation": "Use does with he and base verb like."
+          },
+          {
+            "question": "Select the correct statement.",
+            "options": [
+              "They play football.",
+              "Play they football.",
+              "They football play.",
+              "Play football they."
+            ],
+            "correct": 0,
+            "explanation": "Statements use S + V + O."
+          },
+          {
+            "question": "Which Wh- question is correct?",
+            "options": [
+              "Where she lives?",
+              "Where does she live?",
+              "Where does she lives?",
+              "Where she does live?"
+            ],
+            "correct": 1,
+            "explanation": "Wh- + does + subject + base verb."
+          }
+        ],
+        "fa": [
+          {
+            "question": "جمله منفی درست کدام است؟",
+            "options": [
+              "She not study.",
+              "She does not study.",
+              "She does not studies.",
+              "She not studies."
+            ],
+            "correct": 1,
+            "explanation": "در منفی از does not + فعل پایه استفاده می‌شود."
+          },
+          {
+            "question": "سوال درست را انتخاب کنید.",
+            "options": [
+              "Does he like pizza?",
+              "Do he like pizza?",
+              "Does he likes pizza?",
+              "Do he likes pizza?"
+            ],
+            "correct": 0,
+            "explanation": "برای he از does و فعل پایه like استفاده می‌شود."
+          },
+          {
+            "question": "جمله خبری درست کدام است؟",
+            "options": [
+              "They play football.",
+              "Play they football.",
+              "They football play.",
+              "Play football they."
+            ],
+            "correct": 0,
+            "explanation": "جمله خبری ترتیب فاعل + فعل + مفعول دارد."
+          },
+          {
+            "question": "سوال Wh- درست کدام است؟",
+            "options": [
+              "Where she lives?",
+              "Where does she live?",
+              "Where does she lives?",
+              "Where she does live?"
+            ],
+            "correct": 1,
+            "explanation": "ترتیب درست: Wh- + does + فاعل + فعل پایه."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "basic-determiners-this-that-each-every-intro",
+    "title": {
+      "en": "Basic Determiners (this/that, each/every — intro)",
+      "fa": "Basic Determiners (this/that, each/every — intro)"
+    },
+    "category": {
+      "en": "Determiners & Quantifiers",
+      "fa": "تعیین‌کننده‌ها و کمیت‌ها"
+    },
+    "tags": {
+      "en": [
+        "basic",
+        "determiners",
+        "this",
+        "that"
+      ],
+      "fa": [
+        "basic",
+        "determiners",
+        "this",
+        "that"
+      ]
+    },
+    "level": 0,
+    "sections": {
+      "summary": {
+        "en": "This topic explains Basic Determiners (this/that, each/every — intro) in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
+        "fa": "This topic explains Basic Determiners (this/that, each/every — intro) in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
+      },
+      "rules": {
+        "en": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ],
+        "fa": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I understand basic determiners (this/that, each/every — intro).",
+          "She practices basic determiners (this/that, each/every — intro) every day.",
+          "Can you give an example of basic determiners (this/that, each/every — intro)?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ],
+        "fa": [
+          "I understand basic determiners (this/that, each/every — intro).",
+          "She practices basic determiners (this/that, each/every — intro) every day.",
+          "Can you give an example of basic determiners (this/that, each/every — intro)?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ],
+        "fa": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "basic-comparatives-superlatives",
+    "title": {
+      "en": "Basic Comparatives & Superlatives",
+      "fa": "Basic Comparatives & Superlatives"
+    },
+    "category": {
+      "en": "Adjectives & Comparison",
+      "fa": "صفت‌ها و مقایسه"
+    },
+    "tags": {
+      "en": [
+        "basic",
+        "comparatives",
+        "superlatives"
+      ],
+      "fa": [
+        "basic",
+        "comparatives",
+        "superlatives"
+      ]
+    },
+    "level": 0,
+    "sections": {
+      "summary": {
+        "en": "This topic explains Basic Comparatives & Superlatives in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
+        "fa": "This topic explains Basic Comparatives & Superlatives in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
+      },
+      "rules": {
+        "en": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ],
+        "fa": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I understand basic comparatives & superlatives.",
+          "She practices basic comparatives & superlatives every day.",
+          "Can you give an example of basic comparatives & superlatives?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ],
+        "fa": [
+          "I understand basic comparatives & superlatives.",
+          "She practices basic comparatives & superlatives every day.",
+          "Can you give an example of basic comparatives & superlatives?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ],
+        "fa": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ]
+      }
+    }
   }
 ]
