@@ -8,7 +8,7 @@ module.exports = defineConfig({
     headless: true
   },
   webServer: {
-    command: 'python -m http.server 4173',
+    command: 'npx http-server . -p 4173 -c-1',
     port: 4173,
     reuseExistingServer: !process.env.CI,
     timeout: 120000

@@ -16,7 +16,7 @@ const LEVEL_METADATA = [
   {
     level: 0,
     key: 'level-0',
-    label: { en: 'Absolute Beginner (Foundations)', fa: 'مقدماتی مطلق (پایهها)' },
+    label: { en: 'Absolute Beginner', fa: 'الفبا و پایهی جمله' },
     file: 'data/levels/level-0.json'
   },
   {

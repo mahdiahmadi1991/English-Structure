@@ -49,6 +49,19 @@ function ensureNonEmptyString(value, pathLabel) {
   ensurePlainString(resolved, pathLabel);
 }
 
+function ensureLocalizedLabel(value, pathLabel) {
+  if (!isLocalizedObject(value)) {
+    addError(pathLabel);
+    return;
+  }
+  ['en', 'fa'].forEach((lang) => {
+    const localized = value[lang];
+    if (typeof localized !== 'string' || localized.trim() === '') {
+      addError(`${pathLabel}.${lang}`);
+    }
+  });
+}
+
 function ensureStringArray(value, pathLabel) {
   const resolved = resolveLocalized(value, pathLabel);
   if (isLocalizedObject(resolved)) {
@@ -272,7 +285,7 @@ function validateIndex(indexData) {
       levelsByNumber.set(levelMeta.level, levelMeta);
     }
     ensurePlainString(levelMeta.key, `${levelPath}.key`);
-    ensureNonEmptyString(levelMeta.label, `${levelPath}.label`);
+    ensureLocalizedLabel(levelMeta.label, `${levelPath}.label`);
     if (levelMeta.description !== undefined) {
       ensureNonEmptyString(levelMeta.description, `${levelPath}.description`);
     }
@@ -423,6 +436,52 @@ function warnAboutUnmappedTopics(topics) {
   }
 }
 
+function validateLevelMap(topics) {
+  const mapData = readJsonFile(LEVEL_MAP_PATH, 'data/level-map.json');
+  if (!mapData || !topics.length) {
+    return;
+  }
+
+  const levelLists = mapData.levels && typeof mapData.levels === 'object'
+    ? mapData.levels
+    : mapData;
+  const mappedIds = new Set();
+  const duplicates = new Set();
+
+  LEVELS.forEach((level) => {
+    const ids = Array.isArray(levelLists?.[level]) ? levelLists[level] : [];
+    ids.forEach((id) => {
+      if (!id) {
+        return;
+      }
+      if (mappedIds.has(id)) {
+        duplicates.add(id);
+      }
+      mappedIds.add(id);
+    });
+  });
+
+  if (duplicates.size) {
+    const sample = Array.from(duplicates).slice(0, 10).join(', ');
+    addError(`levelMap.duplicates: ${sample}`);
+  }
+
+  const topicIds = new Set(topics.map((topic) => topic?.id).filter(Boolean));
+  const missing = Array.from(topicIds).filter((id) => !mappedIds.has(id));
+  if (missing.length) {
+    const sample = missing.slice(0, 15).join(', ');
+    const suffix = missing.length > 15 ? ` (+${missing.length - 15} more)` : '';
+    addError(`levelMap.missingIds: ${sample}${suffix}`);
+  }
+
+  const extra = Array.from(mappedIds).filter((id) => !topicIds.has(id));
+  if (extra.length) {
+    const sample = extra.slice(0, 10).join(', ');
+    const suffix = extra.length > 10 ? ` (+${extra.length - 10} more)` : '';
+    addError(`levelMap.unknownIds: ${sample}${suffix}`);
+  }
+}
+
 function validateCounts(counts, topics) {
   if (!counts || typeof counts !== 'object') {
     return;
@@ -446,6 +505,27 @@ function validateCounts(counts, topics) {
       }
     });
   }
+}
+
+function validateDistribution(topics) {
+  if (!Array.isArray(topics) || topics.length === 0) {
+    return;
+  }
+  const total = topics.length;
+  const counts = LEVELS.reduce((acc, level) => {
+    acc[level] = topics.filter((topic) => topic.level === level).length;
+    return acc;
+  }, {});
+
+  LEVELS.forEach((level) => {
+    const levelCount = counts[level];
+    if (total >= 20 && levelCount === 0) {
+      addError(`topicsIndex.distribution.emptyLevel.${level}`);
+    }
+    if (total > 0 && levelCount / total > 0.7) {
+      addError(`topicsIndex.distribution.skewedLevel.${level}`);
+    }
+  });
 }
 
 const topicsIndex = readIndexFile();
@@ -479,7 +559,9 @@ topics.forEach((topic, index) => {
 });
 
 warnAboutUnmappedTopics(topics);
+validateLevelMap(topics);
 validateCounts(counts, topics);
+validateDistribution(topics);
 
 console.log(`Topics checked: ${topics.length}`);
 console.log(`Level files checked: ${LEVELS.length}`);

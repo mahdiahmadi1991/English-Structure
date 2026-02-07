@@ -28,18 +28,15 @@ An interactive, mobile-first static web application for learning English grammar
    cd English-Structure
    ```
 
-2. Serve it with a local server:
+2. Install dependencies and start the local dev server:
    ```bash
-   # Using Python 3
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx serve
+   npm ci
+   npm run dev
    ```
 
-3. Open http://localhost:8000 in your browser.
+3. Open http://localhost:4173 in your browser.
 
-> **Important:** Do not open `index.html` via `file://` URLs. Fetch requests for JSON data are blocked by browsers without an HTTP server.
+> **Important:** Do not open `index.html` via `file://` URLs. Fetch requests for JSON data are blocked by browsers without an HTTP server. Run `npm run dev` instead.
 
 That's it! No build process or dependencies required.
 
@@ -72,7 +69,7 @@ full topic content from the level files in `data/levels/`.
     {
       "level": 0,
       "key": "level-0",
-      "label": { "en": "Absolute Beginner (Foundations)", "fa": "مقدماتی مطلق (پایهها)" },
+      "label": { "en": "Absolute Beginner", "fa": "الفبا و پایهی جمله" },
       "file": "data/levels/level-0.json"
     }
   ],
@@ -130,7 +127,7 @@ Each grammar topic in the level files follows this structure:
 ### Adding New Topics
 
 1. Add or update a topic in the appropriate `data/levels/level-*.json` file.
-2. Run `node scripts/split-topics-by-level.cjs` to refresh `data/topics-index.json`.
+2. Run `npm run build:data` to refresh `data/topics-index.json`.
 3. Refresh the page to see your changes.
 
 ### Styling
@@ -188,12 +185,11 @@ User notes and mistakes are saved using the browser's LocalStorage:
 ## 🚫 No Build Process
 
 This is a static web application with:
-- ✅ No npm packages
-- ✅ No build tools
-- ✅ No transpilation
 - ✅ No bundling
+- ✅ No transpilation
+- ✅ No server-side runtime
 
-Just open `index.html` and start learning!
+Use `npm run dev` for a local static server (required for browser fetch), then open the app in your browser.
 
 ## 📄 License
 
