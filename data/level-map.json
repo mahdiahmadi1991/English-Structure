@@ -32,5 +32,387 @@
     "4": [],
     "5": [],
     "6": []
-  }
+  },
+  "ambiguousDefaults": [
+    {
+      "id": "simple-questions",
+      "defaultLevel": 1
+    },
+    {
+      "id": "short-answers",
+      "defaultLevel": 1
+    },
+    {
+      "id": "object-pronouns",
+      "defaultLevel": 1
+    },
+    {
+      "id": "possessive-pronouns",
+      "defaultLevel": 1
+    },
+    {
+      "id": "like-love-hate-gerund",
+      "defaultLevel": 1
+    },
+    {
+      "id": "how-much-how-many",
+      "defaultLevel": 1
+    },
+    {
+      "id": "adverbs-of-frequency",
+      "defaultLevel": 1
+    },
+    {
+      "id": "personal-pronouns",
+      "defaultLevel": 1
+    },
+    {
+      "id": "can-could-ability-requests",
+      "defaultLevel": 1
+    },
+    {
+      "id": "future-going-to",
+      "defaultLevel": 1
+    },
+    {
+      "id": "future-will",
+      "defaultLevel": 1
+    },
+    {
+      "id": "there-is-there-are",
+      "defaultLevel": 1
+    },
+    {
+      "id": "like-love-hate-verb-ing",
+      "defaultLevel": 1
+    },
+    {
+      "id": "present-continuous-progressive",
+      "defaultLevel": 1
+    },
+    {
+      "id": "can-could-ability-requests-2",
+      "defaultLevel": 1
+    },
+    {
+      "id": "countable-vs-uncountable-nouns",
+      "defaultLevel": 1
+    },
+    {
+      "id": "quantifiers-some-any-a-lot-of-much-many",
+      "defaultLevel": 1
+    },
+    {
+      "id": "future-with-going-to",
+      "defaultLevel": 1
+    },
+    {
+      "id": "future-with-will-predictions-decisions",
+      "defaultLevel": 1
+    },
+    {
+      "id": "prepositions-of-time-place-expanded",
+      "defaultLevel": 1
+    },
+    {
+      "id": "conjunctions-and-but-or-because-so",
+      "defaultLevel": 1
+    },
+    {
+      "id": "present-perfect-experiences-ever-never",
+      "defaultLevel": 1
+    },
+    {
+      "id": "present-perfect-results-already-yet-just",
+      "defaultLevel": 1
+    },
+    {
+      "id": "future-continuous",
+      "defaultLevel": 1
+    },
+    {
+      "id": "modal-verbs-overview-meaning-use",
+      "defaultLevel": 1
+    },
+    {
+      "id": "must-have-to-should-obligation-advice",
+      "defaultLevel": 1
+    },
+    {
+      "id": "may-might-could-possibility",
+      "defaultLevel": 1
+    },
+    {
+      "id": "used-to-past-habits-states",
+      "defaultLevel": 1
+    },
+    {
+      "id": "be-used-to-get-used-to",
+      "defaultLevel": 1
+    },
+    {
+      "id": "gerunds-infinitives-common-patterns",
+      "defaultLevel": 1
+    },
+    {
+      "id": "verb-to-infinitive-vs-verb-ing-core-list",
+      "defaultLevel": 1
+    },
+    {
+      "id": "relative-clauses-defining-who-which-that",
+      "defaultLevel": 1
+    },
+    {
+      "id": "determiners-each-every-both-either-neither",
+      "defaultLevel": 1
+    },
+    {
+      "id": "quantifiers-few-a-few-little-a-little-enough-too",
+      "defaultLevel": 1
+    },
+    {
+      "id": "comparison-structures-as-as-not-as-as",
+      "defaultLevel": 1
+    },
+    {
+      "id": "prepositions-with-verbs-adjectives-common-collocations",
+      "defaultLevel": 1
+    },
+    {
+      "id": "all-tense-review-12-tenses-overview-contrasts",
+      "defaultLevel": 1
+    },
+    {
+      "id": "present-perfect-continuous-use-cases",
+      "defaultLevel": 1
+    },
+    {
+      "id": "future-forms-will-going-to-present-continuous-future-continuous",
+      "defaultLevel": 1
+    },
+    {
+      "id": "conditionals-zero-conditional",
+      "defaultLevel": 1
+    },
+    {
+      "id": "conditionals-first-conditional",
+      "defaultLevel": 1
+    },
+    {
+      "id": "conditionals-second-conditional",
+      "defaultLevel": 1
+    },
+    {
+      "id": "conditionals-third-conditional",
+      "defaultLevel": 1
+    },
+    {
+      "id": "modal-perfect-should-have-might-have-must-have",
+      "defaultLevel": 1
+    },
+    {
+      "id": "passive-with-modals",
+      "defaultLevel": 1
+    },
+    {
+      "id": "causative-have-get-something-done",
+      "defaultLevel": 1
+    },
+    {
+      "id": "reported-speech-statements",
+      "defaultLevel": 1
+    },
+    {
+      "id": "reported-speech-questions-commands",
+      "defaultLevel": 1
+    },
+    {
+      "id": "reporting-verbs-advise-suggest-warn",
+      "defaultLevel": 1
+    },
+    {
+      "id": "participles-present-past-participles-as-adjectives",
+      "defaultLevel": 1
+    },
+    {
+      "id": "noun-phrases-modifiers-order-of-adjectives",
+      "defaultLevel": 1
+    },
+    {
+      "id": "adjective-order-intensifiers-quite-rather-pretty",
+      "defaultLevel": 1
+    },
+    {
+      "id": "adverbs-position-meaning-manner-vs-degree",
+      "defaultLevel": 1
+    },
+    {
+      "id": "phrasal-verbs-grammar-behavior-separable-inseparable-object-placement",
+      "defaultLevel": 1
+    },
+    {
+      "id": "conjunctions-discourse-markers-however-therefore-despite-whereas",
+      "defaultLevel": 1
+    },
+    {
+      "id": "clauses-noun-clauses-that-clauses-if-whether",
+      "defaultLevel": 1
+    },
+    {
+      "id": "indirect-questions-embedded-questions",
+      "defaultLevel": 1
+    },
+    {
+      "id": "question-tags",
+      "defaultLevel": 1
+    },
+    {
+      "id": "emphasis-do-does-did-for-emphasis",
+      "defaultLevel": 1
+    },
+    {
+      "id": "wishes-regrets-wish-if-only",
+      "defaultLevel": 1
+    },
+    {
+      "id": "wish-past-wish-past-perfect-wish-would",
+      "defaultLevel": 1
+    },
+    {
+      "id": "subjunctive-mandative-subjunctive-recommend-that-he-be",
+      "defaultLevel": 1
+    },
+    {
+      "id": "reporting-structures-it-is-said-that-he-is-said-to",
+      "defaultLevel": 1
+    },
+    {
+      "id": "relative-clauses-reduced-preposition-which-whom",
+      "defaultLevel": 1
+    },
+    {
+      "id": "participle-clauses-time-reason-result",
+      "defaultLevel": 1
+    },
+    {
+      "id": "clauses-of-contrast-concession-although-though-even-though-despite-in-spite-of",
+      "defaultLevel": 1
+    },
+    {
+      "id": "fronting-inversion-never-have-i-not-only",
+      "defaultLevel": 1
+    },
+    {
+      "id": "cleft-sentences-what-i-need-is-it-was-that",
+      "defaultLevel": 1
+    },
+    {
+      "id": "ellipsis-substitution-so-neither-do-one-ones",
+      "defaultLevel": 1
+    },
+    {
+      "id": "modal-verbs-nuance-degrees-of-certainty-politeness-criticism",
+      "defaultLevel": 1
+    },
+    {
+      "id": "modal-perfect-nuance-could-have-vs-might-have-vs-should-have",
+      "defaultLevel": 1
+    },
+    {
+      "id": "hypothetical-meaning-would-rather-its-high-time",
+      "defaultLevel": 1
+    },
+    {
+      "id": "future-in-the-past-was-going-to-would",
+      "defaultLevel": 1
+    },
+    {
+      "id": "complex-noun-clauses-whatever-whenever-whoever",
+      "defaultLevel": 1
+    },
+    {
+      "id": "negation-scope-not-until-hardly-barely-no-sooner-than",
+      "defaultLevel": 1
+    },
+    {
+      "id": "discourse-grammar-cohesion-reference-substitution-ellipsis",
+      "defaultLevel": 1
+    },
+    {
+      "id": "register-formality-in-grammar-formal-inversions-formal-reporting",
+      "defaultLevel": 1
+    },
+    {
+      "id": "complex-inversion-patterns-scarcely-hardly-no-sooner",
+      "defaultLevel": 1
+    },
+    {
+      "id": "clause-packing-nominalization-dense-noun-phrases",
+      "defaultLevel": 1
+    },
+    {
+      "id": "participle-clauses-stacked-complex-ambiguity-control",
+      "defaultLevel": 1
+    },
+    {
+      "id": "non-finite-clauses-to-infinitive-clauses-ing-clauses-bare-infinitive",
+      "defaultLevel": 1
+    },
+    {
+      "id": "complementation-patterns-verb-patterns-adjective-patterns-noun-patterns",
+      "defaultLevel": 1
+    },
+    {
+      "id": "stance-hedging-grammar-appears-to-tends-to-is-likely-to",
+      "defaultLevel": 1
+    },
+    {
+      "id": "negation-polarity-and-emphatic-negatives",
+      "defaultLevel": 1
+    },
+    {
+      "id": "information-structure-given-new-information-theme-rheme",
+      "defaultLevel": 1
+    },
+    {
+      "id": "agreement-concord-edge-cases",
+      "defaultLevel": 1
+    },
+    {
+      "id": "preposition-stranding-vs-pied-piping-who-to-to-whom",
+      "defaultLevel": 1
+    },
+    {
+      "id": "complex-coordination-not-only-but-also-either-or-with-agreement",
+      "defaultLevel": 1
+    },
+    {
+      "id": "style-driven-grammar-choices-rhythm-clarity-ambiguity-avoidance",
+      "defaultLevel": 1
+    },
+    {
+      "id": "real-time-tense-switching-in-conversation",
+      "defaultLevel": 1
+    },
+    {
+      "id": "natural-questioning-follow-up-questions-clarifying-questions",
+      "defaultLevel": 1
+    },
+    {
+      "id": "correcting-yourself-reformulation-grammar",
+      "defaultLevel": 1
+    },
+    {
+      "id": "managing-turn-taking-well-actually-you-know-as-discourse-markers",
+      "defaultLevel": 1
+    },
+    {
+      "id": "softening-politeness-grammar-would-could-might-indirectness",
+      "defaultLevel": 1
+    },
+    {
+      "id": "precision-grammar-nuance-in-modality-aspect-and-emphasis",
+      "defaultLevel": 1
+    }
+  ]
 }
