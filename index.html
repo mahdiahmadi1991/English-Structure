@@ -38,6 +38,14 @@
                     </select>
                 </div>
 
+                <div class="category-filter">
+                    <label for="levelSelect" id="levelFilterLabel"></label>
+                    <select id="levelSelect">
+                    </select>
+                </div>
+
+                <div class="results-badge" id="resultsBadge" aria-live="polite"></div>
+
                 <nav class="topics-list" id="topicsList" role="navigation" aria-label="Grammar topics">
                     <!-- Topics will be dynamically inserted here -->
                 </nav>
@@ -170,7 +178,6 @@
     </div>
 
     <!-- Load data and app -->
-    <script src="data/grammar-topics.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>

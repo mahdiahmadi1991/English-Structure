@@ -18,6 +18,10 @@ function createConsoleErrorTracker(page) {
   };
 }
 
+async function waitForTopicData(page) {
+  await page.waitForResponse((response) => response.url().includes('/data/topics/level-') && response.ok());
+}
+
 test('homepage loads', async ({ page }) => {
   const tracker = createConsoleErrorTracker(page);
 
@@ -53,6 +57,8 @@ test('routing + topic render', async ({ page }) => {
 
   await page.goto('/#present-simple');
 
+  await waitForTopicData(page);
+
   await expect(page.locator('#topicTitle')).not.toHaveText('');
   await expect(page.locator('#summaryContent')).not.toHaveText('');
   await expect.poll(async () => page.locator('#rulesContent li').count()).toBeGreaterThan(0);
@@ -66,6 +72,7 @@ test('notes save notification', async ({ page }) => {
   const noteText = 'Playwright note';
 
   await page.goto('/#present-simple');
+  await waitForTopicData(page);
   const notesAccordion = page.locator('.accordion-item').last().locator('.accordion-header');
   await notesAccordion.click();
   await expect(page.locator('#notesTextarea')).toBeVisible();

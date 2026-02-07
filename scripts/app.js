@@ -6,16 +6,20 @@
   // State Management
   // ===========================
   const state = {
-    topics: grammarTopics || [],
+    topics: [],
+    topicCache: new Map(),
+    loadedLevels: new Set(),
     currentTopicId: null,
     filteredTopics: [],
     searchQuery: '',
     selectedCategory: '',
+    selectedLevel: '',
     currentLang: 'en',
     quizState: null
   };
 
   const LANG_STORAGE_KEY = 'ep_lang';
+  const LEVEL_STORAGE_KEY = 'ep_level';
 
   const uiStrings = {
     en: {
@@ -24,7 +28,19 @@
       searchPlaceholder: '🔍 Search topics...',
       searchAriaLabel: 'Search grammar topics',
       filterLabel: 'Filter by category:',
+      levelFilterLabel: 'Level:',
       allCategories: 'All Categories',
+      allLevels: 'All Levels',
+      levelOptionPrefix: 'Level',
+      levelLabels: [
+        'Beginner',
+        'Elementary',
+        'Pre-Intermediate',
+        'Intermediate',
+        'Upper-Intermediate',
+        'Advanced',
+        'Proficient'
+      ],
       emptyTitle: 'Welcome to Grammar Handbook! 👋',
       emptySubtitle: 'Select a topic from the list to start learning.',
       sectionSummary: 'Summary',
@@ -62,7 +78,19 @@
       searchPlaceholder: '🔍 جستجوی موضوعات...',
       searchAriaLabel: 'جستجوی موضوعات دستور زبان',
       filterLabel: 'فیلتر بر اساس دسته‌بندی:',
+      levelFilterLabel: 'سطح:',
       allCategories: 'همه دسته‌بندی‌ها',
+      allLevels: 'همه سطوح',
+      levelOptionPrefix: 'سطح',
+      levelLabels: [
+        'مبتدی',
+        'ابتدایی',
+        'پیش‌متوسط',
+        'متوسط',
+        'متوسط پیشرفته',
+        'پیشرفته',
+        'حرفه‌ای'
+      ],
       emptyTitle: 'به دفترچه دستور زبان خوش آمدید! 👋',
       emptySubtitle: 'برای شروع یادگیری یک موضوع را انتخاب کنید.',
       sectionSummary: 'خلاصه',
@@ -122,6 +150,82 @@
     return [value];
   }
 
+  function getTopicMeta(topicId) {
+    return state.topics.find(topic => topic.id === topicId) || null;
+  }
+
+  async function loadTopicsIndex() {
+    try {
+      const response = await fetch('data/topics-index.json');
+      if (!response.ok) {
+        throw new Error('Failed to load topics index');
+      }
+      const topics = await response.json();
+      state.topics = Array.isArray(topics) ? topics : [];
+    } catch (error) {
+      console.warn(error);
+      state.topics = [];
+    }
+  }
+
+  async function loadLevelTopics(level) {
+    if (state.loadedLevels.has(level)) {
+      return;
+    }
+
+    try {
+      const response = await fetch(`data/topics/level-${level}.json`);
+      if (!response.ok) {
+        throw new Error(`Failed to load level ${level}`);
+      }
+      const topics = await response.json();
+      if (Array.isArray(topics)) {
+        topics.forEach((topic) => {
+          if (topic && topic.id) {
+            state.topicCache.set(topic.id, topic);
+          }
+        });
+      }
+      state.loadedLevels.add(level);
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+
+  async function ensureTopicLoaded(topicId) {
+    if (state.topicCache.has(topicId)) {
+      return state.topicCache.get(topicId);
+    }
+
+    const meta = getTopicMeta(topicId);
+    if (!meta) {
+      return null;
+    }
+
+    const level = Number.isInteger(meta.level) ? meta.level : 0;
+    await loadLevelTopics(level);
+    return state.topicCache.get(topicId) || null;
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function highlightMatch(text, query) {
+    const safeText = escapeHtml(text);
+    if (!query) {
+      return safeText;
+    }
+    const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escapedQuery})`, 'ig');
+    return safeText.replace(regex, '<mark>$1</mark>');
+  }
+
   function getUiString(key) {
     const langStrings = uiStrings[state.currentLang] || uiStrings.en;
     return (langStrings && langStrings[key]) || uiStrings.en[key] || '';
@@ -149,6 +253,8 @@
   const elements = {
     searchInput: document.getElementById('searchInput'),
     categorySelect: document.getElementById('categorySelect'),
+    levelSelect: document.getElementById('levelSelect'),
+    resultsBadge: document.getElementById('resultsBadge'),
     topicsList: document.getElementById('topicsList'),
     topicDetail: document.getElementById('topicDetail'),
     topicContent: document.getElementById('topicContent'),
@@ -170,6 +276,7 @@
     appTitle: document.getElementById('appTitle'),
     appSubtitle: document.getElementById('appSubtitle'),
     categoryFilterLabel: document.getElementById('categoryFilterLabel'),
+    levelFilterLabel: document.getElementById('levelFilterLabel'),
     emptyStateTitle: document.getElementById('emptyStateTitle'),
     emptyStateSubtitle: document.getElementById('emptyStateSubtitle'),
     sectionSummaryLabel: document.getElementById('sectionSummaryLabel'),
@@ -187,17 +294,20 @@
   // ===========================
   // Initialization
   // ===========================
-  function init() {
+  async function init() {
     state.currentLang = localStorage.getItem(LANG_STORAGE_KEY) || 'en';
+    state.selectedLevel = localStorage.getItem(LEVEL_STORAGE_KEY) || '';
     document.documentElement.lang = state.currentLang;
     document.documentElement.dir = state.currentLang === 'fa' ? 'rtl' : 'ltr';
     updateLangToggle();
+    await loadTopicsIndex();
     validateTopics();
     applyTranslations();
     populateCategories();
+    populateLevels();
     renderTopicsList();
     attachEventListeners();
-    handleHashRouting();
+    void handleHashRouting();
     
     // Listen for hash changes
     window.addEventListener('hashchange', handleHashRouting);
@@ -225,12 +335,36 @@
     });
   }
 
+  function populateLevels() {
+    if (!elements.levelSelect) {
+      return;
+    }
+
+    elements.levelSelect.innerHTML = '';
+    const allOption = document.createElement('option');
+    allOption.value = '';
+    allOption.textContent = getUiString('allLevels');
+    elements.levelSelect.appendChild(allOption);
+
+    const prefix = getUiString('levelOptionPrefix');
+    const labels = getUiString('levelLabels');
+    for (let level = 0; level <= 6; level += 1) {
+      const option = document.createElement('option');
+      option.value = String(level);
+      const label = Array.isArray(labels) ? labels[level] : '';
+      option.textContent = label ? `${prefix} ${level} — ${label}` : `${prefix} ${level}`;
+      elements.levelSelect.appendChild(option);
+    }
+
+    elements.levelSelect.value = state.selectedLevel;
+  }
+
   // ===========================
   // Topics List Rendering
   // ===========================
   function renderTopicsList() {
     // Filter topics based on search and category
-    state.filteredTopics = state.topics.filter(topic => {
+    const filteredTopics = state.topics.filter(topic => {
       const searchPool = [
         ...collectSearchStrings(topic.title),
         ...collectSearchStrings(topic.tags),
@@ -242,9 +376,31 @@
 
       const matchesCategory = !state.selectedCategory ||
         t(topic.category, state.currentLang) === state.selectedCategory;
+
+      const matchesLevel = !state.selectedLevel || Number(topic.level) === Number(state.selectedLevel);
       
-      return matchesSearch && matchesCategory;
+      return matchesSearch && matchesCategory && matchesLevel;
     });
+
+    const withIndex = filteredTopics.map((topic, index) => ({ topic, index }));
+    const hasOrder = withIndex.some(item => Number.isInteger(item.topic.order));
+    if (hasOrder) {
+      withIndex.sort((a, b) => {
+        const orderA = Number.isInteger(a.topic.order) ? a.topic.order : Number.MAX_SAFE_INTEGER;
+        const orderB = Number.isInteger(b.topic.order) ? b.topic.order : Number.MAX_SAFE_INTEGER;
+        if (orderA !== orderB) {
+          return orderA - orderB;
+        }
+        return a.index - b.index;
+      });
+    }
+
+    state.filteredTopics = withIndex.map(item => item.topic);
+
+    if (elements.resultsBadge) {
+      const count = state.filteredTopics.length;
+      elements.resultsBadge.textContent = `${count} ${count === 1 ? 'result' : 'results'}`;
+    }
 
     // Render filtered topics
     elements.topicsList.innerHTML = '';
@@ -267,8 +423,8 @@
       }
       
       topicItem.innerHTML = `
-        <div class="topic-item-title">${topicTitle}</div>
-        <div class="topic-item-category">${topicCategory}</div>
+        <div class="topic-item-title">${highlightMatch(topicTitle, state.searchQuery)}</div>
+        <div class="topic-item-category">${escapeHtml(topicCategory)}</div>
       `;
       
       elements.topicsList.appendChild(topicItem);
@@ -278,8 +434,8 @@
   // ===========================
   // Topic Detail Rendering
   // ===========================
-  function renderTopicDetail(topicId) {
-    const topic = state.topics.find(t => t.id === topicId);
+  async function renderTopicDetail(topicId) {
+    const topic = await ensureTopicLoaded(topicId);
     
     if (!topic) {
       showEmptyState();
@@ -414,8 +570,8 @@
       const explanation = questionEl.querySelector('.quiz-explanation');
       const feedback = questionEl.querySelector('[data-quiz-feedback]');
       const questionIndex = parseInt(questionEl.dataset.questionIndex, 10);
-      const topic = state.topics.find(t => t.id === state.currentTopicId);
-      const quizData = toArray(t((topic.sections || {}).quiz, state.currentLang))[questionIndex];
+      const topic = state.topicCache.get(state.currentTopicId);
+      const quizData = toArray(t((topic?.sections || {}).quiz, state.currentLang))[questionIndex];
       const questionState = state.quizState?.questions?.[questionIndex];
 
       if (!quizData || !questionState) {
@@ -682,11 +838,11 @@
   // ===========================
   // Hash Routing
   // ===========================
-  function handleHashRouting() {
+  async function handleHashRouting() {
     const hash = window.location.hash.slice(1); // Remove #
     
     if (hash) {
-      renderTopicDetail(hash);
+      await renderTopicDetail(hash);
     } else if (state.topics.length > 0) {
       // Default to first topic if no hash
       const firstTopicId = state.topics[0].id;
@@ -709,6 +865,15 @@
       state.selectedCategory = e.target.value;
       renderTopicsList();
     });
+
+    // Level filter
+    if (elements.levelSelect) {
+      elements.levelSelect.addEventListener('change', (e) => {
+        state.selectedLevel = e.target.value;
+        localStorage.setItem(LEVEL_STORAGE_KEY, state.selectedLevel);
+        renderTopicsList();
+      });
+    }
 
     // Language toggle
     elements.langButtons.forEach(button => {
@@ -763,10 +928,11 @@
     elements.categorySelect.value = '';
     applyTranslations();
     populateCategories();
+    populateLevels();
     renderTopicsList();
 
     if (state.currentTopicId) {
-      renderTopicDetail(state.currentTopicId);
+      void renderTopicDetail(state.currentTopicId);
     }
 
     updateLangToggle();
@@ -784,6 +950,9 @@
     elements.searchInput.placeholder = getUiString('searchPlaceholder');
     elements.searchInput.setAttribute('aria-label', getUiString('searchAriaLabel'));
     elements.categoryFilterLabel.textContent = getUiString('filterLabel');
+    if (elements.levelFilterLabel) {
+      elements.levelFilterLabel.textContent = getUiString('levelFilterLabel');
+    }
     elements.emptyStateTitle.textContent = getUiString('emptyTitle');
     elements.emptyStateSubtitle.textContent = getUiString('emptySubtitle');
     elements.sectionSummaryLabel.textContent = getUiString('sectionSummary');
@@ -803,8 +972,6 @@
   }
 
   function validateTopics() {
-    const requiredSections = ['summary', 'rules', 'examples', 'commonMistakes', 'quiz'];
-
     state.topics.forEach((topic, index) => {
       const missing = [];
 
@@ -819,6 +986,14 @@
       }
       if (!topic.tags) {
         missing.push('tags');
+      }
+      if (!Number.isInteger(topic.level)) {
+        missing.push('level');
+      } else if (topic.level < 0 || topic.level > 6) {
+        missing.push('level (0-6)');
+      }
+      if (topic.order !== undefined && !Number.isInteger(topic.order)) {
+        missing.push('order');
       }
       if (!topic.sections) {
         missing.push('sections');

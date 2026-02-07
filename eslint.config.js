@@ -19,9 +19,11 @@ module.exports = [
         document: 'readonly',
         localStorage: 'readonly',
         console: 'readonly',
+        fetch: 'readonly',
         module: 'readonly',
         require: 'readonly',
-        process: 'readonly'
+        process: 'readonly',
+        topicsIndex: 'readonly'
       }
     },
     ...js.configs.recommended,

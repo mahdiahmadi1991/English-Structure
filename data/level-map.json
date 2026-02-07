@@ -1,0 +1,36 @@
+{
+  "defaultLevel": 0,
+  "levels": {
+    "0": [],
+    "1": [
+      "word-order-svo",
+      "basic-sentence-types",
+      "basic-prepositions-of-place-time-in-on-at-intro",
+      "basic-determiners-this-that-each-every-intro",
+      "basic-comparatives-superlatives",
+      "basic-passive-voice-present-past-simple",
+      "present-simple-vs-present-continuous",
+      "past-continuous-basics",
+      "past-continuous-progressive-basics",
+      "past-simple-vs-past-continuous"
+    ],
+    "2": [
+      "present-perfect-vs-past-simple",
+      "present-perfect-continuous-basics",
+      "past-perfect-basics",
+      "past-perfect-vs-past-simple-basics",
+      "future-perfect-basics",
+      "would-polite-requests-habits-in-past-intro",
+      "relative-clauses-non-defining-intro",
+      "linking-words-because-although-however-intro"
+    ],
+    "3": [
+      "narrative-tenses-past-simple-continuous-perfect",
+      "mixed-conditionals-intro",
+      "relative-clauses-reduced-relatives-participle-clauses-intro"
+    ],
+    "4": [],
+    "5": [],
+    "6": []
+  }
+}

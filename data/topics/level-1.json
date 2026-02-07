@@ -1,0 +1,2017 @@
+[
+  {
+    "id": "word-order-svo",
+    "title": {
+      "en": "Word Order in English (SVO)",
+      "fa": "ترتیب کلمات در انگلیسی (SVO)"
+    },
+    "category": {
+      "en": "Sentence Structure",
+      "fa": "ساختار جمله"
+    },
+    "tags": {
+      "en": [
+        "word-order",
+        "svo",
+        "beginner"
+      ],
+      "fa": [
+        "ترتیب کلمات",
+        "svo",
+        "مبتدی"
+      ]
+    },
+    "level": 1,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Most English sentences follow Subject + Verb + Object order. This order keeps the meaning clear. Time and place usually come after the object.",
+        "fa": "بیشتر جملات انگلیسی ترتیب فاعل + فعل + مفعول دارند. این ترتیب معنی را واضح می‌کند. زمان و مکان معمولاً بعد از مفعول می‌آیند."
+      },
+      "rules": {
+        "en": [
+          "Start with the subject (My sister plays football).",
+          "Put the main verb after the subject (She reads books).",
+          "Place the object after the verb (They watch TV).",
+          "Put time expressions at the end (I study at night).",
+          "Place expressions often follow time (We meet on Monday at school).",
+          "Use S + V when there is no object (He sleeps)."
+        ],
+        "fa": [
+          "جمله را با فاعل شروع کنید (My sister plays football).",
+          "فعل اصلی بعد از فاعل می‌آید (She reads books).",
+          "مفعول بعد از فعل می‌آید (They watch TV).",
+          "زمان در پایان می‌آید (I study at night).",
+          "مکان معمولاً بعد از زمان می‌آید (We meet on Monday at school).",
+          "اگر مفعول ندارید، فقط فاعل + فعل کافی است (He sleeps)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I read a book. (SVO)",
+          "Tom eats lunch at noon. (time at end)",
+          "We play soccer in the park. (place)",
+          "She opens the window. (SVO)",
+          "They watch a movie tonight. (time)",
+          "My friends visit me on Friday. (time)",
+          "The dog chased the ball. (SVO)",
+          "Anna works in a hospital. (place)"
+        ],
+        "fa": [
+          "من یک کتاب می‌خوانم. (فاعل+فعل+مفعول)",
+          "تام ظهر ناهار می‌خورد. (زمان در پایان)",
+          "ما در پارک فوتبال بازی می‌کنیم. (مکان)",
+          "او پنجره را باز می‌کند. (فاعل+فعل+مفعول)",
+          "آنها امشب یک فیلم می‌بینند. (زمان)",
+          "دوستانم جمعه به دیدنم می‌آیند. (زمان)",
+          "سگ توپ را دنبال کرد. (فاعل+فعل+مفعول)",
+          "آنا در یک بیمارستان کار می‌کند. (مکان)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "Eats Ali breakfast.",
+            "correct": "Ali eats breakfast.",
+            "explanation": "English sentences usually start with the subject."
+          },
+          {
+            "wrong": "I to school go.",
+            "correct": "I go to school.",
+            "explanation": "The verb comes right after the subject."
+          },
+          {
+            "wrong": "She her homework does.",
+            "correct": "She does her homework.",
+            "explanation": "Use auxiliary before the object in statements."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "Eats Ali breakfast.",
+            "correct": "Ali eats breakfast.",
+            "explanation": "در انگلیسی معمولاً جمله با فاعل شروع می‌شود."
+          },
+          {
+            "wrong": "I to school go.",
+            "correct": "I go to school.",
+            "explanation": "فعل باید بعد از فاعل بیاید."
+          },
+          {
+            "wrong": "She her homework does.",
+            "correct": "She does her homework.",
+            "explanation": "در جمله خبری، فعل کمکی قبل از مفعول می‌آید."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct order: (she / likes / tea).",
+            "options": [
+              "She likes tea.",
+              "Likes she tea.",
+              "Tea likes she.",
+              "She tea likes."
+            ],
+            "correct": 0,
+            "explanation": "Subject + verb + object is correct."
+          },
+          {
+            "question": "Where does time usually go? \"I meet you ___.\"",
+            "options": [
+              "yesterday",
+              "yesterday meet",
+              "meet yesterday",
+              "yesterday I meet"
+            ],
+            "correct": 0,
+            "explanation": "Time expressions often go at the end."
+          },
+          {
+            "question": "Which sentence is correct?",
+            "options": [
+              "Plays he football.",
+              "He plays football.",
+              "Football plays he.",
+              "He football plays."
+            ],
+            "correct": 1,
+            "explanation": "Subject comes first, then verb."
+          },
+          {
+            "question": "Choose the correct S + V sentence.",
+            "options": [
+              "Runs the boy.",
+              "The boy runs.",
+              "The boy the runs.",
+              "Runs boy the."
+            ],
+            "correct": 1,
+            "explanation": "Subject + verb is correct when no object."
+          }
+        ],
+        "fa": [
+          {
+            "question": "ترتیب درست را انتخاب کنید: (she / likes / tea).",
+            "options": [
+              "She likes tea.",
+              "Likes she tea.",
+              "Tea likes she.",
+              "She tea likes."
+            ],
+            "correct": 0,
+            "explanation": "ترتیب درست فاعل + فعل + مفعول است."
+          },
+          {
+            "question": "زمان معمولاً کجا می‌آید؟ \"I meet you ___.\"",
+            "options": [
+              "yesterday",
+              "yesterday meet",
+              "meet yesterday",
+              "yesterday I meet"
+            ],
+            "correct": 0,
+            "explanation": "زمان معمولاً در پایان جمله می‌آید."
+          },
+          {
+            "question": "کدام جمله درست است؟",
+            "options": [
+              "Plays he football.",
+              "He plays football.",
+              "Football plays he.",
+              "He football plays."
+            ],
+            "correct": 1,
+            "explanation": "فاعل اول و سپس فعل می‌آید."
+          },
+          {
+            "question": "جمله فاعل + فعل درست را انتخاب کنید.",
+            "options": [
+              "Runs the boy.",
+              "The boy runs.",
+              "The boy the runs.",
+              "Runs boy the."
+            ],
+            "correct": 1,
+            "explanation": "وقتی مفعول نیست، فاعل + فعل کافی است."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "basic-sentence-types",
+    "title": {
+      "en": "Basic Sentence Types (Statements/Negatives/Questions)",
+      "fa": "انواع جمله پایه (خبری/منفی/سوالی)"
+    },
+    "category": {
+      "en": "Sentence Structure",
+      "fa": "ساختار جمله"
+    },
+    "tags": {
+      "en": [
+        "statements",
+        "negatives",
+        "questions"
+      ],
+      "fa": [
+        "خبری",
+        "منفی",
+        "سوالی"
+      ]
+    },
+    "level": 1,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Statements give information, negatives say something is not true, and questions ask for information. You can build all three using simple patterns.",
+        "fa": "جملات خبری اطلاعات می‌دهند، منفی‌ها عدم درست بودن را نشان می‌دهند و سوال‌ها اطلاعات می‌خواهند. هر سه با الگوهای ساده ساخته می‌شوند."
+      },
+      "rules": {
+        "en": [
+          "Statements use S + V (He works).",
+          "Negatives use do/does + not (She does not drive).",
+          "Use don't/doesn't in speech (I don't know).",
+          "Be-verb negatives place not after be (He is not late).",
+          "Yes/No questions start with Do/Does/Is/Are (Do you like it?).",
+          "Wh- questions start with a question word (Where do you live?)."
+        ],
+        "fa": [
+          "جمله خبری با فاعل + فعل می‌آید (He works).",
+          "جمله منفی با do/does + not ساخته می‌شود (She does not drive).",
+          "در گفتار از don't/doesn't استفاده کنید (I don't know).",
+          "در جملات be، not بعد از be می‌آید (He is not late).",
+          "سوال بله/خیر با Do/Does/Is/Are شروع می‌شود (Do you like it?).",
+          "سوال Wh- با کلمه سوال شروع می‌شود (Where do you live?)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "She studies English. (statement)",
+          "He does not eat meat. (negative)",
+          "Do you play tennis? (question)",
+          "I am not ready. (be negative)",
+          "Is it cold outside? (be question)",
+          "Where does he work? (wh-)",
+          "They don't like coffee. (negative)",
+          "We live in Isfahan. (statement)"
+        ],
+        "fa": [
+          "او انگلیسی می‌خواند. (خبری)",
+          "او گوشت نمی‌خورد. (منفی)",
+          "آیا تنیس بازی می‌کنی؟ (سوالی)",
+          "من آماده نیستم. (منفی با be)",
+          "آیا بیرون سرد است؟ (سوالی با be)",
+          "او کجا کار می‌کند؟ (Wh-)",
+          "آنها قهوه دوست ندارند. (منفی)",
+          "ما در اصفهان زندگی می‌کنیم. (خبری)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "He not likes tea.",
+            "correct": "He does not like tea.",
+            "explanation": "Use does not + base verb for negatives in present simple."
+          },
+          {
+            "wrong": "Do she like music?",
+            "correct": "Does she like music?",
+            "explanation": "Use does with he/she/it."
+          },
+          {
+            "wrong": "Where he works?",
+            "correct": "Where does he work?",
+            "explanation": "Wh- questions need an auxiliary before the subject."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "He not likes tea.",
+            "correct": "He does not like tea.",
+            "explanation": "در منفی حال ساده از does not + فعل پایه استفاده کنید."
+          },
+          {
+            "wrong": "Do she like music?",
+            "correct": "Does she like music?",
+            "explanation": "برای he/she/it از does استفاده می‌شود."
+          },
+          {
+            "wrong": "Where he works?",
+            "correct": "Where does he work?",
+            "explanation": "در سوال Wh- فعل کمکی قبل از فاعل می‌آید."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct negative sentence.",
+            "options": [
+              "She not study.",
+              "She does not study.",
+              "She does not studies.",
+              "She not studies."
+            ],
+            "correct": 1,
+            "explanation": "Use does not + base verb."
+          },
+          {
+            "question": "Choose the correct question.",
+            "options": [
+              "Does he like pizza?",
+              "Do he like pizza?",
+              "Does he likes pizza?",
+              "Do he likes pizza?"
+            ],
+            "correct": 0,
+            "explanation": "Use does with he and base verb like."
+          },
+          {
+            "question": "Select the correct statement.",
+            "options": [
+              "They play football.",
+              "Play they football.",
+              "They football play.",
+              "Play football they."
+            ],
+            "correct": 0,
+            "explanation": "Statements use S + V + O."
+          },
+          {
+            "question": "Which Wh- question is correct?",
+            "options": [
+              "Where she lives?",
+              "Where does she live?",
+              "Where does she lives?",
+              "Where she does live?"
+            ],
+            "correct": 1,
+            "explanation": "Wh- + does + subject + base verb."
+          }
+        ],
+        "fa": [
+          {
+            "question": "جمله منفی درست کدام است؟",
+            "options": [
+              "She not study.",
+              "She does not study.",
+              "She does not studies.",
+              "She not studies."
+            ],
+            "correct": 1,
+            "explanation": "در منفی از does not + فعل پایه استفاده می‌شود."
+          },
+          {
+            "question": "سوال درست را انتخاب کنید.",
+            "options": [
+              "Does he like pizza?",
+              "Do he like pizza?",
+              "Does he likes pizza?",
+              "Do he likes pizza?"
+            ],
+            "correct": 0,
+            "explanation": "برای he از does و فعل پایه like استفاده می‌شود."
+          },
+          {
+            "question": "جمله خبری درست کدام است؟",
+            "options": [
+              "They play football.",
+              "Play they football.",
+              "They football play.",
+              "Play football they."
+            ],
+            "correct": 0,
+            "explanation": "جمله خبری ترتیب فاعل + فعل + مفعول دارد."
+          },
+          {
+            "question": "سوال Wh- درست کدام است؟",
+            "options": [
+              "Where she lives?",
+              "Where does she live?",
+              "Where does she lives?",
+              "Where she does live?"
+            ],
+            "correct": 1,
+            "explanation": "ترتیب درست: Wh- + does + فاعل + فعل پایه."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "present-simple-vs-present-continuous",
+    "title": {
+      "en": "Present Simple vs Present Continuous",
+      "fa": "حال ساده در برابر حال استمراری"
+    },
+    "category": {
+      "en": "Grammar Basics",
+      "fa": "مبانی دستور زبان"
+    },
+    "tags": {
+      "en": [
+        "present",
+        "contrast",
+        "beginner"
+      ],
+      "fa": [
+        "حال",
+        "مقایسه",
+        "مبتدی"
+      ]
+    },
+    "level": 1,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Present simple talks about habits and facts. Present continuous talks about actions happening now or temporary situations. Choosing the right tense makes your meaning clear.",
+        "fa": "حال ساده برای عادت‌ها و حقیقت‌هاست. حال استمراری برای کارهای در حال انجام یا وضعیت موقت است. انتخاب درست زمان، معنی را واضح می‌کند."
+      },
+      "rules": {
+        "en": [
+          "Use present simple for routines (I go to work every day).",
+          "Use present simple for facts (Water boils at 100°C).",
+          "Use present continuous for actions now (She is studying now).",
+          "Use present continuous for temporary situations (He is living in Tehran this month).",
+          "Simple uses base verb or -s (He plays soccer).",
+          "Continuous uses am/is/are + ing (They are playing now).",
+          "Use time words to choose tense (usually = simple)."
+        ],
+        "fa": [
+          "حال ساده برای عادت است (I go to work every day).",
+          "حال ساده برای حقیقت است (Water boils at 100°C).",
+          "حال استمراری برای کارِ الان است (She is studying now).",
+          "حال استمراری برای وضعیت موقت است (He is living in Tehran this month).",
+          "در حال ساده فعل پایه یا -s می‌آید (He plays soccer).",
+          "در حال استمراری از am/is/are + ing استفاده می‌شود (They are playing now).",
+          "از کلمات زمان کمک بگیرید (usually = حال ساده)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I read books every night. (habit)",
+          "She works at a bank. (fact)",
+          "They are watching TV now. (now)",
+          "He is cooking dinner. (now)",
+          "We play football on Fridays. (routine)",
+          "I am staying with my aunt this week. (temporary)",
+          "The sun rises in the east. (fact)",
+          "She is talking on the phone. (action now)"
+        ],
+        "fa": [
+          "من هر شب کتاب می‌خوانم. (عادت)",
+          "او در بانک کار می‌کند. (حقیقت)",
+          "آنها الان تلویزیون تماشا می‌کنند. (الان)",
+          "او دارد شام درست می‌کند. (الان)",
+          "ما جمعه‌ها فوتبال بازی می‌کنیم. (روتین)",
+          "این هفته پیش عمه‌ام می‌مانم. (موقت)",
+          "خورشید از شرق طلوع می‌کند. (حقیقت)",
+          "او دارد با تلفن صحبت می‌کند. (الان)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "She is work every day.",
+            "correct": "She works every day.",
+            "explanation": "Use present simple for routines, not continuous."
+          },
+          {
+            "wrong": "I watch TV now.",
+            "correct": "I am watching TV now.",
+            "explanation": "Use present continuous for actions happening now."
+          },
+          {
+            "wrong": "He is knowing the answer.",
+            "correct": "He knows the answer.",
+            "explanation": "Stative verbs like know are not used in continuous."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "She is work every day.",
+            "correct": "She works every day.",
+            "explanation": "برای عادت از حال ساده استفاده می‌شود."
+          },
+          {
+            "wrong": "I watch TV now.",
+            "correct": "I am watching TV now.",
+            "explanation": "برای کارِ الان از حال استمراری استفاده کنید."
+          },
+          {
+            "wrong": "He is knowing the answer.",
+            "correct": "He knows the answer.",
+            "explanation": "افعال حالتی مثل know معمولاً استمراری نمی‌آیند."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "She ___ coffee every morning.",
+            "options": [
+              "drinks",
+              "is drinking",
+              "drink",
+              "drank"
+            ],
+            "correct": 0,
+            "explanation": "Every morning shows a routine."
+          },
+          {
+            "question": "Look! The baby ___ now.",
+            "options": [
+              "cries",
+              "is crying",
+              "cry",
+              "cried"
+            ],
+            "correct": 1,
+            "explanation": "Actions happening now use present continuous."
+          },
+          {
+            "question": "We ___ in Shiraz this week.",
+            "options": [
+              "stay",
+              "are staying",
+              "stays",
+              "stayed"
+            ],
+            "correct": 1,
+            "explanation": "This week shows a temporary situation."
+          },
+          {
+            "question": "The sun ___ in the east.",
+            "options": [
+              "rises",
+              "is rising",
+              "rise",
+              "rose"
+            ],
+            "correct": 0,
+            "explanation": "Facts use present simple."
+          }
+        ],
+        "fa": [
+          {
+            "question": "She ___ coffee every morning.",
+            "options": [
+              "drinks",
+              "is drinking",
+              "drink",
+              "drank"
+            ],
+            "correct": 0,
+            "explanation": "Every morning یعنی عادت، پس حال ساده."
+          },
+          {
+            "question": "Look! The baby ___ now.",
+            "options": [
+              "cries",
+              "is crying",
+              "cry",
+              "cried"
+            ],
+            "correct": 1,
+            "explanation": "کارِ الان با حال استمراری می‌آید."
+          },
+          {
+            "question": "We ___ in Shiraz this week.",
+            "options": [
+              "stay",
+              "are staying",
+              "stays",
+              "stayed"
+            ],
+            "correct": 1,
+            "explanation": "This week یعنی وضعیت موقت."
+          },
+          {
+            "question": "The sun ___ in the east.",
+            "options": [
+              "rises",
+              "is rising",
+              "rise",
+              "rose"
+            ],
+            "correct": 0,
+            "explanation": "حقایق با حال ساده می‌آیند."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "past-continuous-basics",
+    "title": {
+      "en": "Past Continuous (Basics)",
+      "fa": "گذشته استمراری (مبانی)"
+    },
+    "category": {
+      "en": "Tenses",
+      "fa": "زمان‌ها"
+    },
+    "tags": {
+      "en": [
+        "past",
+        "continuous",
+        "beginner"
+      ],
+      "fa": [
+        "گذشته",
+        "استمراری",
+        "مبتدی"
+      ]
+    },
+    "level": 1,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Past continuous describes actions in progress at a specific time in the past. It is also used for background actions. It helps show what was happening.",
+        "fa": "گذشته استمراری کار در حال انجام در یک زمان مشخص گذشته را نشان می‌دهد. برای بیان عمل زمینه هم استفاده می‌شود. این زمان نشان می‌دهد چه چیزی در حال وقوع بوده است."
+      },
+      "rules": {
+        "en": [
+          "Form: was/were + verb-ing (I was studying).",
+          "Use was with I/he/she/it (She was cooking).",
+          "Use were with you/we/they (They were playing).",
+          "Use for an action at a past time (At 8, I was sleeping).",
+          "Use for background action (I was reading when he arrived).",
+          "Negatives: wasn't/weren't + ing (We weren't working)."
+        ],
+        "fa": [
+          "ساختار: was/were + ing (I was studying).",
+          "برای I/he/she/it از was استفاده کنید (She was cooking).",
+          "برای you/we/they از were استفاده کنید (They were playing).",
+          "برای زمان مشخص گذشته استفاده کنید (At 8, I was sleeping).",
+          "برای عمل زمینه استفاده کنید (I was reading when he arrived).",
+          "منفی: wasn't/weren't + ing (We weren't working)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I was studying at 9 last night. (time)",
+          "She was cooking dinner. (action)",
+          "They were playing in the yard. (background)",
+          "We were watching a movie. (in progress)",
+          "He was driving to work. (in progress)",
+          "The kids were sleeping. (background)",
+          "I was reading when you called. (background)",
+          "It was raining all evening. (situation)"
+        ],
+        "fa": [
+          "من دیشب ساعت ۹ داشتم درس می‌خواندم. (زمان)",
+          "او داشت شام درست می‌کرد. (عمل)",
+          "آنها در حیاط بازی می‌کردند. (زمینه)",
+          "ما داشتیم فیلم می‌دیدیم. (در حال انجام)",
+          "او داشت به محل کار می‌رفت. (در حال انجام)",
+          "بچه‌ها خواب بودند. (زمینه)",
+          "وقتی تو زنگ زدی من داشتم کتاب می‌خواندم. (زمینه)",
+          "تمام عصر باران می‌بارید. (وضعیت)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I was study at 9.",
+            "correct": "I was studying at 9.",
+            "explanation": "Past continuous needs verb-ing."
+          },
+          {
+            "wrong": "She were cooking.",
+            "correct": "She was cooking.",
+            "explanation": "Use was with she."
+          },
+          {
+            "wrong": "They was playing.",
+            "correct": "They were playing.",
+            "explanation": "Use were with they."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I was study at 9.",
+            "correct": "I was studying at 9.",
+            "explanation": "گذشته استمراری به ing نیاز دارد."
+          },
+          {
+            "wrong": "She were cooking.",
+            "correct": "She was cooking.",
+            "explanation": "با she باید was بیاید."
+          },
+          {
+            "wrong": "They was playing.",
+            "correct": "They were playing.",
+            "explanation": "با they باید were بیاید."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "At 7 PM, I ___ dinner.",
+            "options": [
+              "cook",
+              "was cooking",
+              "cooked",
+              "am cooking"
+            ],
+            "correct": 1,
+            "explanation": "Past time + ongoing action uses was/were + ing."
+          },
+          {
+            "question": "They ___ football when it started to rain.",
+            "options": [
+              "play",
+              "played",
+              "were playing",
+              "are playing"
+            ],
+            "correct": 2,
+            "explanation": "Past continuous shows the background action."
+          },
+          {
+            "question": "Choose the correct form.",
+            "options": [
+              "She was read.",
+              "She was reading.",
+              "She were reading.",
+              "She readed."
+            ],
+            "correct": 1,
+            "explanation": "Use was + ing with she."
+          },
+          {
+            "question": "We ___ not working.",
+            "options": [
+              "was",
+              "were",
+              "are",
+              "did"
+            ],
+            "correct": 1,
+            "explanation": "Use were with we."
+          }
+        ],
+        "fa": [
+          {
+            "question": "At 7 PM, I ___ dinner.",
+            "options": [
+              "cook",
+              "was cooking",
+              "cooked",
+              "am cooking"
+            ],
+            "correct": 1,
+            "explanation": "زمان مشخص گذشته + عمل در جریان = was/were + ing."
+          },
+          {
+            "question": "They ___ football when it started to rain.",
+            "options": [
+              "play",
+              "played",
+              "were playing",
+              "are playing"
+            ],
+            "correct": 2,
+            "explanation": "برای عمل زمینه از گذشته استمراری استفاده می‌شود."
+          },
+          {
+            "question": "گزینه درست را انتخاب کنید.",
+            "options": [
+              "She was read.",
+              "She was reading.",
+              "She were reading.",
+              "She readed."
+            ],
+            "correct": 1,
+            "explanation": "با she از was + ing استفاده می‌شود."
+          },
+          {
+            "question": "We ___ not working.",
+            "options": [
+              "was",
+              "were",
+              "are",
+              "did"
+            ],
+            "correct": 1,
+            "explanation": "با we از were استفاده کنید."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "past-simple-vs-past-continuous",
+    "title": {
+      "en": "Past Simple vs Past Continuous (Intro)",
+      "fa": "گذشته ساده در برابر گذشته استمراری (مقدمه)"
+    },
+    "category": {
+      "en": "Tenses",
+      "fa": "زمان‌ها"
+    },
+    "tags": {
+      "en": [
+        "past",
+        "contrast",
+        "intro"
+      ],
+      "fa": [
+        "گذشته",
+        "مقایسه",
+        "مقدمه"
+      ]
+    },
+    "level": 1,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Past simple describes finished actions. Past continuous describes an action in progress. We often use them together to show a shorter action interrupting a longer one.",
+        "fa": "گذشته ساده عمل تمام‌شده را نشان می‌دهد. گذشته استمراری عمل در جریان را نشان می‌دهد. معمولاً برای قطع شدن یک عمل بلند با یک عمل کوتاه از هر دو استفاده می‌کنیم."
+      },
+      "rules": {
+        "en": [
+          "Use past simple for completed actions (I finished my homework).",
+          "Use past continuous for ongoing actions (I was studying).",
+          "Combine them with when (I was reading when he called).",
+          "Past continuous gives background (She was cooking).",
+          "Past simple shows the interrupting action (The phone rang).",
+          "Use time words like while/when (While I was walking, it started to rain)."
+        ],
+        "fa": [
+          "گذشته ساده برای عمل تمام‌شده است (I finished my homework).",
+          "گذشته استمراری برای عمل در جریان است (I was studying).",
+          "با when هر دو را ترکیب کنید (I was reading when he called).",
+          "گذشته استمراری عمل زمینه است (She was cooking).",
+          "گذشته ساده عمل کوتاه و قطع‌کننده است (The phone rang).",
+          "از while/when برای زمان استفاده کنید (While I was walking, it started to rain)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I was reading when the door opened. (interrupt)",
+          "She was cooking when the lights went out. (interrupt)",
+          "We were watching TV when he arrived. (interrupt)",
+          "While I was walking, I saw a cat. (while)",
+          "They played football yesterday. (completed)",
+          "He was studying all evening. (ongoing)",
+          "I called you last night. (completed)",
+          "She was sleeping at 10 PM. (ongoing)"
+        ],
+        "fa": [
+          "وقتی در باز شد من داشتم کتاب می‌خواندم. (قطع شدن)",
+          "وقتی چراغ‌ها خاموش شد او داشت آشپزی می‌کرد. (قطع شدن)",
+          "وقتی او رسید ما داشتیم تلویزیون می‌دیدیم. (قطع شدن)",
+          "وقتی داشتم راه می‌رفتم یک گربه دیدم. (while)",
+          "آنها دیروز فوتبال بازی کردند. (تمام‌شده)",
+          "او تمام عصر درس می‌خواند. (در جریان)",
+          "دیشب به تو زنگ زدم. (تمام‌شده)",
+          "ساعت ۱۰ او خواب بود. (در جریان)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I read when he called.",
+            "correct": "I was reading when he called.",
+            "explanation": "Use past continuous for the longer action."
+          },
+          {
+            "wrong": "She was cooked when he arrived.",
+            "correct": "She was cooking when he arrived.",
+            "explanation": "Past continuous needs verb-ing."
+          },
+          {
+            "wrong": "While I walked, it started to rain.",
+            "correct": "While I was walking, it started to rain.",
+            "explanation": "While usually uses past continuous."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I read when he called.",
+            "correct": "I was reading when he called.",
+            "explanation": "برای عمل طولانی‌تر از گذشته استمراری استفاده کنید."
+          },
+          {
+            "wrong": "She was cooked when he arrived.",
+            "correct": "She was cooking when he arrived.",
+            "explanation": "گذشته استمراری به ing نیاز دارد."
+          },
+          {
+            "wrong": "While I walked, it started to rain.",
+            "correct": "While I was walking, it started to rain.",
+            "explanation": "بعد از while معمولاً گذشته استمراری می‌آید."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "I ___ when the phone rang.",
+            "options": [
+              "slept",
+              "was sleeping",
+              "sleep",
+              "am sleeping"
+            ],
+            "correct": 1,
+            "explanation": "Past continuous shows the background action."
+          },
+          {
+            "question": "She ___ dinner when I arrived.",
+            "options": [
+              "cooked",
+              "was cooking",
+              "is cooking",
+              "cook"
+            ],
+            "correct": 1,
+            "explanation": "Ongoing action uses was + ing."
+          },
+          {
+            "question": "While we ___, it started to snow.",
+            "options": [
+              "walked",
+              "were walking",
+              "walk",
+              "are walking"
+            ],
+            "correct": 1,
+            "explanation": "While takes past continuous for the longer action."
+          },
+          {
+            "question": "Choose the completed action.",
+            "options": [
+              "I was studying",
+              "She was sleeping",
+              "He arrived",
+              "They were talking"
+            ],
+            "correct": 2,
+            "explanation": "Past simple shows a finished action."
+          }
+        ],
+        "fa": [
+          {
+            "question": "I ___ when the phone rang.",
+            "options": [
+              "slept",
+              "was sleeping",
+              "sleep",
+              "am sleeping"
+            ],
+            "correct": 1,
+            "explanation": "عمل زمینه با گذشته استمراری می‌آید."
+          },
+          {
+            "question": "She ___ dinner when I arrived.",
+            "options": [
+              "cooked",
+              "was cooking",
+              "is cooking",
+              "cook"
+            ],
+            "correct": 1,
+            "explanation": "عمل در جریان با was + ing است."
+          },
+          {
+            "question": "While we ___, it started to snow.",
+            "options": [
+              "walked",
+              "were walking",
+              "walk",
+              "are walking"
+            ],
+            "correct": 1,
+            "explanation": "بعد از while از گذشته استمراری استفاده می‌شود."
+          },
+          {
+            "question": "کدام عمل تمام‌شده است؟",
+            "options": [
+              "I was studying",
+              "She was sleeping",
+              "He arrived",
+              "They were talking"
+            ],
+            "correct": 2,
+            "explanation": "گذشته ساده عمل تمام‌شده را نشان می‌دهد."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "basic-prepositions-of-place-time-in-on-at-intro",
+    "title": {
+      "en": "Basic Prepositions of Place/Time (in/on/at) — Intro",
+      "fa": "Basic Prepositions of Place/Time (in/on/at) — Intro"
+    },
+    "category": {
+      "en": "Prepositions",
+      "fa": "حروف اضافه"
+    },
+    "tags": {
+      "en": [
+        "basic",
+        "prepositions",
+        "place",
+        "time"
+      ],
+      "fa": [
+        "basic",
+        "prepositions",
+        "place",
+        "time"
+      ]
+    },
+    "level": 1,
+    "sections": {
+      "summary": {
+        "en": "This topic explains Basic Prepositions of Place/Time (in/on/at) — Intro in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
+        "fa": "This topic explains Basic Prepositions of Place/Time (in/on/at) — Intro in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
+      },
+      "rules": {
+        "en": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ],
+        "fa": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I understand basic prepositions of place/time (in/on/at) — intro.",
+          "She practices basic prepositions of place/time (in/on/at) — intro every day.",
+          "Can you give an example of basic prepositions of place/time (in/on/at) — intro?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ],
+        "fa": [
+          "I understand basic prepositions of place/time (in/on/at) — intro.",
+          "She practices basic prepositions of place/time (in/on/at) — intro every day.",
+          "Can you give an example of basic prepositions of place/time (in/on/at) — intro?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ],
+        "fa": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "basic-determiners-this-that-each-every-intro",
+    "title": {
+      "en": "Basic Determiners (this/that, each/every — intro)",
+      "fa": "Basic Determiners (this/that, each/every — intro)"
+    },
+    "category": {
+      "en": "Determiners & Quantifiers",
+      "fa": "تعیین‌کننده‌ها و کمیت‌ها"
+    },
+    "tags": {
+      "en": [
+        "basic",
+        "determiners",
+        "this",
+        "that"
+      ],
+      "fa": [
+        "basic",
+        "determiners",
+        "this",
+        "that"
+      ]
+    },
+    "level": 1,
+    "sections": {
+      "summary": {
+        "en": "This topic explains Basic Determiners (this/that, each/every — intro) in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
+        "fa": "This topic explains Basic Determiners (this/that, each/every — intro) in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
+      },
+      "rules": {
+        "en": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ],
+        "fa": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I understand basic determiners (this/that, each/every — intro).",
+          "She practices basic determiners (this/that, each/every — intro) every day.",
+          "Can you give an example of basic determiners (this/that, each/every — intro)?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ],
+        "fa": [
+          "I understand basic determiners (this/that, each/every — intro).",
+          "She practices basic determiners (this/that, each/every — intro) every day.",
+          "Can you give an example of basic determiners (this/that, each/every — intro)?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ],
+        "fa": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "basic-comparatives-superlatives",
+    "title": {
+      "en": "Basic Comparatives & Superlatives",
+      "fa": "Basic Comparatives & Superlatives"
+    },
+    "category": {
+      "en": "Adjectives & Comparison",
+      "fa": "صفت‌ها و مقایسه"
+    },
+    "tags": {
+      "en": [
+        "basic",
+        "comparatives",
+        "superlatives"
+      ],
+      "fa": [
+        "basic",
+        "comparatives",
+        "superlatives"
+      ]
+    },
+    "level": 1,
+    "sections": {
+      "summary": {
+        "en": "This topic explains Basic Comparatives & Superlatives in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
+        "fa": "This topic explains Basic Comparatives & Superlatives in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
+      },
+      "rules": {
+        "en": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ],
+        "fa": [
+          "Learn the core pattern first, then add details (example: keep the main structure simple).",
+          "Check the grammar signal words and choose the right form (example: time words help).",
+          "Use the correct word order for clarity (example: subject before main verb).",
+          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
+          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
+          "Practice with real sentences you can reuse (example: everyday topics)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I understand basic comparatives & superlatives.",
+          "She practices basic comparatives & superlatives every day.",
+          "Can you give an example of basic comparatives & superlatives?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ],
+        "fa": [
+          "I understand basic comparatives & superlatives.",
+          "She practices basic comparatives & superlatives every day.",
+          "Can you give an example of basic comparatives & superlatives?",
+          "This rule helps my writing a lot.",
+          "That sentence sounds more natural now.",
+          "I made a mistake and corrected it.",
+          "We use this structure in real conversations.",
+          "Today I will review it again."
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I no understand this.",
+            "correct": "I don't understand this.",
+            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+          },
+          {
+            "wrong": "He go to school.",
+            "correct": "He goes to school.",
+            "explanation": "Add -s/-es for third person singular in present simple."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ],
+        "fa": [
+          {
+            "question": "Choose the best sentence.",
+            "options": [
+              "I don't understand this.",
+              "I no understand this.",
+              "I not understand this.",
+              "I doesn't understand this."
+            ],
+            "correct": 0,
+            "explanation": "Use do + not for negatives."
+          },
+          {
+            "question": "Pick the correct word order.",
+            "options": [
+              "Subject + verb + object",
+              "Verb + subject + object",
+              "Object + subject + verb",
+              "Subject + object + verb"
+            ],
+            "correct": 0,
+            "explanation": "SVO is the default order in English."
+          },
+          {
+            "question": "Which option is a Wh- question?",
+            "options": [
+              "Where do you live?",
+              "You live where.",
+              "Do you live.",
+              "Live you where?"
+            ],
+            "correct": 0,
+            "explanation": "Wh- + auxiliary + subject + base verb."
+          },
+          {
+            "question": "Choose the correct form for 'he' in present simple.",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ],
+            "correct": 0,
+            "explanation": "Third person singular uses -s/-es."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "past-continuous-progressive-basics",
+    "title": {
+      "en": "Past Continuous/Progressive (Basics)",
+      "fa": "Past Continuous/Progressive (Basics)"
+    },
+    "category": {
+      "en": "Tenses & Aspect",
+      "fa": "زمان‌ها و نمود"
+    },
+    "tags": {
+      "en": [
+        "past",
+        "continuous",
+        "progressive",
+        "basics"
+      ],
+      "fa": [
+        "past",
+        "continuous",
+        "progressive",
+        "basics"
+      ]
+    },
+    "level": 1,
+    "sections": {
+      "summary": {
+        "en": "Use the past continuous (was/were + verb-ing) for actions in progress at a specific time in the past, often interrupted by past simple.",
+        "fa": "Use the past continuous (was/were + verb-ing) for actions in progress at a specific time in the past, often interrupted by past simple."
+      },
+      "rules": {
+        "en": [
+          "Form: was/were + verb-ing (I was working).",
+          "Negative: wasn't/weren't + verb-ing (They weren't listening).",
+          "Question: Was/Were + subject + verb-ing? (Were you sleeping?).",
+          "Use with 'at 7 pm', 'while', 'when' to show background action.",
+          "Interrupted action: past continuous + when + past simple (I was cooking when he called).",
+          "Two long actions: past continuous + while + past continuous (She was studying while I was working)."
+        ],
+        "fa": [
+          "Form: was/were + verb-ing (I was working).",
+          "Negative: wasn't/weren't + verb-ing (They weren't listening).",
+          "Question: Was/Were + subject + verb-ing? (Were you sleeping?).",
+          "Use with 'at 7 pm', 'while', 'when' to show background action.",
+          "Interrupted action: past continuous + when + past simple (I was cooking when he called).",
+          "Two long actions: past continuous + while + past continuous (She was studying while I was working)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "I was studying at 9 pm. (in progress)",
+          "She was driving when it started to rain. (interrupted)",
+          "They weren't waiting for us. (negative)",
+          "Were you listening to music? (question)",
+          "We were walking while it was snowing. (two actions)",
+          "He was sleeping when I arrived. (background)",
+          "I was working all day yesterday. (duration)",
+          "The kids were playing in the garden. (background)"
+        ],
+        "fa": [
+          "I was studying at 9 pm. (in progress)",
+          "She was driving when it started to rain. (interrupted)",
+          "They weren't waiting for us. (negative)",
+          "Were you listening to music? (question)",
+          "We were walking while it was snowing. (two actions)",
+          "He was sleeping when I arrived. (background)",
+          "I was working all day yesterday. (duration)",
+          "The kids were playing in the garden. (background)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I was study at 9 pm.",
+            "correct": "I was studying at 9 pm.",
+            "explanation": "Use verb-ing after was/were."
+          },
+          {
+            "wrong": "When he called, I cooked.",
+            "correct": "When he called, I was cooking.",
+            "explanation": "Use past continuous for the ongoing background action."
+          },
+          {
+            "wrong": "Were you listened?",
+            "correct": "Were you listening?",
+            "explanation": "Use verb-ing after were."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I was study at 9 pm.",
+            "correct": "I was studying at 9 pm.",
+            "explanation": "Use verb-ing after was/were."
+          },
+          {
+            "wrong": "When he called, I cooked.",
+            "correct": "When he called, I was cooking.",
+            "explanation": "Use past continuous for the ongoing background action."
+          },
+          {
+            "wrong": "Were you listened?",
+            "correct": "Were you listening?",
+            "explanation": "Use verb-ing after were."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct past continuous sentence.",
+            "options": [
+              "She was studying at 8.",
+              "She studied at 8.",
+              "She was study at 8.",
+              "She is studying at 8."
+            ],
+            "correct": 0,
+            "explanation": "was/were + verb-ing."
+          },
+          {
+            "question": "Pick the best pair: 'I ___ (cook) when he ___ (call).'",
+            "options": [
+              "was cooking / called",
+              "cooked / was calling",
+              "was cooking / was calling",
+              "cooked / called"
+            ],
+            "correct": 0,
+            "explanation": "Background action + interrupting action."
+          },
+          {
+            "question": "Choose the correct question.",
+            "options": [
+              "Were they waiting?",
+              "Did they waiting?",
+              "Were they waited?",
+              "Are they waiting?"
+            ],
+            "correct": 0,
+            "explanation": "Were + subject + verb-ing."
+          },
+          {
+            "question": "Which word often links two past continuous actions?",
+            "options": [
+              "while",
+              "because",
+              "so",
+              "but"
+            ],
+            "correct": 0,
+            "explanation": "While links two ongoing actions."
+          }
+        ],
+        "fa": [
+          {
+            "question": "Choose the correct past continuous sentence.",
+            "options": [
+              "She was studying at 8.",
+              "She studied at 8.",
+              "She was study at 8.",
+              "She is studying at 8."
+            ],
+            "correct": 0,
+            "explanation": "was/were + verb-ing."
+          },
+          {
+            "question": "Pick the best pair: 'I ___ (cook) when he ___ (call).'",
+            "options": [
+              "was cooking / called",
+              "cooked / was calling",
+              "was cooking / was calling",
+              "cooked / called"
+            ],
+            "correct": 0,
+            "explanation": "Background action + interrupting action."
+          },
+          {
+            "question": "Choose the correct question.",
+            "options": [
+              "Were they waiting?",
+              "Did they waiting?",
+              "Were they waited?",
+              "Are they waiting?"
+            ],
+            "correct": 0,
+            "explanation": "Were + subject + verb-ing."
+          },
+          {
+            "question": "Which word often links two past continuous actions?",
+            "options": [
+              "while",
+              "because",
+              "so",
+              "but"
+            ],
+            "correct": 0,
+            "explanation": "While links two ongoing actions."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "basic-passive-voice-present-past-simple",
+    "title": {
+      "en": "Basic Passive Voice (Present/Past simple)",
+      "fa": "Basic Passive Voice (Present/Past simple)"
+    },
+    "category": {
+      "en": "Tenses & Aspect",
+      "fa": "زمان‌ها و نمود"
+    },
+    "tags": {
+      "en": [
+        "basic",
+        "passive",
+        "voice",
+        "present"
+      ],
+      "fa": [
+        "basic",
+        "passive",
+        "voice",
+        "present"
+      ]
+    },
+    "level": 1,
+    "sections": {
+      "summary": {
+        "en": "Passive voice focuses on the receiver of the action. Form is be + past participle; the agent is optional (by...).",
+        "fa": "Passive voice focuses on the receiver of the action. Form is be + past participle; the agent is optional (by...)."
+      },
+      "rules": {
+        "en": [
+          "Present simple passive: am/is/are + V3 (The room is cleaned).",
+          "Past simple passive: was/were + V3 (The room was cleaned).",
+          "Use when the doer is unknown/unimportant (My bike was stolen).",
+          "Use 'by' to add the doer (It was made by Anna).",
+          "Keep the tense in 'be' (is/was/will be).",
+          "Objects become subjects in passive (They built a bridge → A bridge was built)."
+        ],
+        "fa": [
+          "Present simple passive: am/is/are + V3 (The room is cleaned).",
+          "Past simple passive: was/were + V3 (The room was cleaned).",
+          "Use when the doer is unknown/unimportant (My bike was stolen).",
+          "Use 'by' to add the doer (It was made by Anna).",
+          "Keep the tense in 'be' (is/was/will be).",
+          "Objects become subjects in passive (They built a bridge → A bridge was built)."
+        ]
+      },
+      "examples": {
+        "en": [
+          "The emails are sent every morning. (present passive)",
+          "The door was opened at 7. (past passive)",
+          "My phone was stolen yesterday. (unknown agent)",
+          "This cake is made with chocolate. (process)",
+          "The homework is checked by the teacher. (by-agent)",
+          "The meeting was canceled. (no agent)",
+          "The cars are produced in Germany. (general fact)",
+          "The package was delivered this morning. (past passive)"
+        ],
+        "fa": [
+          "The emails are sent every morning. (present passive)",
+          "The door was opened at 7. (past passive)",
+          "My phone was stolen yesterday. (unknown agent)",
+          "This cake is made with chocolate. (process)",
+          "The homework is checked by the teacher. (by-agent)",
+          "The meeting was canceled. (no agent)",
+          "The cars are produced in Germany. (general fact)",
+          "The package was delivered this morning. (past passive)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "The room cleaned.",
+            "correct": "The room is cleaned.",
+            "explanation": "Passive needs a form of be."
+          },
+          {
+            "wrong": "The room is clean by me.",
+            "correct": "The room is cleaned by me.",
+            "explanation": "Use past participle (cleaned), not adjective clean."
+          },
+          {
+            "wrong": "The letter was wrote.",
+            "correct": "The letter was written.",
+            "explanation": "Use the correct past participle (written)."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "The room cleaned.",
+            "correct": "The room is cleaned.",
+            "explanation": "Passive needs a form of be."
+          },
+          {
+            "wrong": "The room is clean by me.",
+            "correct": "The room is cleaned by me.",
+            "explanation": "Use past participle (cleaned), not adjective clean."
+          },
+          {
+            "wrong": "The letter was wrote.",
+            "correct": "The letter was written.",
+            "explanation": "Use the correct past participle (written)."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct passive sentence (present).",
+            "options": [
+              "The room is cleaned.",
+              "The room cleans.",
+              "The room is clean.",
+              "The room cleaned."
+            ],
+            "correct": 0,
+            "explanation": "is + V3."
+          },
+          {
+            "question": "Pick the correct passive transformation: 'They built the bridge.'",
+            "options": [
+              "The bridge was built.",
+              "The bridge built.",
+              "The bridge was build.",
+              "The bridge is built yesterday."
+            ],
+            "correct": 0,
+            "explanation": "was built is past passive."
+          },
+          {
+            "question": "Which part shows the agent?",
+            "options": [
+              "by the teacher",
+              "yesterday",
+              "in the room",
+              "very quickly"
+            ],
+            "correct": 0,
+            "explanation": "'by' introduces the doer."
+          },
+          {
+            "question": "Choose the correct past participle of 'write'.",
+            "options": [
+              "written",
+              "wrote",
+              "writing",
+              "writes"
+            ],
+            "correct": 0,
+            "explanation": "V3 = written."
+          }
+        ],
+        "fa": [
+          {
+            "question": "Choose the correct passive sentence (present).",
+            "options": [
+              "The room is cleaned.",
+              "The room cleans.",
+              "The room is clean.",
+              "The room cleaned."
+            ],
+            "correct": 0,
+            "explanation": "is + V3."
+          },
+          {
+            "question": "Pick the correct passive transformation: 'They built the bridge.'",
+            "options": [
+              "The bridge was built.",
+              "The bridge built.",
+              "The bridge was build.",
+              "The bridge is built yesterday."
+            ],
+            "correct": 0,
+            "explanation": "was built is past passive."
+          },
+          {
+            "question": "Which part shows the agent?",
+            "options": [
+              "by the teacher",
+              "yesterday",
+              "in the room",
+              "very quickly"
+            ],
+            "correct": 0,
+            "explanation": "'by' introduces the doer."
+          },
+          {
+            "question": "Choose the correct past participle of 'write'.",
+            "options": [
+              "written",
+              "wrote",
+              "writing",
+              "writes"
+            ],
+            "correct": 0,
+            "explanation": "V3 = written."
+          }
+        ]
+      }
+    }
+  }
+]
