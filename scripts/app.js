@@ -405,6 +405,7 @@
   // ===========================
   function attachQuizListeners() {
     const quizQuestions = elements.quizContent.querySelectorAll('.quiz-question');
+
     quizQuestions.forEach(questionEl => {
       const options = Array.from(questionEl.querySelectorAll('.quiz-option'));
       const submitBtn = questionEl.querySelector('.quiz-submit');
@@ -591,7 +592,7 @@
       if (parsed && Number.isInteger(parsed.correctCount) && Number.isInteger(parsed.total)) {
         return parsed;
       }
-    } catch (error) {
+    } catch {
       return null;
     }
     return null;
