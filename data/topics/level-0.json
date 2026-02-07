@@ -2,7 +2,7 @@
   {
     "id": "sentence-basics",
     "title": {
-      "en": "Sentence Basics (S + V + O)",
+      "en": "Sentence Basics (Subject, Verb, Object)",
       "fa": "مبانی جمله (فاعل + فعل + مفعول)"
     },
     "category": {
@@ -413,10 +413,10 @@
     }
   },
   {
-    "id": "plurals",
+    "id": "articles-intro",
     "title": {
-      "en": "Plurals (Regular & Irregular)",
-      "fa": "جمع‌ها (قاعده‌دار و بی‌قاعده)"
+      "en": "Articles: A / An / The (Introduction)",
+      "fa": "حروف تعریف: A / An / The (مقدمه)"
     },
     "category": {
       "en": "Grammar Basics",
@@ -424,136 +424,136 @@
     },
     "tags": {
       "en": [
-        "plural",
-        "regular",
-        "irregular"
+        "articles",
+        "a-an-the",
+        "beginner"
       ],
       "fa": [
-        "جمع",
-        "قاعده‌دار",
-        "بی‌قاعده"
+        "حروف تعریف",
+        "a/an/the",
+        "مبتدی"
       ]
     },
     "level": 0,
     "lang": "en",
     "sections": {
       "summary": {
-        "en": "Most nouns add -s or -es to become plural, but some have irregular forms.",
-        "fa": "بیشتر اسم‌ها با -s یا -es جمع می‌شوند، اما بعضی بی‌قاعده هستند."
+        "en": "Articles come before nouns. Use a/an for general things and the for specific ones.",
+        "fa": "حروف تعریف قبل از اسم می‌آیند؛ برای چیزهای کلی از a/an و برای چیزهای مشخص از the استفاده می‌شود."
       },
       "rules": {
         "en": [
-          "Add -s to most nouns",
-          "Add -es to nouns ending in s, x, ch, sh",
-          "Change y to ies after a consonant",
-          "Some nouns change form (man → men)",
-          "Some nouns stay the same (sheep → sheep)"
+          "Use a before consonant sounds",
+          "Use an before vowel sounds",
+          "Use the when both speaker and listener know the noun",
+          "Do not use a/an with plural nouns",
+          "Do not use a/an with uncountable nouns"
         ],
         "fa": [
-          "بیشتر اسم‌ها با -s جمع می‌شوند",
-          "اسم‌های ending in s, x, ch, sh با -es جمع می‌شوند",
-          "بعد از حرف بی‌صدا y به ies تبدیل می‌شود",
-          "برخی اسم‌ها شکلشان عوض می‌شود (man → men)",
-          "برخی اسم‌ها ثابت می‌مانند (sheep → sheep)"
+          "قبل از صدای همخوان از a استفاده کنید",
+          "قبل از صدای واکه از an استفاده کنید",
+          "وقتی اسم مشخص است از the استفاده کنید",
+          "با اسم‌های جمع از a/an استفاده نمی‌شود",
+          "با اسم‌های غیرقابل شمارش از a/an استفاده نمی‌شود"
         ]
       },
       "examples": {
         "en": [
-          "book → books (regular)",
-          "bus → buses (-es)",
-          "city → cities (y → ies)",
-          "child → children (irregular)"
+          "I have a book. (general)",
+          "She eats an apple. (vowel sound)",
+          "The book is on the table. (specific)",
+          "We need water. (uncountable)"
         ],
         "fa": [
-          "book → books (قاعده‌دار)",
-          "bus → buses (-es)",
-          "city → cities (y → ies)",
-          "child → children (بی‌قاعده)"
+          "من یک کتاب دارم. (کلی)",
+          "او یک سیب می‌خورد. (صدای واکه)",
+          "کتاب روی میز است. (مشخص)",
+          "ما به آب نیاز داریم. (غیرقابل شمارش)"
         ]
       },
       "commonMistakes": {
         "en": [
           {
-            "wrong": "two childs",
-            "correct": "two children",
-            "explanation": "Child has an irregular plural form."
+            "wrong": "She is teacher.",
+            "correct": "She is a teacher.",
+            "explanation": "Use a/an with singular countable nouns."
           },
           {
-            "wrong": "boxs",
-            "correct": "boxes",
-            "explanation": "Add -es to nouns ending in x."
+            "wrong": "I bought an book.",
+            "correct": "I bought a book.",
+            "explanation": "Use a before consonant sounds like /b/."
           }
         ],
         "fa": [
           {
-            "wrong": "two childs",
-            "correct": "two children",
-            "explanation": "جمع child بی‌قاعده است."
+            "wrong": "She is teacher.",
+            "correct": "She is a teacher.",
+            "explanation": "با اسم مفرد قابل شمارش باید a/an بیاید."
           },
           {
-            "wrong": "boxs",
-            "correct": "boxes",
-            "explanation": "اسم‌های ending in x با -es جمع می‌شوند."
+            "wrong": "I bought an book.",
+            "correct": "I bought a book.",
+            "explanation": "قبل از صدای همخوان مثل /b/ از a استفاده می‌شود."
           }
         ]
       },
       "quiz": {
         "en": [
           {
-            "question": "Choose the correct plural of “baby”.",
+            "question": "She has ___ umbrella.",
             "options": [
-              "babys",
-              "babies",
-              "babyes",
-              "babyses"
+              "a",
+              "an",
+              "the",
+              "no article"
             ],
             "correct": 1,
-            "explanation": "Y changes to ies after a consonant."
+            "explanation": "Umbrella starts with a vowel sound."
           },
           {
-            "question": "The plural of “man” is ___.",
+            "question": "___ sun is bright today.",
             "options": [
-              "mans",
-              "mens",
-              "men",
-              "manes"
+              "A",
+              "An",
+              "The",
+              "No article"
             ],
             "correct": 2,
-            "explanation": "Man has an irregular plural."
+            "explanation": "The sun is specific and unique."
           }
         ],
         "fa": [
           {
-            "question": "جمع درست “baby” کدام است؟",
+            "question": "She has ___ umbrella.",
             "options": [
-              "babys",
-              "babies",
-              "babyes",
-              "babyses"
+              "a",
+              "an",
+              "the",
+              "no article"
             ],
             "correct": 1,
-            "explanation": "بعد از حرف بی‌صدا y به ies تبدیل می‌شود."
+            "explanation": "Umbrella با صدای واکه شروع می‌شود."
           },
           {
-            "question": "جمع “man” کدام است؟",
+            "question": "___ sun is bright today.",
             "options": [
-              "mans",
-              "mens",
-              "men",
-              "manes"
+              "A",
+              "An",
+              "The",
+              "No article"
             ],
             "correct": 2,
-            "explanation": "Man جمع بی‌قاعده دارد."
+            "explanation": "خورشید مشخص و یکتا است؛ the لازم است."
           }
         ]
       }
     }
   },
   {
-    "id": "countable-uncountable",
+    "id": "demonstratives",
     "title": {
-      "en": "Countable vs Uncountable Nouns",
-      "fa": "اسم‌های قابل شمارش و غیرقابل شمارش"
+      "en": "Demonstratives (This/That/These/Those)",
+      "fa": "اشاره‌گرها (This/That/These/Those)"
     },
     "category": {
       "en": "Grammar Basics",
@@ -561,667 +561,1423 @@
     },
     "tags": {
       "en": [
-        "countable",
-        "uncountable",
-        "nouns"
+        "demonstratives",
+        "this-that",
+        "beginner"
       ],
       "fa": [
-        "قابل شمارش",
-        "غیرقابل شمارش",
-        "اسم"
+        "اشاره‌گر",
+        "this/that",
+        "مبتدی"
       ]
     },
     "level": 0,
     "lang": "en",
     "sections": {
       "summary": {
-        "en": "Countable nouns can be counted; uncountable nouns cannot and usually have no plural.",
-        "fa": "اسم‌های قابل شمارش قابل شمارش‌اند؛ غیرقابل شمارش معمولاً جمع ندارند."
+        "en": "Use demonstratives to point to people or things near or far, singular or plural.",
+        "fa": "برای اشاره به افراد یا اشیای نزدیک/دور و مفرد/جمع از اشاره‌گرها استفاده می‌شود."
       },
       "rules": {
         "en": [
-          "Countable nouns have singular and plural forms",
-          "Use a/an with singular countable nouns",
-          "Uncountable nouns do not use a/an",
-          "Use much with uncountable, many with countable",
-          "Some nouns are always uncountable (water, rice)"
+          "This = near + singular",
+          "That = far + singular",
+          "These = near + plural",
+          "Those = far + plural",
+          "Demonstratives come before nouns"
         ],
         "fa": [
-          "اسم‌های قابل شمارش مفرد و جمع دارند",
-          "با اسم قابل شمارش مفرد از a/an استفاده می‌شود",
-          "اسم‌های غیرقابل شمارش با a/an نمی‌آیند",
-          "برای غیرقابل شمارش از much و برای قابل شمارش از many استفاده کنید",
-          "برخی اسم‌ها همیشه غیرقابل شمارش‌اند (water, rice)"
+          "This = نزدیک + مفرد",
+          "That = دور + مفرد",
+          "These = نزدیک + جمع",
+          "Those = دور + جمع",
+          "اشاره‌گرها قبل از اسم می‌آیند"
         ]
       },
       "examples": {
         "en": [
-          "one apple → two apples (countable)",
-          "one chair → many chairs (countable)",
-          "some water (uncountable)",
-          "much rice (uncountable)"
+          "This book is interesting. (near)",
+          "That car is fast. (far)",
+          "These apples are fresh. (near plural)",
+          "Those shoes are expensive. (far plural)"
         ],
         "fa": [
-          "یک سیب → دو سیب (قابل شمارش)",
-          "یک صندلی → صندلی‌های زیاد (قابل شمارش)",
-          "مقداری آب (غیرقابل شمارش)",
-          "برنج زیاد (غیرقابل شمارش)"
+          "این کتاب جالب است. (نزدیک)",
+          "آن ماشین سریع است. (دور)",
+          "این سیب‌ها تازه‌اند. (جمع نزدیک)",
+          "آن کفش‌ها گران هستند. (جمع دور)"
         ]
       },
       "commonMistakes": {
         "en": [
           {
-            "wrong": "an information",
-            "correct": "some information",
-            "explanation": "Information is uncountable."
+            "wrong": "This apples are sweet.",
+            "correct": "These apples are sweet.",
+            "explanation": "Use these with plural nouns."
           },
           {
-            "wrong": "many milk",
-            "correct": "much milk",
-            "explanation": "Use much with uncountable nouns."
+            "wrong": "Those book is mine.",
+            "correct": "That book is mine.",
+            "explanation": "Use that with singular nouns."
           }
         ],
         "fa": [
           {
-            "wrong": "an information",
-            "correct": "some information",
-            "explanation": "Information غیرقابل شمارش است."
+            "wrong": "This apples are sweet.",
+            "correct": "These apples are sweet.",
+            "explanation": "برای اسم جمع از these استفاده می‌شود."
           },
           {
-            "wrong": "many milk",
-            "correct": "much milk",
-            "explanation": "برای غیرقابل شمارش از much استفاده کنید."
+            "wrong": "Those book is mine.",
+            "correct": "That book is mine.",
+            "explanation": "برای اسم مفرد از that استفاده می‌شود."
           }
         ]
       },
       "quiz": {
         "en": [
           {
-            "question": "Choose the uncountable noun.",
+            "question": "___ is my phone here. (near, singular)",
             "options": [
-              "chair",
-              "water",
-              "apple",
-              "student"
-            ],
-            "correct": 1,
-            "explanation": "Water is uncountable."
-          },
-          {
-            "question": "Choose the correct phrase.",
-            "options": [
-              "a rice",
-              "many rice",
-              "much rice",
-              "two rice"
-            ],
-            "correct": 2,
-            "explanation": "Use much with uncountable nouns."
-          }
-        ],
-        "fa": [
-          {
-            "question": "کدام اسم غیرقابل شمارش است؟",
-            "options": [
-              "chair",
-              "water",
-              "apple",
-              "student"
-            ],
-            "correct": 1,
-            "explanation": "Water غیرقابل شمارش است."
-          },
-          {
-            "question": "کدام عبارت درست است؟",
-            "options": [
-              "a rice",
-              "many rice",
-              "much rice",
-              "two rice"
-            ],
-            "correct": 2,
-            "explanation": "برای غیرقابل شمارش از much استفاده می‌شود."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "quantifiers-some-any-much-many",
-    "title": {
-      "en": "Quantifiers (some/any, much/many, a lot of)",
-      "fa": "کمیت‌ها (some/any, much/many, a lot of)"
-    },
-    "category": {
-      "en": "Grammar Basics",
-      "fa": "مبانی دستور زبان"
-    },
-    "tags": {
-      "en": [
-        "quantifiers",
-        "some-any",
-        "much-many"
-      ],
-      "fa": [
-        "کمیت",
-        "some/any",
-        "much/many"
-      ]
-    },
-    "level": 0,
-    "lang": "en",
-    "sections": {
-      "summary": {
-        "en": "Quantifiers tell us how much or how many. Some is common in positive sentences, any in questions or negatives.",
-        "fa": "کمیت‌ها مقدار یا تعداد را نشان می‌دهند؛ some در جمله مثبت و any در سوال/منفی رایج است."
-      },
-      "rules": {
-        "en": [
-          "Use some in positive sentences",
-          "Use any in questions and negatives",
-          "Use much with uncountable nouns",
-          "Use many with countable nouns",
-          "A lot of works with both countable and uncountable nouns"
-        ],
-        "fa": [
-          "در جمله مثبت از some استفاده کنید",
-          "در سوال و منفی از any استفاده کنید",
-          "برای غیرقابل شمارش از much استفاده کنید",
-          "برای قابل شمارش از many استفاده کنید",
-          "A lot of هم برای قابل شمارش و هم غیرقابل شمارش کاربرد دارد"
-        ]
-      },
-      "examples": {
-        "en": [
-          "I have some friends. (positive)",
-          "Do you have any bread? (question)",
-          "There isn't much time. (uncountable)",
-          "She has many books. (countable)"
-        ],
-        "fa": [
-          "من چند دوست دارم. (مثبت)",
-          "آیا نان دارید؟ (سوال)",
-          "زمان زیادی نداریم. (غیرقابل شمارش)",
-          "او کتاب‌های زیادی دارد. (قابل شمارش)"
-        ]
-      },
-      "commonMistakes": {
-        "en": [
-          {
-            "wrong": "I don't have some money.",
-            "correct": "I don't have any money.",
-            "explanation": "Use any in negatives."
-          },
-          {
-            "wrong": "How much apples do you have?",
-            "correct": "How many apples do you have?",
-            "explanation": "Use many with countable nouns."
-          }
-        ],
-        "fa": [
-          {
-            "wrong": "I don't have some money.",
-            "correct": "I don't have any money.",
-            "explanation": "در منفی از any استفاده می‌شود."
-          },
-          {
-            "wrong": "How much apples do you have?",
-            "correct": "How many apples do you have?",
-            "explanation": "برای قابل شمارش از many استفاده کنید."
-          }
-        ]
-      },
-      "quiz": {
-        "en": [
-          {
-            "question": "We don't have ___ milk.",
-            "options": [
-              "some",
-              "any",
-              "many",
-              "a lot"
-            ],
-            "correct": 1,
-            "explanation": "Use any in negative sentences."
-          },
-          {
-            "question": "She has ___ homework today.",
-            "options": [
-              "much",
-              "many",
-              "some",
-              "few"
+              "This",
+              "That",
+              "These",
+              "Those"
             ],
             "correct": 0,
-            "explanation": "Homework is uncountable, so use much."
+            "explanation": "This is used for near, singular."
+          },
+          {
+            "question": "___ houses are big. (far, plural)",
+            "options": [
+              "This",
+              "That",
+              "These",
+              "Those"
+            ],
+            "correct": 3,
+            "explanation": "Those is used for far, plural."
           }
         ],
         "fa": [
           {
-            "question": "We don't have ___ milk.",
+            "question": "___ is my phone here. (near, singular)",
             "options": [
-              "some",
-              "any",
-              "many",
-              "a lot"
-            ],
-            "correct": 1,
-            "explanation": "در منفی از any استفاده می‌شود."
-          },
-          {
-            "question": "She has ___ homework today.",
-            "options": [
-              "much",
-              "many",
-              "some",
-              "few"
+              "This",
+              "That",
+              "These",
+              "Those"
             ],
             "correct": 0,
-            "explanation": "Homework غیرقابل شمارش است، پس much."
+            "explanation": "برای نزدیک و مفرد از this استفاده می‌شود."
+          },
+          {
+            "question": "___ houses are big. (far, plural)",
+            "options": [
+              "This",
+              "That",
+              "These",
+              "Those"
+            ],
+            "correct": 3,
+            "explanation": "برای دور و جمع از those استفاده می‌شود."
           }
         ]
       }
     }
   },
   {
-    "id": "word-order-in-english-svo",
+    "id": "possessive-adjectives",
+    "title": {
+      "en": "Possessive Adjectives (my/your/his...)",
+      "fa": "صفت‌های ملکی (my/your/his...)"
+    },
+    "category": {
+      "en": "Pronouns",
+      "fa": "ضمیرها"
+    },
+    "tags": {
+      "en": [
+        "possessive",
+        "my-your",
+        "beginner"
+      ],
+      "fa": [
+        "ملکی",
+        "my/your",
+        "مبتدی"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Possessive adjectives show ownership and come before nouns.",
+        "fa": "صفت‌های ملکی مالکیت را نشان می‌دهند و قبل از اسم می‌آیند."
+      },
+      "rules": {
+        "en": [
+          "Use my, your, his, her, its, our, their",
+          "Place them before the noun",
+          "Do not use articles with possessive adjectives",
+          "Its is for things/animals; their is for plural",
+          "Possessive adjectives do not change for plural nouns"
+        ],
+        "fa": [
+          "از my, your, his, her, its, our, their استفاده کنید",
+          "این صفت‌ها قبل از اسم می‌آیند",
+          "با صفت ملکی از a/an/the استفاده نکنید",
+          "Its برای اشیا/حیوانات و their برای جمع است",
+          "صفت‌های ملکی با جمع شدن اسم تغییر نمی‌کنند"
+        ]
+      },
+      "examples": {
+        "en": [
+          "This is my book. (ownership)",
+          "Her bag is red. (her)",
+          "Our class starts at 9. (our)",
+          "Their house is big. (their)"
+        ],
+        "fa": [
+          "این کتاب من است. (مالکیت)",
+          "کیف او قرمز است. (her)",
+          "کلاس ما ساعت ۹ شروع می‌شود. (our)",
+          "خانه آنها بزرگ است. (their)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "This is the my book.",
+            "correct": "This is my book.",
+            "explanation": "Do not use the with possessive adjectives."
+          },
+          {
+            "wrong": "She likes her the car.",
+            "correct": "She likes her car.",
+            "explanation": "Possessive adjectives go directly before nouns."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "This is the my book.",
+            "correct": "This is my book.",
+            "explanation": "با صفت ملکی the استفاده نمی‌شود."
+          },
+          {
+            "wrong": "She likes her the car.",
+            "correct": "She likes her car.",
+            "explanation": "صفت ملکی باید درست قبل از اسم بیاید."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "We love ___ teacher.",
+            "options": [
+              "we",
+              "our",
+              "us",
+              "ours"
+            ],
+            "correct": 1,
+            "explanation": "Our is the possessive adjective."
+          },
+          {
+            "question": "___ phone is new. (belonging to him)",
+            "options": [
+              "He",
+              "Him",
+              "His",
+              "Her"
+            ],
+            "correct": 2,
+            "explanation": "His shows ownership for he."
+          }
+        ],
+        "fa": [
+          {
+            "question": "We love ___ teacher.",
+            "options": [
+              "we",
+              "our",
+              "us",
+              "ours"
+            ],
+            "correct": 1,
+            "explanation": "Our صفت ملکی است."
+          },
+          {
+            "question": "___ phone is new. (belonging to him)",
+            "options": [
+              "He",
+              "Him",
+              "His",
+              "Her"
+            ],
+            "correct": 2,
+            "explanation": "His مالکیت را برای he نشان می‌دهد."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "imperatives",
+    "title": {
+      "en": "Imperatives (Commands)",
+      "fa": "امری‌ها (دستورها)"
+    },
+    "category": {
+      "en": "Sentence Structure",
+      "fa": "ساختار جمله"
+    },
+    "tags": {
+      "en": [
+        "imperative",
+        "commands",
+        "beginner"
+      ],
+      "fa": [
+        "امری",
+        "دستور",
+        "مبتدی"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Imperatives are used to give commands, instructions, or requests.",
+        "fa": "امری‌ها برای دستور دادن، راهنما دادن یا درخواست استفاده می‌شوند."
+      },
+      "rules": {
+        "en": [
+          "Use the base verb without a subject",
+          "Add please to make it polite",
+          "Negative imperative: Do not + base verb",
+          "Use it for instructions and directions",
+          "You is understood, not written"
+        ],
+        "fa": [
+          "از شکل پایه فعل بدون فاعل استفاده کنید",
+          "برای مؤدبانه شدن از please استفاده کنید",
+          "امری منفی: Do not + فعل پایه",
+          "برای دستور و راهنما استفاده می‌شود",
+          "فاعل you به طور ضمنی وجود دارد"
+        ]
+      },
+      "examples": {
+        "en": [
+          "Open the door. (command)",
+          "Please sit down. (polite)",
+          "Do not touch that. (negative)",
+          "Turn left at the corner. (instruction)"
+        ],
+        "fa": [
+          "در را باز کن. (دستور)",
+          "لطفاً بنشین. (مودبانه)",
+          "به آن دست نزن. (منفی)",
+          "سرِ چهارراه به چپ بپیچ. (راهنما)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "You open the door.",
+            "correct": "Open the door.",
+            "explanation": "Imperatives do not use a subject."
+          },
+          {
+            "wrong": "Don't to touch it.",
+            "correct": "Don't touch it.",
+            "explanation": "After don't, use the base verb."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "You open the door.",
+            "correct": "Open the door.",
+            "explanation": "در امری فاعل نوشته نمی‌شود."
+          },
+          {
+            "wrong": "Don't to touch it.",
+            "correct": "Don't touch it.",
+            "explanation": "بعد از don't از فعل پایه استفاده می‌شود."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the imperative sentence.",
+            "options": [
+              "You are late.",
+              "Open the window.",
+              "She opens the window.",
+              "I open the window."
+            ],
+            "correct": 1,
+            "explanation": "Imperatives use the base verb without subject."
+          },
+          {
+            "question": "Negative imperative:",
+            "options": [
+              "Don't be late.",
+              "Not be late.",
+              "No be late.",
+              "Do not late."
+            ],
+            "correct": 0,
+            "explanation": "Use Don't + base verb."
+          }
+        ],
+        "fa": [
+          {
+            "question": "کدام جمله امری است؟",
+            "options": [
+              "You are late.",
+              "Open the window.",
+              "She opens the window.",
+              "I open the window."
+            ],
+            "correct": 1,
+            "explanation": "امری با فعل پایه و بدون فاعل می‌آید."
+          },
+          {
+            "question": "امری منفی کدام است؟",
+            "options": [
+              "Don't be late.",
+              "Not be late.",
+              "No be late.",
+              "Do not late."
+            ],
+            "correct": 0,
+            "explanation": "ساختار درست: Don't + فعل پایه."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "basic-prepositions-in-on-at",
+    "title": {
+      "en": "Basic Prepositions of Place/Time (in/on/at) — Intro",
+      "fa": "حروف اضافه پایه مکان/زمان (in/on/at) — مقدمه"
+    },
+    "category": {
+      "en": "Prepositions",
+      "fa": "حروف اضافه"
+    },
+    "tags": {
+      "en": [
+        "prepositions",
+        "in-on-at",
+        "beginner"
+      ],
+      "fa": [
+        "حروف اضافه",
+        "in/on/at",
+        "مبتدی"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Use in, on, and at to talk about time and place in simple sentences.",
+        "fa": "برای زمان و مکان در جملات ساده از in، on و at استفاده می‌شود."
+      },
+      "rules": {
+        "en": [
+          "In for months, years, and long periods",
+          "On for days and dates",
+          "At for specific times",
+          "In for enclosed places (in a room)",
+          "On for surfaces; at for points (at the door)"
+        ],
+        "fa": [
+          "in برای ماه‌ها، سال‌ها و دوره‌های طولانی",
+          "on برای روزها و تاریخ‌ها",
+          "at برای زمان مشخص",
+          "in برای مکان‌های بسته (in a room)",
+          "on برای سطح و at برای نقطه (at the door)"
+        ]
+      },
+      "examples": {
+        "en": [
+          "We meet at 7 o'clock. (time)",
+          "She was born in 2010. (year)",
+          "The class is on Monday. (day)",
+          "The keys are on the table. (surface)"
+        ],
+        "fa": [
+          "ما ساعت ۷ ملاقات می‌کنیم. (زمان)",
+          "او در سال ۲۰۱۰ به دنیا آمد. (سال)",
+          "کلاس روز دوشنبه است. (روز)",
+          "کلیدها روی میز هستند. (سطح)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "I meet you in 5 o'clock.",
+            "correct": "I meet you at 5 o'clock.",
+            "explanation": "Use at for specific times."
+          },
+          {
+            "wrong": "She studies on 2012.",
+            "correct": "She studies in 2012.",
+            "explanation": "Use in for years."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "I meet you in 5 o'clock.",
+            "correct": "I meet you at 5 o'clock.",
+            "explanation": "برای زمان مشخص از at استفاده می‌شود."
+          },
+          {
+            "wrong": "She studies on 2012.",
+            "correct": "She studies in 2012.",
+            "explanation": "برای سال از in استفاده می‌شود."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct preposition: I work ___ Monday.",
+            "options": [
+              "in",
+              "on",
+              "at",
+              "to"
+            ],
+            "correct": 1,
+            "explanation": "Use on with days."
+          },
+          {
+            "question": "Choose the correct preposition: The meeting is ___ 3 PM.",
+            "options": [
+              "in",
+              "on",
+              "at",
+              "from"
+            ],
+            "correct": 2,
+            "explanation": "Use at with specific times."
+          }
+        ],
+        "fa": [
+          {
+            "question": "حرف اضافه درست را انتخاب کنید: I work ___ Monday.",
+            "options": [
+              "in",
+              "on",
+              "at",
+              "to"
+            ],
+            "correct": 1,
+            "explanation": "برای روز از on استفاده می‌شود."
+          },
+          {
+            "question": "حرف اضافه درست را انتخاب کنید: The meeting is ___ 3 PM.",
+            "options": [
+              "in",
+              "on",
+              "at",
+              "from"
+            ],
+            "correct": 2,
+            "explanation": "برای زمان مشخص از at استفاده می‌شود."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "parts-of-speech",
+    "title": {
+      "en": "Parts of Speech (Noun, Verb, Adjective, Adverb, Pronoun, Preposition, Conjunction, Determiner)",
+      "fa": "نقش‌های کلمات"
+    },
+    "category": {
+      "en": "Grammar Basics",
+      "fa": "مبانی دستور زبان"
+    },
+    "tags": {
+      "en": [
+        "basic",
+        "parts-of-speech",
+        "beginner"
+      ],
+      "fa": [
+        "پایه",
+        "نقش‌های کلمات",
+        "مبتدی"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Words have different jobs in a sentence, such as naming things, showing actions, or describing.",
+        "fa": "کلمات در جمله نقش‌های متفاوتی دارند؛ مانند نام‌گذاری، انجام عمل یا توصیف."
+      },
+      "rules": {
+        "en": [
+          "Nouns name people, places, or things",
+          "Verbs show actions or states",
+          "Adjectives describe nouns",
+          "Adverbs describe verbs or adjectives",
+          "Pronouns replace nouns"
+        ],
+        "fa": [
+          "اسم‌ها افراد، مکان‌ها یا چیزها را نام می‌برند",
+          "افعال عمل یا حالت را نشان می‌دهند",
+          "صفت‌ها اسم‌ها را توصیف می‌کنند",
+          "قیدها فعل یا صفت را توصیف می‌کنند",
+          "ضمیرها به جای اسم می‌آیند"
+        ]
+      },
+      "examples": {
+        "en": [
+          "Ali is a student. (noun)",
+          "She runs fast. (verb)",
+          "It is a red bag. (adjective)",
+          "He speaks clearly. (adverb)"
+        ],
+        "fa": [
+          "علی یک دانش‌آموز است. (اسم)",
+          "او سریع می‌دود. (فعل)",
+          "این یک کیف قرمز است. (صفت)",
+          "او واضح صحبت می‌کند. (قید)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "He good play football.",
+            "correct": "He plays football well.",
+            "explanation": "Use an adverb (well) to describe the verb, not an adjective (good)."
+          },
+          {
+            "wrong": "She is teacher.",
+            "correct": "She is a teacher.",
+            "explanation": "Use an article before a singular countable noun."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "He good play football.",
+            "correct": "He plays football well.",
+            "explanation": "برای توصیف فعل باید از قید (well) استفاده شود، نه صفت (good)."
+          },
+          {
+            "wrong": "She is teacher.",
+            "correct": "She is a teacher.",
+            "explanation": "قبل از اسم مفرد قابل شمارش از a/an استفاده می‌شود."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the noun in the sentence: The cat sleeps.",
+            "options": [
+              "The",
+              "cat",
+              "sleeps",
+              "fast"
+            ],
+            "correct": 1,
+            "explanation": "Cat is the noun (a thing)."
+          },
+          {
+            "question": "Which word is an adjective? The small house is blue.",
+            "options": [
+              "small",
+              "house",
+              "is",
+              "blue"
+            ],
+            "correct": 0,
+            "explanation": "Small describes the noun house."
+          }
+        ],
+        "fa": [
+          {
+            "question": "اسم را انتخاب کنید: The cat sleeps.",
+            "options": [
+              "The",
+              "cat",
+              "sleeps",
+              "fast"
+            ],
+            "correct": 1,
+            "explanation": "Cat یک اسم است (چیز)."
+          },
+          {
+            "question": "کدام کلمه صفت است؟ The small house is blue.",
+            "options": [
+              "small",
+              "house",
+              "is",
+              "blue"
+            ],
+            "correct": 0,
+            "explanation": "Small اسم house را توصیف می‌کند."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "to-be",
+    "title": {
+      "en": "To Be (am/is/are) — Affirmative / Negative / Questions",
+      "fa": "فعل To Be (am/is/are) — خبری/منفی/سوالی"
+    },
+    "category": {
+      "en": "Verbs",
+      "fa": "افعال"
+    },
+    "tags": {
+      "en": [
+        "to-be",
+        "am-is-are",
+        "beginner"
+      ],
+      "fa": [
+        "to-be",
+        "am/is/are",
+        "مبتدی"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Use am, is, or are to describe states and identities in the present.",
+        "fa": "برای بیان حالت و هویت در زمان حال از am، is یا are استفاده کنید."
+      },
+      "rules": {
+        "en": [
+          "I am, he/she/it is, you/we/they are",
+          "Use not for negatives: am not, is not, are not",
+          "Questions: Am I? Is he/she? Are you/we/they?",
+          "To be is a main verb in these sentences",
+          "Use contractions in speaking: I'm, he's, they're"
+        ],
+        "fa": [
+          "I am، he/she/it is، you/we/they are",
+          "برای منفی از not استفاده کنید: am not, is not, are not",
+          "سوالی: Am I? Is he/she? Are you/we/they?",
+          "در این جملات to be فعل اصلی است",
+          "در گفتار از شکل کوتاه استفاده می‌شود: I'm, he's, they're"
+        ]
+      },
+      "examples": {
+        "en": [
+          "I am tired. (state)",
+          "She is a doctor. (identity)",
+          "We are ready. (state)",
+          "Are they at home? (question)"
+        ],
+        "fa": [
+          "من خسته هستم. (حالت)",
+          "او یک پزشک است. (هویت)",
+          "ما آماده هستیم. (حالت)",
+          "آیا آنها در خانه هستند؟ (سوال)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "He are happy.",
+            "correct": "He is happy.",
+            "explanation": "Use is with he/she/it."
+          },
+          {
+            "wrong": "I is a student.",
+            "correct": "I am a student.",
+            "explanation": "Use am with I."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "He are happy.",
+            "correct": "He is happy.",
+            "explanation": "برای he/she/it باید از is استفاده شود."
+          },
+          {
+            "wrong": "I is a student.",
+            "correct": "I am a student.",
+            "explanation": "برای I باید از am استفاده شود."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "She ___ my sister.",
+            "options": [
+              "am",
+              "is",
+              "are",
+              "be"
+            ],
+            "correct": 1,
+            "explanation": "Use is with she."
+          },
+          {
+            "question": "___ you ready?",
+            "options": [
+              "Am",
+              "Is",
+              "Are",
+              "Be"
+            ],
+            "correct": 2,
+            "explanation": "Use are with you in questions."
+          }
+        ],
+        "fa": [
+          {
+            "question": "She ___ my sister.",
+            "options": [
+              "am",
+              "is",
+              "are",
+              "be"
+            ],
+            "correct": 1,
+            "explanation": "برای she از is استفاده می‌شود."
+          },
+          {
+            "question": "___ you ready?",
+            "options": [
+              "Am",
+              "Is",
+              "Are",
+              "Be"
+            ],
+            "correct": 2,
+            "explanation": "در سوال با you از are استفاده می‌شود."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "there-is-are",
+    "title": {
+      "en": "There is / There are",
+      "fa": "There is / There are"
+    },
+    "category": {
+      "en": "Grammar Basics",
+      "fa": "مبانی دستور زبان"
+    },
+    "tags": {
+      "en": [
+        "there-is",
+        "there-are",
+        "beginner"
+      ],
+      "fa": [
+        "there is",
+        "there are",
+        "مبتدی"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Use there is for singular and there are for plural to say something exists.",
+        "fa": "برای بیان وجود، there is برای مفرد و there are برای جمع استفاده می‌شود."
+      },
+      "rules": {
+        "en": [
+          "Use there is with singular nouns",
+          "Use there are with plural nouns",
+          "Negative: there is not / there are not",
+          "Questions: Is there...? / Are there...?",
+          "Use some/any with plural or uncountable nouns"
+        ],
+        "fa": [
+          "برای اسم مفرد از there is استفاده کنید",
+          "برای اسم جمع از there are استفاده کنید",
+          "منفی: there is not / there are not",
+          "سوالی: Is there...? / Are there...?",
+          "برای جمع یا غیرقابل شمارش از some/any استفاده کنید"
+        ]
+      },
+      "examples": {
+        "en": [
+          "There is a book on the table. (singular)",
+          "There are two chairs. (plural)",
+          "Is there any milk? (question)",
+          "There are not any students here. (negative)"
+        ],
+        "fa": [
+          "یک کتاب روی میز هست. (مفرد)",
+          "دو صندلی وجود دارد. (جمع)",
+          "آیا شیر وجود دارد؟ (سوال)",
+          "هیچ دانش‌آموزی اینجا نیست. (منفی)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "There are a cat in the room.",
+            "correct": "There is a cat in the room.",
+            "explanation": "Use there is with singular nouns."
+          },
+          {
+            "wrong": "There is two books.",
+            "correct": "There are two books.",
+            "explanation": "Use there are with plural nouns."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "There are a cat in the room.",
+            "correct": "There is a cat in the room.",
+            "explanation": "برای اسم مفرد از there is استفاده کنید."
+          },
+          {
+            "wrong": "There is two books.",
+            "correct": "There are two books.",
+            "explanation": "برای اسم جمع از there are استفاده کنید."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "___ a pen on the desk.",
+            "options": [
+              "There are",
+              "There is",
+              "Is there",
+              "Are there"
+            ],
+            "correct": 1,
+            "explanation": "Singular noun uses there is."
+          },
+          {
+            "question": "___ any students in class?",
+            "options": [
+              "Is there",
+              "Are there",
+              "There is",
+              "There are"
+            ],
+            "correct": 1,
+            "explanation": "Plural noun uses are there in questions."
+          }
+        ],
+        "fa": [
+          {
+            "question": "___ a pen on the desk.",
+            "options": [
+              "There are",
+              "There is",
+              "Is there",
+              "Are there"
+            ],
+            "correct": 1,
+            "explanation": "برای اسم مفرد از there is استفاده می‌شود."
+          },
+          {
+            "question": "___ any students in class?",
+            "options": [
+              "Is there",
+              "Are there",
+              "There is",
+              "There are"
+            ],
+            "correct": 1,
+            "explanation": "برای اسم جمع در سوال از are there استفاده می‌شود."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "simple-questions",
+    "title": {
+      "en": "Simple Questions (Yes/No & Wh- Questions)",
+      "fa": "سوال‌های ساده (بله/خیر و سوال‌های Wh-)"
+    },
+    "category": {
+      "en": "Questions",
+      "fa": "سوال‌ها"
+    },
+    "tags": {
+      "en": [
+        "questions",
+        "yes-no",
+        "wh"
+      ],
+      "fa": [
+        "سوال",
+        "بله/خیر",
+        "wh"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Yes/No questions use do/does or to be. Wh- questions start with words like what, where, and when.",
+        "fa": "سوال‌های بله/خیر از do/does یا to be استفاده می‌کنند و سوال‌های Wh- با واژه‌هایی مثل what و where شروع می‌شوند."
+      },
+      "rules": {
+        "en": [
+          "Yes/No questions often start with Do/Does/Is/Are",
+          "Use do/does with main verbs",
+          "Use to be directly with subject",
+          "Wh- questions start with what/where/when/who/why",
+          "Word order: Question word + auxiliary + subject + verb"
+        ],
+        "fa": [
+          "سوال بله/خیر معمولاً با Do/Does/Is/Are شروع می‌شود",
+          "با فعل اصلی از do/does استفاده کنید",
+          "در جملات to be، فعل قبل از فاعل می‌آید",
+          "سوال‌های Wh- با what/where/when/who/why شروع می‌شوند",
+          "ترتیب: کلمه سوال + فعل کمکی + فاعل + فعل"
+        ]
+      },
+      "examples": {
+        "en": [
+          "Do you like tea? (yes/no)",
+          "Is she your teacher? (yes/no)",
+          "Where do you live? (wh-)",
+          "What time is it? (wh-)"
+        ],
+        "fa": [
+          "آیا چای دوست داری؟ (بله/خیر)",
+          "آیا او معلم شماست؟ (بله/خیر)",
+          "کجا زندگی می‌کنی؟ (Wh-)",
+          "ساعت چند است؟ (Wh-)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "You like tea?",
+            "correct": "Do you like tea?",
+            "explanation": "Use do/does to form a basic question with a main verb."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "Wh- questions need an auxiliary before the subject."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "You like tea?",
+            "correct": "Do you like tea?",
+            "explanation": "در سوال با فعل اصلی باید از do/does استفاده شود."
+          },
+          {
+            "wrong": "Where you live?",
+            "correct": "Where do you live?",
+            "explanation": "در سوال Wh- فعل کمکی قبل از فاعل می‌آید."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "Choose the correct question.",
+            "options": [
+              "You are hungry?",
+              "Are you hungry?",
+              "Hungry you are?",
+              "Are hungry you?"
+            ],
+            "correct": 1,
+            "explanation": "Use are + subject for to be questions."
+          },
+          {
+            "question": "Which Wh- question is correct?",
+            "options": [
+              "Where you are?",
+              "Where are you?",
+              "Where are?",
+              "Where you do?"
+            ],
+            "correct": 1,
+            "explanation": "Wh- word + are + subject is correct."
+          }
+        ],
+        "fa": [
+          {
+            "question": "کدام سوال درست است؟",
+            "options": [
+              "You are hungry?",
+              "Are you hungry?",
+              "Hungry you are?",
+              "Are hungry you?"
+            ],
+            "correct": 1,
+            "explanation": "برای سوال to be از are + فاعل استفاده می‌شود."
+          },
+          {
+            "question": "کدام سوال Wh- درست است؟",
+            "options": [
+              "Where you are?",
+              "Where are you?",
+              "Where are?",
+              "Where you do?"
+            ],
+            "correct": 1,
+            "explanation": "ترتیب درست: کلمه سوال + are + فاعل."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "personal-pronouns",
+    "title": {
+      "en": "Personal Pronouns (Subject/Object)",
+      "fa": "ضمیرهای شخصی (فاعل/مفعول)"
+    },
+    "category": {
+      "en": "Pronouns",
+      "fa": "ضمیرها"
+    },
+    "tags": {
+      "en": [
+        "pronouns",
+        "subject",
+        "object"
+      ],
+      "fa": [
+        "ضمیر",
+        "فاعل",
+        "مفعول"
+      ]
+    },
+    "level": 0,
+    "lang": "en",
+    "sections": {
+      "summary": {
+        "en": "Personal pronouns replace names. Subject pronouns do the action; object pronouns receive it.",
+        "fa": "ضمیرهای شخصی جای اسم می‌آیند؛ ضمیر فاعلی عمل را انجام می‌دهد و ضمیر مفعولی عمل را دریافت می‌کند."
+      },
+      "rules": {
+        "en": [
+          "Subject pronouns: I, you, he, she, it, we, they",
+          "Object pronouns: me, you, him, her, it, us, them",
+          "Use subject pronouns before verbs",
+          "Use object pronouns after verbs or prepositions",
+          "Do not use object forms as subjects"
+        ],
+        "fa": [
+          "ضمیر فاعلی: I, you, he, she, it, we, they",
+          "ضمیر مفعولی: me, you, him, her, it, us, them",
+          "ضمیر فاعلی قبل از فعل می‌آید",
+          "ضمیر مفعولی بعد از فعل یا حرف اضافه می‌آید",
+          "از ضمیر مفعولی به جای فاعل استفاده نکنید"
+        ]
+      },
+      "examples": {
+        "en": [
+          "He is my friend. (subject)",
+          "I see him. (object)",
+          "They help us. (object)",
+          "She talks to me. (object)"
+        ],
+        "fa": [
+          "او دوست من است. (فاعل)",
+          "من او را می‌بینم. (مفعول)",
+          "آنها به ما کمک می‌کنند. (مفعول)",
+          "او با من صحبت می‌کند. (مفعول)"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          {
+            "wrong": "Him is my brother.",
+            "correct": "He is my brother.",
+            "explanation": "Use subject pronouns before the verb."
+          },
+          {
+            "wrong": "She likes I.",
+            "correct": "She likes me.",
+            "explanation": "Use object pronouns after verbs."
+          }
+        ],
+        "fa": [
+          {
+            "wrong": "Him is my brother.",
+            "correct": "He is my brother.",
+            "explanation": "قبل از فعل باید ضمیر فاعلی بیاید."
+          },
+          {
+            "wrong": "She likes I.",
+            "correct": "She likes me.",
+            "explanation": "بعد از فعل باید ضمیر مفعولی بیاید."
+          }
+        ]
+      },
+      "quiz": {
+        "en": [
+          {
+            "question": "___ am a student.",
+            "options": [
+              "Me",
+              "I",
+              "Him",
+              "Us"
+            ],
+            "correct": 1,
+            "explanation": "I is a subject pronoun."
+          },
+          {
+            "question": "She calls ___.",
+            "options": [
+              "he",
+              "I",
+              "me",
+              "they"
+            ],
+            "correct": 2,
+            "explanation": "Me is an object pronoun."
+          }
+        ],
+        "fa": [
+          {
+            "question": "___ am a student.",
+            "options": [
+              "Me",
+              "I",
+              "Him",
+              "Us"
+            ],
+            "correct": 1,
+            "explanation": "I ضمیر فاعلی است."
+          },
+          {
+            "question": "She calls ___.",
+            "options": [
+              "he",
+              "I",
+              "me",
+              "they"
+            ],
+            "correct": 2,
+            "explanation": "Me ضمیر مفعولی است."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "word-order-svo",
     "title": {
       "en": "Word Order in English (SVO)",
-      "fa": "Word Order in English (SVO)"
+      "fa": "ترتیب کلمات در انگلیسی (SVO)"
     },
     "category": {
-      "en": "Grammar Basics",
-      "fa": "مبانی دستور زبان"
+      "en": "Sentence Structure",
+      "fa": "ساختار جمله"
     },
     "tags": {
       "en": [
-        "word",
-        "order",
-        "english",
-        "svo"
+        "word-order",
+        "svo",
+        "beginner"
       ],
       "fa": [
-        "word",
-        "order",
-        "english",
-        "svo"
+        "ترتیب کلمات",
+        "svo",
+        "مبتدی"
       ]
     },
     "level": 0,
+    "lang": "en",
     "sections": {
       "summary": {
-        "en": "This topic explains Word Order in English (SVO) in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
-        "fa": "This topic explains Word Order in English (SVO) in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
+        "en": "Most English sentences follow Subject + Verb + Object order. This order keeps the meaning clear. Time and place usually come after the object.",
+        "fa": "بیشتر جملات انگلیسی ترتیب فاعل + فعل + مفعول دارند. این ترتیب معنی را واضح می‌کند. زمان و مکان معمولاً بعد از مفعول می‌آیند."
       },
       "rules": {
         "en": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
+          "Start with the subject (My sister plays football).",
+          "Put the main verb after the subject (She reads books).",
+          "Place the object after the verb (They watch TV).",
+          "Put time expressions at the end (I study at night).",
+          "Place expressions often follow time (We meet on Monday at school).",
+          "Use S + V when there is no object (He sleeps)."
         ],
         "fa": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
+          "جمله را با فاعل شروع کنید (My sister plays football).",
+          "فعل اصلی بعد از فاعل می‌آید (She reads books).",
+          "مفعول بعد از فعل می‌آید (They watch TV).",
+          "زمان در پایان می‌آید (I study at night).",
+          "مکان معمولاً بعد از زمان می‌آید (We meet on Monday at school).",
+          "اگر مفعول ندارید، فقط فاعل + فعل کافی است (He sleeps)."
         ]
       },
       "examples": {
         "en": [
-          "I understand word order in english (svo).",
-          "She practices word order in english (svo) every day.",
-          "Can you give an example of word order in english (svo)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
+          "I read a book. (SVO)",
+          "Tom eats lunch at noon. (time at end)",
+          "We play soccer in the park. (place)",
+          "She opens the window. (SVO)",
+          "They watch a movie tonight. (time)",
+          "My friends visit me on Friday. (time)",
+          "The dog chased the ball. (SVO)",
+          "Anna works in a hospital. (place)"
         ],
         "fa": [
-          "I understand word order in english (svo).",
-          "She practices word order in english (svo) every day.",
-          "Can you give an example of word order in english (svo)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
+          "من یک کتاب می‌خوانم. (فاعل+فعل+مفعول)",
+          "تام ظهر ناهار می‌خورد. (زمان در پایان)",
+          "ما در پارک فوتبال بازی می‌کنیم. (مکان)",
+          "او پنجره را باز می‌کند. (فاعل+فعل+مفعول)",
+          "آنها امشب یک فیلم می‌بینند. (زمان)",
+          "دوستانم جمعه به دیدنم می‌آیند. (زمان)",
+          "سگ توپ را دنبال کرد. (فاعل+فعل+مفعول)",
+          "آنا در یک بیمارستان کار می‌کند. (مکان)"
         ]
       },
       "commonMistakes": {
         "en": [
           {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+            "wrong": "Eats Ali breakfast.",
+            "correct": "Ali eats breakfast.",
+            "explanation": "English sentences usually start with the subject."
           },
           {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
+            "wrong": "I to school go.",
+            "correct": "I go to school.",
+            "explanation": "The verb comes right after the subject."
           },
           {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+            "wrong": "She her homework does.",
+            "correct": "She does her homework.",
+            "explanation": "Use auxiliary before the object in statements."
           }
         ],
         "fa": [
           {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
+            "wrong": "Eats Ali breakfast.",
+            "correct": "Ali eats breakfast.",
+            "explanation": "در انگلیسی معمولاً جمله با فاعل شروع می‌شود."
           },
           {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
+            "wrong": "I to school go.",
+            "correct": "I go to school.",
+            "explanation": "فعل باید بعد از فاعل بیاید."
           },
           {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
+            "wrong": "She her homework does.",
+            "correct": "She does her homework.",
+            "explanation": "در جمله خبری، فعل کمکی قبل از مفعول می‌آید."
           }
         ]
       },
       "quiz": {
         "en": [
           {
-            "question": "Choose the best sentence.",
+            "question": "Choose the correct order: (she / likes / tea).",
             "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
+              "She likes tea.",
+              "Likes she tea.",
+              "Tea likes she.",
+              "She tea likes."
             ],
             "correct": 0,
-            "explanation": "Use do + not for negatives."
+            "explanation": "Subject + verb + object is correct."
           },
           {
-            "question": "Pick the correct word order.",
+            "question": "Where does time usually go? \"I meet you ___.\"",
             "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
+              "yesterday",
+              "yesterday meet",
+              "meet yesterday",
+              "yesterday I meet"
             ],
             "correct": 0,
-            "explanation": "SVO is the default order in English."
+            "explanation": "Time expressions often go at the end."
           },
           {
-            "question": "Which option is a Wh- question?",
+            "question": "Which sentence is correct?",
             "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
+              "Plays he football.",
+              "He plays football.",
+              "Football plays he.",
+              "He football plays."
             ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
+            "correct": 1,
+            "explanation": "Subject comes first, then verb."
           },
           {
-            "question": "Choose the correct form for 'he' in present simple.",
+            "question": "Choose the correct S + V sentence.",
             "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
+              "Runs the boy.",
+              "The boy runs.",
+              "The boy the runs.",
+              "Runs boy the."
             ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
+            "correct": 1,
+            "explanation": "Subject + verb is correct when no object."
           }
         ],
         "fa": [
           {
-            "question": "Choose the best sentence.",
+            "question": "ترتیب درست را انتخاب کنید: (she / likes / tea).",
             "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
+              "She likes tea.",
+              "Likes she tea.",
+              "Tea likes she.",
+              "She tea likes."
             ],
             "correct": 0,
-            "explanation": "Use do + not for negatives."
+            "explanation": "ترتیب درست فاعل + فعل + مفعول است."
           },
           {
-            "question": "Pick the correct word order.",
+            "question": "زمان معمولاً کجا می‌آید؟ \"I meet you ___.\"",
             "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
+              "yesterday",
+              "yesterday meet",
+              "meet yesterday",
+              "yesterday I meet"
             ],
             "correct": 0,
-            "explanation": "SVO is the default order in English."
+            "explanation": "زمان معمولاً در پایان جمله می‌آید."
           },
           {
-            "question": "Which option is a Wh- question?",
+            "question": "کدام جمله درست است؟",
             "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
+              "Plays he football.",
+              "He plays football.",
+              "Football plays he.",
+              "He football plays."
             ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
+            "correct": 1,
+            "explanation": "فاعل اول و سپس فعل می‌آید."
           },
           {
-            "question": "Choose the correct form for 'he' in present simple.",
+            "question": "جمله فاعل + فعل درست را انتخاب کنید.",
             "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
+              "Runs the boy.",
+              "The boy runs.",
+              "The boy the runs.",
+              "Runs boy the."
             ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "punctuation-for-meaning-commas-in-clauses-relative-clauses",
-    "title": {
-      "en": "Punctuation for meaning (commas in clauses, relative clauses)",
-      "fa": "Punctuation for meaning (commas in clauses, relative clauses)"
-    },
-    "category": {
-      "en": "Grammar Basics",
-      "fa": "مبانی دستور زبان"
-    },
-    "tags": {
-      "en": [
-        "punctuation",
-        "meaning",
-        "commas",
-        "clauses"
-      ],
-      "fa": [
-        "punctuation",
-        "meaning",
-        "commas",
-        "clauses"
-      ]
-    },
-    "level": 0,
-    "sections": {
-      "summary": {
-        "en": "This topic explains Punctuation for meaning (commas in clauses, relative clauses) in clear, practical patterns. Focus on form, meaning, and common learner mistakes.",
-        "fa": "This topic explains Punctuation for meaning (commas in clauses, relative clauses) in clear, practical patterns. Focus on form, meaning, and common learner mistakes."
-      },
-      "rules": {
-        "en": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
-        ],
-        "fa": [
-          "Learn the core pattern first, then add details (example: keep the main structure simple).",
-          "Check the grammar signal words and choose the right form (example: time words help).",
-          "Use the correct word order for clarity (example: subject before main verb).",
-          "Prefer short, correct sentences before longer ones (example: one idea per sentence).",
-          "Watch common learner errors and fix them early (example: auxiliary + base verb).",
-          "Practice with real sentences you can reuse (example: everyday topics)."
-        ]
-      },
-      "examples": {
-        "en": [
-          "I understand punctuation for meaning (commas in clauses, relative clauses).",
-          "She practices punctuation for meaning (commas in clauses, relative clauses) every day.",
-          "Can you give an example of punctuation for meaning (commas in clauses, relative clauses)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
-        ],
-        "fa": [
-          "I understand punctuation for meaning (commas in clauses, relative clauses).",
-          "She practices punctuation for meaning (commas in clauses, relative clauses) every day.",
-          "Can you give an example of punctuation for meaning (commas in clauses, relative clauses)?",
-          "This rule helps my writing a lot.",
-          "That sentence sounds more natural now.",
-          "I made a mistake and corrected it.",
-          "We use this structure in real conversations.",
-          "Today I will review it again."
-        ]
-      },
-      "commonMistakes": {
-        "en": [
-          {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
-          },
-          {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
-          },
-          {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
-          }
-        ],
-        "fa": [
-          {
-            "wrong": "I no understand this.",
-            "correct": "I don't understand this.",
-            "explanation": "Use an auxiliary (do/does) for negatives in present simple."
-          },
-          {
-            "wrong": "He go to school.",
-            "correct": "He goes to school.",
-            "explanation": "Add -s/-es for third person singular in present simple."
-          },
-          {
-            "wrong": "Where you live?",
-            "correct": "Where do you live?",
-            "explanation": "Use an auxiliary in Wh- questions (do/does)."
-          }
-        ]
-      },
-      "quiz": {
-        "en": [
-          {
-            "question": "Choose the best sentence.",
-            "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
-            ],
-            "correct": 0,
-            "explanation": "Use do + not for negatives."
-          },
-          {
-            "question": "Pick the correct word order.",
-            "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
-            ],
-            "correct": 0,
-            "explanation": "SVO is the default order in English."
-          },
-          {
-            "question": "Which option is a Wh- question?",
-            "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
-            ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
-          },
-          {
-            "question": "Choose the correct form for 'he' in present simple.",
-            "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
-            ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
-          }
-        ],
-        "fa": [
-          {
-            "question": "Choose the best sentence.",
-            "options": [
-              "I don't understand this.",
-              "I no understand this.",
-              "I not understand this.",
-              "I doesn't understand this."
-            ],
-            "correct": 0,
-            "explanation": "Use do + not for negatives."
-          },
-          {
-            "question": "Pick the correct word order.",
-            "options": [
-              "Subject + verb + object",
-              "Verb + subject + object",
-              "Object + subject + verb",
-              "Subject + object + verb"
-            ],
-            "correct": 0,
-            "explanation": "SVO is the default order in English."
-          },
-          {
-            "question": "Which option is a Wh- question?",
-            "options": [
-              "Where do you live?",
-              "You live where.",
-              "Do you live.",
-              "Live you where?"
-            ],
-            "correct": 0,
-            "explanation": "Wh- + auxiliary + subject + base verb."
-          },
-          {
-            "question": "Choose the correct form for 'he' in present simple.",
-            "options": [
-              "works",
-              "work",
-              "working",
-              "worked"
-            ],
-            "correct": 0,
-            "explanation": "Third person singular uses -s/-es."
+            "correct": 1,
+            "explanation": "وقتی مفعول نیست، فاعل + فعل کافی است."
           }
         ]
       }
