@@ -52,6 +52,23 @@ test('language toggle + RTL', async ({ page }) => {
   await tracker.assertNoErrors();
 });
 
+test('level filter shows absolute beginner topics', async ({ page }) => {
+  const tracker = createConsoleErrorTracker(page);
+
+  await page.goto('/');
+
+  await expect.poll(async () => page.locator('.topic-item').count()).toBeGreaterThan(0);
+  await page.selectOption('#levelSelect', '0');
+
+  await expect(
+    page.locator('.topic-item-title', {
+      hasText: 'Parts of Speech (Noun, Verb, Adjective, Adverb, Pronoun, Preposition, Conjunction, Determiner)'
+    })
+  ).toBeVisible();
+
+  await tracker.assertNoErrors();
+});
+
 test('routing + topic render', async ({ page }) => {
   const tracker = createConsoleErrorTracker(page);
 
