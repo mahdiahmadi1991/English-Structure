@@ -68,6 +68,24 @@ body {
   font-weight: 300;
 }
 
+.language-toggle {
+  margin-top: 0.75rem;
+  display: inline-flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.language-toggle .btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.language-toggle .btn-secondary.active {
+  background: white;
+  color: var(--primary-color);
+}
+
 .main-content {
   flex: 1;
   display: flex;
@@ -500,6 +518,14 @@ body {
   transform: translateY(0);
 }
 
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
 /* ===========================
    Mobile Menu Toggle
    =========================== */
@@ -694,6 +720,65 @@ body {
 
 .topic-content {
   animation: fadeIn 0.4s ease;
+}
+
+/* ===========================
+   RTL Support
+   =========================== */
+[dir="rtl"] .app-header,
+[dir="rtl"] .sidebar,
+[dir="rtl"] .topic-detail,
+[dir="rtl"] .empty-state,
+[dir="rtl"] .accordion-header,
+[dir="rtl"] .accordion-content,
+[dir="rtl"] .notes-section textarea,
+[dir="rtl"] #searchInput,
+[dir="rtl"] #categorySelect {
+  text-align: right;
+}
+
+[dir="rtl"] .topic-meta {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .topic-tags {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .topic-item:hover {
+  transform: translateX(-4px);
+}
+
+[dir="rtl"] .accordion-content li {
+  border-left: none;
+  border-right: 3px solid var(--primary-color);
+}
+
+[dir="rtl"] .mistake-item {
+  border-left: none;
+  border-right: 4px solid var(--error-color);
+}
+
+[dir="rtl"] .quiz-explanation {
+  border-left: none;
+  border-right: 3px solid var(--primary-color);
+}
+
+[dir="rtl"] .mobile-menu-toggle {
+  right: auto;
+  left: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  [dir="rtl"] .sidebar {
+    left: auto;
+    right: -100%;
+  }
+
+  [dir="rtl"] .sidebar.active {
+    left: auto;
+    right: 0;
+  }
 }
 
 /* ===========================

@@ -11,8 +11,12 @@
     <div class="app-container">
         <!-- Header -->
         <header class="app-header">
-            <h1>📚 Grammar Handbook</h1>
-            <p class="subtitle">Your Interactive English Grammar Guide</p>
+            <h1 id="appTitle"></h1>
+            <p class="subtitle" id="appSubtitle"></p>
+            <div class="language-toggle" id="languageToggle">
+                <button class="btn btn-secondary" type="button" data-lang="en">EN</button>
+                <button class="btn btn-secondary" type="button" data-lang="fa">FA</button>
+            </div>
         </header>
 
         <!-- Main Content Area -->
@@ -23,15 +27,14 @@
                     <input 
                         type="search" 
                         id="searchInput" 
-                        placeholder="🔍 Search topics..." 
-                        aria-label="Search grammar topics"
+                        placeholder="" 
+                        aria-label=""
                     />
                 </div>
 
                 <div class="category-filter">
-                    <label for="categorySelect">Filter by category:</label>
+                    <label for="categorySelect" id="categoryFilterLabel"></label>
                     <select id="categorySelect">
-                        <option value="">All Categories</option>
                     </select>
                 </div>
 
@@ -43,8 +46,8 @@
             <!-- Topic Detail View -->
             <section class="topic-detail" id="topicDetail">
                 <div class="empty-state">
-                    <h2>Welcome to Grammar Handbook! 👋</h2>
-                    <p>Select a topic from the list to start learning.</p>
+                    <h2 id="emptyStateTitle"></h2>
+                    <p id="emptyStateSubtitle"></p>
                 </div>
 
                 <div class="topic-content" id="topicContent" style="display: none;">
@@ -63,7 +66,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header" aria-expanded="true">
                                 <span class="accordion-icon">📋</span>
-                                <span>Summary</span>
+                                <span id="sectionSummaryLabel"></span>
                                 <span class="accordion-toggle">−</span>
                             </button>
                             <div class="accordion-content active">
@@ -75,7 +78,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header" aria-expanded="false">
                                 <span class="accordion-icon">📐</span>
-                                <span>Rules</span>
+                                <span id="sectionRulesLabel"></span>
                                 <span class="accordion-toggle">+</span>
                             </button>
                             <div class="accordion-content">
@@ -87,7 +90,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header" aria-expanded="false">
                                 <span class="accordion-icon">💡</span>
-                                <span>Examples</span>
+                                <span id="sectionExamplesLabel"></span>
                                 <span class="accordion-toggle">+</span>
                             </button>
                             <div class="accordion-content">
@@ -99,7 +102,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header" aria-expanded="false">
                                 <span class="accordion-icon">⚠️</span>
-                                <span>Common Mistakes</span>
+                                <span id="sectionMistakesLabel"></span>
                                 <span class="accordion-toggle">+</span>
                             </button>
                             <div class="accordion-content">
@@ -111,7 +114,7 @@
                         <div class="accordion-item">
                             <button class="accordion-header" aria-expanded="false">
                                 <span class="accordion-icon">✏️</span>
-                                <span>Quiz</span>
+                                <span id="sectionQuizLabel"></span>
                                 <span class="accordion-toggle">+</span>
                             </button>
                             <div class="accordion-content">
@@ -123,29 +126,29 @@
                         <div class="accordion-item">
                             <button class="accordion-header" aria-expanded="false">
                                 <span class="accordion-icon">📝</span>
-                                <span>My Notes & Mistakes</span>
+                                <span id="sectionNotesLabel"></span>
                                 <span class="accordion-toggle">+</span>
                             </button>
                             <div class="accordion-content">
                                 <div class="notes-section">
-                                    <h4>Personal Notes</h4>
+                                    <h4 id="notesTitle"></h4>
                                     <textarea 
                                         id="notesTextarea" 
-                                        placeholder="Write your notes here..."
+                                        placeholder=""
                                         rows="4"
                                     ></textarea>
-                                    <button id="saveNotesBtn" class="btn btn-primary">💾 Save Notes</button>
+                                    <button id="saveNotesBtn" class="btn btn-primary"></button>
                                     
-                                    <h4>My Mistakes Log</h4>
+                                    <h4 id="mistakesTitle"></h4>
                                     <textarea 
                                         id="mistakesTextarea" 
-                                        placeholder="Track mistakes you've made with this topic..."
+                                        placeholder=""
                                         rows="4"
                                     ></textarea>
-                                    <button id="saveMistakesBtn" class="btn btn-primary">💾 Save Mistakes</button>
+                                    <button id="saveMistakesBtn" class="btn btn-primary"></button>
 
                                     <div class="notes-info">
-                                        <small>💡 Your notes are saved locally in your browser</small>
+                                        <small id="notesInfo"></small>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +165,7 @@
 
         <!-- Footer -->
         <footer class="app-footer">
-            <p>&copy; 2026 Grammar Handbook. Built with ❤️ for English learners.</p>
+            <p id="appFooter"></p>
         </footer>
     </div>
 

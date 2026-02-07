@@ -2,50 +2,108 @@
 const grammarTopics = [
   {
     id: 'present-simple',
-    title: 'Present Simple Tense',
-    category: 'Tenses',
-    tags: ['basic', 'present', 'beginner'],
+    title: {
+      en: 'Present Simple Tense',
+      fa: 'زمان حال ساده'
+    },
+    category: {
+      en: 'Tenses',
+      fa: 'زمان'
+    },
+    tags: {
+      en: ['basic', 'present', 'beginner'],
+      fa: ['پایه', 'حال', 'مبتدی']
+    },
     lang: 'en',
     sections: {
-      summary: 'The present simple tense is used to describe habits, unchanging situations, general truths, and fixed arrangements.',
-      rules: [
-        'Use base form of verb for I, you, we, they',
-        'Add -s/-es to verb for he, she, it',
-        'Use "do/does" for questions and negatives',
-        'Regular habits use present simple (e.g., "I wake up at 7 AM")'
-      ],
-      examples: [
-        'I work in a bank. (fact)',
-        'She plays tennis every weekend. (habit)',
-        'Water boils at 100°C. (general truth)',
-        'The train leaves at 9:00 AM. (fixed arrangement)'
-      ],
-      commonMistakes: [
-        {
-          wrong: 'He go to school.',
-          correct: 'He goes to school.',
-          explanation: 'Third person singular (he, she, it) requires -s/-es ending'
-        },
-        {
-          wrong: 'Does she goes to work?',
-          correct: 'Does she go to work?',
-          explanation: 'With auxiliary "does", use base form of the verb'
-        }
-      ],
-      quiz: [
-        {
-          question: 'She ___ (go) to the gym every day.',
-          options: ['go', 'goes', 'going', 'gone'],
-          correct: 1,
-          explanation: 'Third person singular (she) requires -es ending'
-        },
-        {
-          question: 'They ___ (not/like) coffee.',
-          options: ['doesn\'t like', 'don\'t like', 'not like', 'aren\'t like'],
-          correct: 1,
-          explanation: 'Use "don\'t" with plural subjects (they)'
-        }
-      ]
+      summary: {
+        en: 'The present simple tense is used to describe habits, unchanging situations, general truths, and fixed arrangements.',
+        fa: 'زمان حال ساده برای توصیف عادات، وضعیت‌های ثابت، حقایق عمومی و ترتیبات ثابت استفاده می‌شود.'
+      },
+      rules: {
+        en: [
+          'Use base form of verb for I, you, we, they',
+          'Add -s/-es to verb for he, she, it',
+          'Use "do/does" for questions and negatives',
+          'Regular habits use present simple (e.g., "I wake up at 7 AM")'
+        ],
+        fa: [
+          'از شکل پایه فعل برای I، you، we، they استفاده کنید',
+          'به فعل برای he، she، it -s/-es اضافه کنید',
+          'برای سوالات و جملات منفی از "do/does" استفاده کنید',
+          'عادات معمولی از زمان حال ساده استفاده می‌کنند (مثلاً "I wake up at 7 AM")'
+        ]
+      },
+      examples: {
+        en: [
+          'I work in a bank. (fact)',
+          'She plays tennis every weekend. (habit)',
+          'Water boils at 100°C. (general truth)',
+          'The train leaves at 9:00 AM. (fixed arrangement)'
+        ],
+        fa: [
+          'من در یک بانک کار می‌کنم. (واقعیت)',
+          'او هر آخر هفته تنیس بازی می‌کند. (عادت)',
+          'آب در 100 درجه سانتی‌گراد می‌جوشد. (حقیقت عمومی)',
+          'قطار در ساعت 9:00 صبح حرکت می‌کند. (ترتیب ثابت)'
+        ]
+      },
+      commonMistakes: {
+        en: [
+          {
+            wrong: 'He go to school.',
+            correct: 'He goes to school.',
+            explanation: 'Third person singular (he, she, it) requires -s/-es ending'
+          },
+          {
+            wrong: 'Does she goes to work?',
+            correct: 'Does she go to work?',
+            explanation: 'With auxiliary "does", use base form of the verb'
+          }
+        ],
+        fa: [
+          {
+            wrong: 'He go to school every day.',
+            correct: 'He goes to school every day.',
+            explanation: 'در سوم شخص مفرد (he/she/it) باید به فعل -s یا -es اضافه شود.'
+          },
+          {
+            wrong: 'Does she goes to work?',
+            correct: 'Does she go to work?',
+            explanation: 'بعد از "does" باید شکل پایه فعل بیاید و -s حذف شود.'
+          }
+        ]
+      },
+      quiz: {
+        en: [
+          {
+            question: 'She ___ (go) to the gym every day.',
+            options: ['go', 'goes', 'going', 'gone'],
+            correct: 1,
+            explanation: 'Third person singular (she) requires -es ending'
+          },
+          {
+            question: 'They ___ (not/like) coffee.',
+            options: ['doesn\'t like', 'don\'t like', 'not like', 'aren\'t like'],
+            correct: 1,
+            explanation: 'Use "don\'t" with plural subjects (they)'
+          }
+        ],
+        fa: [
+          {
+            question: 'جای خالی را پر کنید: She ___ to the gym every day.',
+            options: ['go', 'goes', 'going', 'gone'],
+            correct: 1,
+            explanation: 'برای سوم شخص مفرد (she) باید -s/-es اضافه شود.'
+          },
+          {
+            question: 'کدام گزینه درست است؟ They ___ coffee.',
+            options: ["don't like", "doesn't like", 'not like', "aren't like"],
+            correct: 0,
+            explanation: 'برای فاعل جمع (they) از "don\'t" استفاده می‌شود.'
+          }
+        ]
+      }
     }
   },
   {
