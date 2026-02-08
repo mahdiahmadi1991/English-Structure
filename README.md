@@ -40,6 +40,14 @@ An interactive, mobile-first static web application for learning English grammar
 
 That's it! No build process or dependencies required.
 
+### Changing the Dev Server Port
+
+The app and tests assume port 4173. If you change it:
+
+1. Update the dev script in [package.json](package.json): change `-p 4173`.
+2. Update `use.baseURL` and `webServer.command` in [playwright.config.js](playwright.config.js).
+3. Re-run tests: `npm run test:e2e`.
+
 ## 📁 Project Structure
 
 ```
@@ -122,13 +130,68 @@ Each grammar topic in the level files follows this structure:
 }
 ```
 
+### Data Schema (concise)
+
+- Localized fields can be plain values or bilingual objects `{ en: ..., fa: ... }`.
+- Localized fields: `levels[].label`, `topics[].title`, `topics[].category`, `topics[].tags`, and `sections.*`.
+
+Example (bilingual):
+
+```json
+{
+  "id": "present-simple",
+  "level": 1,
+  "title": { "en": "Present Simple", "fa": "حال ساده" },
+  "category": { "en": "Tenses", "fa": "زمان" },
+  "tags": { "en": ["basic"], "fa": ["پایه"] },
+  "sections": {
+    "summary": { "en": "Use for routines.", "fa": "برای عادات." },
+    "rules": { "en": ["Add -s for he/she/it"], "fa": ["افزودن -s برای سوم‌شخص"] },
+    "examples": { "en": ["She walks."], "fa": ["او راه می‌رود."] },
+    "commonMistakes": {
+      "en": [{ "wrong": "She walk.", "correct": "She walks.", "explanation": "Third person -s" }],
+      "fa": [{ "wrong": "She walk.", "correct": "She walks.", "explanation": "-s سوم‌شخص" }]
+    },
+    "quiz": {
+      "en": [{ "question": "He __ (work)", "options": ["work","works"], "correct": 1, "explanation": "-s" }],
+      "fa": [{ "question": "He __ (work)", "options": ["work","works"], "correct": 1, "explanation": "-s" }]
+    }
+  }
+}
+```
+
+Notes (FA/EN): Provide both `en` and `fa` where applicable; the validator enforces presence and counts. برای فیلدهای قابل‌محلی‌سازی، هر دو زبان `en` و `fa` را وارد کنید.
+
 ## 🎨 Customization
 
 ### Adding New Topics
 
 1. Add or update a topic in the appropriate `data/topics/level-*.json` file.
-2. Run `npm run build:data` to regenerate `data/levels/level-*.json` and refresh `data/topics-index.json`.
-3. Refresh the page to see your changes.
+  - Alternatively, add the topic `id` to `data/level-map.json` under a level to remap.
+2. Rebuild data (splits per-level files and refreshes index):
+
+  ```bash
+  npm run build:data
+  ```
+
+3. Validate content (schema, EN/FA, counts, mapping coverage):
+
+  ```bash
+  npm run validate:data
+  ```
+
+4. Start dev server and verify topic via hash route:
+
+  ```bash
+  npm run dev
+  # open http://localhost:4173/#<topic-id>
+  ```
+
+5. (Optional) Run end‑to‑end tests:
+
+  ```bash
+  npm run test:e2e
+  ```
 
 ### Styling
 
@@ -197,12 +260,45 @@ This project is open source and available for educational purposes.
 
 ## 🤝 Contributing
 
-Contributions are welcome! To add grammar topics:
+Contributions are welcome! To add grammar topics or improve data/UI:
 
-1. Fork the repository
-2. Add your topics to `data/topics/level-*.json`
-3. Run `npm run build:data` and test thoroughly (`npm run test:e2e`)
-4. Submit a pull request
+1. Fork the repository and create a feature branch.
+2. Edit topics in `data/topics/level-*.json` (or update `data/level-map.json` to move levels).
+3. Rebuild and validate data:
+
+  ```bash
+  npm run build:data
+  npm run validate:data
+  ```
+
+4. Run locally and verify (EN/FA, filters, routing):
+
+  ```bash
+  npm run dev
+  # open http://localhost:4173/#<topic-id>
+  ```
+
+5. (Optional) Run end‑to‑end tests:
+
+  ```bash
+  npm run test:e2e
+  ```
+
+6. Submit a pull request with a clear description of changes.
+
+### Lightweight Pre‑Commit Check (optional)
+
+You can wire a local Git hook to run validation and lint before commits.
+
+1. Ensure a combined check script exists (see `package.json` → `scripts.check`).
+2. Create `.git/hooks/pre-commit` and make it executable with:
+
+```sh
+#!/usr/bin/env sh
+npm run check || exit 1
+```
+
+This runs data validation and linting on each commit. برای جلوگیری از خطاها، می‌توانید این قلاب را فعال کنید.
 
 ## 📧 Contact
 

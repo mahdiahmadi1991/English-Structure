@@ -8,6 +8,7 @@
     "test:e2e": "playwright test",
     "test:e2e:ci": "playwright test --reporter=line",
     "build:data": "node scripts/split-topics-by-level.cjs",
+    "check": "npm run validate:data && npm run lint",
     "lint": "eslint \"scripts/**/*.js\" \"scripts/**/*.cjs\" \"data/**/*.js\" \"tests/**/*.js\"",
     "lint:fix": "eslint --fix \"scripts/**/*.js\" \"scripts/**/*.cjs\" \"data/**/*.js\" \"tests/**/*.js\"",
     "validate:data": "node scripts/validate-data.cjs",
