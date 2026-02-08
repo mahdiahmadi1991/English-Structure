@@ -11,6 +11,8 @@ module.exports = [
   },
   {
     files: ['scripts/**/*.js', 'scripts/**/*.cjs', 'data/**/*.js', 'tests/**/*.js'],
+    // Bring in the recommended set first, then override specifics
+    ...js.configs.recommended,
     languageOptions: {
       ecmaVersion: 2021,
       sourceType: 'script',
@@ -26,7 +28,6 @@ module.exports = [
         topicsIndex: 'readonly'
       }
     },
-    ...js.configs.recommended,
     rules: {
       'no-console': 'off',
       'no-unused-vars': ['error', { argsIgnorePattern: '^_' }]

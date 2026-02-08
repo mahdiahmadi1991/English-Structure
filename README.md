@@ -126,8 +126,8 @@ Each grammar topic in the level files follows this structure:
 
 ### Adding New Topics
 
-1. Add or update a topic in the appropriate `data/levels/level-*.json` file.
-2. Run `npm run build:data` to refresh `data/topics-index.json`.
+1. Add or update a topic in the appropriate `data/topics/level-*.json` file.
+2. Run `npm run build:data` to regenerate `data/levels/level-*.json` and refresh `data/topics-index.json`.
 3. Refresh the page to see your changes.
 
 ### Styling
@@ -200,8 +200,8 @@ This project is open source and available for educational purposes.
 Contributions are welcome! To add grammar topics:
 
 1. Fork the repository
-2. Add your topics to `data/grammar-topics.js`
-3. Test thoroughly
+2. Add your topics to `data/topics/level-*.json`
+3. Run `npm run build:data` and test thoroughly (`npm run test:e2e`)
 4. Submit a pull request
 
 ## 📧 Contact

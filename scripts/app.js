@@ -73,7 +73,9 @@
       quizShowAnswer: 'Show Answer',
       quizScoreLabel: 'Score:',
       quizBestLabel: 'Best:',
-      quizIncorrect: '❌ Incorrect'
+      quizIncorrect: '❌ Incorrect',
+      resultsOne: 'result',
+      resultsMany: 'results'
     },
     fa: {
       appTitle: '📚 دفترچه دستور زبان',
@@ -124,7 +126,9 @@
       quizShowAnswer: 'نمایش پاسخ',
       quizScoreLabel: 'امتیاز:',
       quizBestLabel: 'بهترین:',
-      quizIncorrect: '❌ نادرست'
+      quizIncorrect: '❌ نادرست',
+      resultsOne: 'نتیجه',
+      resultsMany: 'نتیجه'
     }
   };
 
@@ -320,6 +324,14 @@
     protocolWarning: document.getElementById('protocolWarning')
   };
 
+  function debounce(fn, wait = 200) {
+    let t;
+    return function debounced(...args) {
+      clearTimeout(t);
+      t = setTimeout(() => fn.apply(this, args), wait);
+    };
+  }
+
   // ===========================
   // Initialization
   // ===========================
@@ -443,7 +455,9 @@
 
     if (elements.resultsBadge) {
       const count = state.filteredTopics.length;
-      elements.resultsBadge.textContent = `${count} ${count === 1 ? 'result' : 'results'}`;
+      const labelKey = count === 1 ? 'resultsOne' : 'resultsMany';
+      const label = getUiString(labelKey) || '';
+      elements.resultsBadge.textContent = label ? `${count} ${label}` : String(count);
     }
 
     // Render filtered topics
@@ -570,14 +584,14 @@
       ${questions.map((q, index) => `
         <div class="quiz-question" data-question-index="${index}">
           <div class="quiz-question-text">Q${index + 1}: ${t(q.question, currentLang)}</div>
-          <div class="quiz-options">
+          <div class="quiz-options" role="radiogroup" aria-label="Quiz options">
             ${toArray(t(q.options, currentLang)).map((option, optIndex) => `
-              <div class="quiz-option" data-option-index="${optIndex}" tabindex="0" role="button" aria-pressed="false">
+              <div class="quiz-option" data-option-index="${optIndex}" tabindex="0" role="radio" aria-checked="false">
                 ${String.fromCharCode(65 + optIndex)}. ${option}
               </div>
             `).join('')}
           </div>
-          <div class="quiz-feedback" data-quiz-feedback></div>
+          <div class="quiz-feedback" data-quiz-feedback role="status" aria-live="polite"></div>
           <div class="quiz-actions">
             <button class="btn btn-primary quiz-submit" type="button" data-question-index="${index}">
               ${quizCheckAnswerLabel}
@@ -713,7 +727,7 @@
     options.forEach((option, index) => {
       const isSelected = index === questionState.selectedIndex;
       option.classList.toggle('selected', isSelected);
-      option.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+      option.setAttribute('aria-checked', isSelected ? 'true' : 'false');
       option.classList.remove('correct', 'incorrect');
 
       if (questionState.revealAnswer) {
@@ -812,8 +826,13 @@
   // Local Storage - Notes
   // ===========================
   function loadUserNotes(topicId) {
-    const notes = localStorage.getItem(`notes-${topicId}`) || '';
-    const mistakes = localStorage.getItem(`mistakes-${topicId}`) || '';
+    const lang = state.currentLang || 'en';
+    const notes = localStorage.getItem(`notes-${lang}-${topicId}`)
+      || localStorage.getItem(`notes-${topicId}`)
+      || '';
+    const mistakes = localStorage.getItem(`mistakes-${lang}-${topicId}`)
+      || localStorage.getItem(`mistakes-${topicId}`)
+      || '';
     
     elements.notesTextarea.value = notes;
     elements.mistakesTextarea.value = mistakes;
@@ -821,12 +840,16 @@
 
   function saveUserNotes(topicId) {
     const notes = elements.notesTextarea.value;
+    const lang = state.currentLang || 'en';
+    localStorage.setItem(`notes-${lang}-${topicId}`, notes);
     localStorage.setItem(`notes-${topicId}`, notes);
     showNotification(getUiString('notesSaved'));
   }
 
   function saveUserMistakes(topicId) {
     const mistakes = elements.mistakesTextarea.value;
+    const lang = state.currentLang || 'en';
+    localStorage.setItem(`mistakes-${lang}-${topicId}`, mistakes);
     localStorage.setItem(`mistakes-${topicId}`, mistakes);
     showNotification(getUiString('mistakesSaved'));
   }
@@ -861,20 +884,38 @@
   // Accordion Functionality
   // ===========================
   function setupAccordion() {
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
-    
-    accordionHeaders.forEach(header => {
-      header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
+    const items = document.querySelectorAll('.accordion-item');
+    items.forEach((item, idx) => {
+      const header = item.querySelector('.accordion-header');
+      const content = item.querySelector('.accordion-content');
+      if (!header || !content) return;
+
+      // Assign ids to content if missing
+      if (!content.id) {
+        content.id = `accordion-content-${idx}`;
+      }
+      header.setAttribute('aria-controls', content.id);
+      content.setAttribute('role', 'region');
+      content.setAttribute('aria-labelledby', `accordion-header-${idx}`);
+      if (!header.id) {
+        header.id = `accordion-header-${idx}`;
+      }
+
+      const clickHandler = () => {
         const isExpanded = header.getAttribute('aria-expanded') === 'true';
-        
-        // Toggle current accordion
-        header.setAttribute('aria-expanded', !isExpanded);
+        header.setAttribute('aria-expanded', (!isExpanded).toString());
         content.classList.toggle('active');
-        
-        // Update toggle icon
+        content.setAttribute('aria-hidden', isExpanded ? 'true' : 'false');
         const toggle = header.querySelector('.accordion-toggle');
-        toggle.textContent = isExpanded ? '+' : '−';
+        if (toggle) toggle.textContent = isExpanded ? '+' : '−';
+      };
+
+      header.addEventListener('click', clickHandler);
+      header.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          clickHandler();
+        }
       });
     });
   }
@@ -899,10 +940,10 @@
   // ===========================
   function attachEventListeners() {
     // Search
-    elements.searchInput.addEventListener('input', (e) => {
+    elements.searchInput.addEventListener('input', debounce((e) => {
       state.searchQuery = e.target.value;
       renderTopicsList();
-    });
+    }, 200));
 
     // Category filter
     elements.categorySelect.addEventListener('change', (e) => {
